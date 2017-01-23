@@ -4,30 +4,38 @@
     <meta charset="utf-8">
     <title>Blueprints for a Blackout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./main.css"/>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gudea:400,700">
     <script src="./data.js"></script>
     <script src="http://unpkg.com/vue/dist/vue.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Gudea:400,700" rel="stylesheet">
 </head>
 <body>
 <div id="app">
     <header>
         <h1>Blueprints for a blackout</h1>
         <div class="box">
-            <div><input placeholder="Search text" v-model="textValue"></div>
-
-            <p><b>Genres</b>: 
-            <template v-for="(type, index) in Object.values(types)"><template v-if="index > 0">, </template>
-                <a href="#" @click="resetFilter(type, 'type')">{{type}}</a></template></p>
-
-            <p><b>Categories</b>: 
-            <template v-for="(cat, index) in Object.values(categories)"><template v-if="index > 0">, </template>
-                <a href="#" @click="resetFilter(cat, 'category')">{{cat}}</a></template></p>
+            <div>
+                <input placeholder="Search text" v-model="textValue">
+            </div>
+            <p>
+                <b>Genres</b>: 
+                <template v-for="(type, index) in Object.values(types)">
+                    <template v-if="index > 0">, </template>
+                    <a href="#" @click.prevent="resetFilter(type, 'type')">{{type}}</a>
+                </template>
+            </p>
+            <p>
+                <b>Categories</b>: 
+                <template v-for="(cat, index) in Object.values(categories)">
+                    <template v-if="index > 0">, </template>
+                    <a href="#" @click.prevent="resetFilter(cat, 'category')">{{cat}}</a>
+                </template>
+            </p>
         </div>
     </header>
     <section>
         <h3>
-            {{category}}{{type}} 
+            {{category}}{{type}}{{textValue}} 
             <button v-show="!!category || !!type" @click="clear">Clear Filter</button>
         </h3>
         <dl>
@@ -36,15 +44,18 @@
                     <a :href="item.url">{{item.title}}</a> 
                     <span class="cite" v-html="formatCitation(item)"></span>
                 </dt>
-                <dd>{{item.info}}</dd>
+                <dd>
+                    {{item.info}}
+                </dd>
             </template>
         <dl>
     </section>
     <footer>
-        <p>Site updated {{ date }}. Suggested additions encouraged via alxdark@gmail.com, or make a pull request on GitHub. </p>
+        <p>Site updated {{ date }}. Suggested additions encouraged via alxdark@gmail.com, 
+            or make a pull request on GitHub. </p>
         <p>Background by <a href="http://www.marcbanderson.com/">Marc Anderson</a>. Website title taken 
-            from The Ex's <a href="http://exmailorder.nl/shop/ex-records/blueprints-for-a-blackout"><cite>Blueprints for a 
-            Blackout</cite>.</a></p> 
+            from The Ex's <a href="http://exmailorder.nl/shop/ex-records/blueprints-for-a-blackout">
+            <cite>Blueprints for a Blackout</cite>.</a></p> 
     </footer>
 </div>
 <script>
@@ -63,9 +74,21 @@ var app = new Vue({
         types: t,
         date: new Date(date).toLocaleDateString()
     },
+    created: function() {
+        var arr = document.location.hash.split("=");
+        if (arr[0] === "#search") {
+            this.textValue = arr[1];
+        } else if (arr[0] === "#type") {
+            this.resetFilter(arr[1], 'type');
+        } else if (arr[0] === "#category") {
+            this.resetFilter(arr[1], 'category');
+        }
+    },
     methods: {
         filteredData: function() {
             if (this.textValue) {
+                this.type = this.category = null;
+                document.location.hash = "#search="+this.textValue;
                 return this.items.filter(function(item) {
                     var title = item.title;
                     var info = item.info;
@@ -73,10 +96,12 @@ var app = new Vue({
                            (info && info.toLowerCase().indexOf(this.textValue.toLowerCase()) > -1);
                 }, this);
             } else if (this.category) {
+                document.location.hash = "#category=" + this.category;
                 return this.items.filter(function(item) {
                     return item.cat.indexOf(this.category) > -1;
                 }, this);
             } else if (this.type) {
+                document.location.hash = "#type=" + this.type;
                 return this.items.filter(function(item) {
                     return item.type === this.type;
                 }, this);
@@ -104,6 +129,5 @@ var app = new Vue({
     }
 });
 </script>
-
 </body>
 </html>

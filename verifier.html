@@ -5,6 +5,8 @@
     <title>Verifier: Blueprints for a Blackout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="./data.js"></script>
+</head>
+<body>
 <script>
 var validKeys = new Set(['title','url','pub','cat','type','info','author','date']);
 var requiredKeys = ['title','url','type','cat'];
@@ -17,29 +19,46 @@ Object.values = function(obj) {
     return array;
 };
 
-data.forEach(function(entry) {
+var urlSet = {};
+var titleSet = {};
+
+// The "21" is the first line of records in data.js
+function write(i, msg, value, entry) {
+    document.write('<p>line '+(i+21) + ': ' + msg+': '+value+
+        '</p><p style="margin-left:2rem">'+JSON.stringify(entry)+'</p>');
+}
+
+data.forEach(function(entry, i) {
+    if (urlSet[entry.url]) {
+        write(i, "duplicate url", entry.url, entry);
+    }
+    urlSet[entry.url] = true;
+
+    if (titleSet[entry.title]) {
+        write(i, "duplicate title", entry.title, entry);
+    }
+    titleSet[entry.title] = true;
+    
     var difference = Object.keys(entry).filter(x => !validKeys.has(x));
     if (difference.length > 0) {
-        console.error("unknown key", entry, difference.join(", "));
+        write(i, "unknown property", difference.join(", "), entry);
     }
     var set = new Set(Object.keys(entry));
     var difference = requiredKeys.filter(x => !set.has(x));
     if (difference.length > 0) {
-        console.error("missing required", entry, difference.join(", "));
+        write(i, "missing required property", difference.join(", "), entry);
     }
     var typeValues = Object.values(t);
     if (typeValues.indexOf(entry.type) === -1) {
-        console.error("type wrong", entry, entry.type);
+        write(i, "type wrong", entry.type, entry);
     }
     var catValues = Object.values(c);
     entry.cat.forEach(function(category) {
         if (catValues.indexOf(category) === -1) {
-            console.error("category wrong", entry, category);
+            write(i, "category wrong", category, entry);
         }
     });
 });
 </script>
-</head>
-<body>
 </body>
 </html>
