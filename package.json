@@ -1,0 +1,19 @@
+{
+  "name": "blueprints2",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/alxdark/blueprints.svg?branch=master)](https://travis-ci.org/alxdark/blueprints)",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxdark/blueprints.git"
+  },
+  "author": "Alx Dark <alxdark@gmail.com> (http://alxdark.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alxdark/blueprints/issues"
+  },
+  "homepage": "https://github.com/alxdark/blueprints#readme"
+}
