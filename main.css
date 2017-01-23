@@ -1,0 +1,114 @@
+html {
+    font-size: 16px;
+    font-family: Gudea, sans-serif;
+    background: url(subway-lines.png);
+    background-attachment: fixed;
+}
+body {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 50rem;
+    background-color: white;
+}
+h1 {
+    font-size: 22px;
+}
+header h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: -.7rem;
+}
+section h2 {
+    font-size: 18px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: .2rem;
+    letter-spacing: 1px;
+}
+h3 button {
+    margin-left: 2rem;
+}
+blockquote {
+    font-style: italic;
+}
+dt {
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+}
+    dt a {
+        display: block;
+    }
+a {
+    text-decoration: none;
+    color: mediumblue;
+}
+    a:visited {
+        color: mediumblue;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a.active {
+        color: black;
+        font-weight: bold;
+    }
+input {
+    font-size: large;
+    border-radius: 6px;
+    border: 2px solid #e5e5e5;
+    padding: .2rem .6rem;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.box {
+    margin: -1rem -2rem 1rem -2rem;
+    padding: 1rem 2rem 0rem 2rem;
+    border-bottom: 3px double silver;
+}
+.cite {
+    font-size: 14px;
+}
+nav {
+    width: 15rem;
+    padding: 1rem 3rem 1rem 0rem;
+}
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        white-space: nowrap;
+    }
+section {
+    padding-right: 2rem;
+    width: 100%;
+}
+    .arrow {
+        color: rgba(0,0,0,.2);
+    }
+footer {
+    border-top: 3px double silver;
+    margin: 2rem -2rem 2rem -2rem;
+    padding: 0rem 2rem;
+}
+    footer p {
+        font-size: smaller;
+    }
+    dd, ul {
+        margin-left: 1rem;
+        padding-left: 0;
+    }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    html {
+        font-size: 18px;
+    }
+    body {
+        padding: 1rem;
+    }
+    .main {
+        display: block;
+    }
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Verifier: Blueprints for a Blackout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="./data.js"></script>
+<script>
+var validKeys = new Set(['title','url','pub','cat','type','info','author','date']);
+var requiredKeys = ['title','url','type','cat'];
+
+Object.values = function(obj) {
+    var array = [];
+    for (var prop in obj) {
+        array.push(obj[prop]);
+    }
+    return array;
+};
+
+data.forEach(function(entry) {
+    var difference = Object.keys(entry).filter(x => !validKeys.has(x));
+    if (difference.length > 0) {
+        console.error("unknown key", entry, difference.join(", "));
+    }
+    var set = new Set(Object.keys(entry));
+    var difference = requiredKeys.filter(x => !set.has(x));
+    if (difference.length > 0) {
+        console.error("missing required", entry, difference.join(", "));
+    }
+    var typeValues = Object.values(t);
+    if (typeValues.indexOf(entry.type) === -1) {
+        console.error("type wrong", entry, entry.type);
+    }
+    var catValues = Object.values(c);
+    entry.cat.forEach(function(category) {
+        if (catValues.indexOf(category) === -1) {
+            console.error("category wrong", entry, category);
+        }
+    });
+});
+</script>
+</head>
+<body>
+</body>
+</html>

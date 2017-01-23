@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Blueprints for a Blackout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./main.css"/>
+    <script src="./data.js"></script>
+    <script src="http://unpkg.com/vue/dist/vue.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Gudea:400,700" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+    <header>
+        <h1>Blueprints for a blackout</h1>
+        <div class="box">
+            <div><input placeholder="Search text" v-model="textValue"></div>
+
+            <p><b>Genres</b>: 
+            <template v-for="(type, index) in Object.values(types)"><template v-if="index > 0">, </template>
+                <a href="#" @click="resetFilter(type, 'type')">{{type}}</a></template></p>
+
+            <p><b>Categories</b>: 
+            <template v-for="(cat, index) in Object.values(categories)"><template v-if="index > 0">, </template>
+                <a href="#" @click="resetFilter(cat, 'category')">{{cat}}</a></template></p>
+        </div>
+    </header>
+    <section>
+        <h3>
+            {{category}}{{type}} 
+            <button v-show="!!category || !!type" @click="clear">Clear Filter</button>
+        </h3>
+        <dl>
+            <template v-for="item in filteredData()">
+                <dt>
+                    <a :href="item.url">{{item.title}}</a> 
+                    <span class="cite" v-html="formatCitation(item)"></span>
+                </dt>
+                <dd>{{item.info}}</dd>
+            </template>
+        <dl>
+    </section>
+    <footer>
+        <p>Site updated {{ date }}. Suggested additions encouraged via alxdark@gmail.com, or make a pull request on GitHub. </p>
+        <p>Background by <a href="http://www.marcbanderson.com/">Marc Anderson</a>. Website title taken 
+            from The Ex's <a href="http://exmailorder.nl/shop/ex-records/blueprints-for-a-blackout"><cite>Blueprints for a 
+            Blackout</cite>.</a></p> 
+    </footer>
+</div>
+<script>
+// cache sortKey on object, see how much this speeds up sort.
+data.sort(function(a,b) {
+    return a.title.toLowerCase().localeCompare(b.title.toLowerCase());
+});
+var app = new Vue({
+    el: '#app',
+    data: {
+        category: null,
+        type: null,
+        textValue: null,
+        items: data,
+        categories: c,
+        types: t,
+        date: new Date(date).toLocaleDateString()
+    },
+    methods: {
+        filteredData: function() {
+            if (this.textValue) {
+                return this.items.filter(function(item) {
+                    var title = item.title;
+                    var info = item.info;
+                    return (title && title.toLowerCase().indexOf(this.textValue.toLowerCase()) > -1) ||
+                           (info && info.toLowerCase().indexOf(this.textValue.toLowerCase()) > -1);
+                }, this);
+            } else if (this.category) {
+                return this.items.filter(function(item) {
+                    return item.cat.indexOf(this.category) > -1;
+                }, this);
+            } else if (this.type) {
+                return this.items.filter(function(item) {
+                    return item.type === this.type;
+                }, this);
+            }
+            return this.items;
+        },
+        resetFilter(value, type) {
+            this.textValue = this.type = this.category = null;
+            if (type === 'type') {
+                this.type = value;
+            } else {
+                this.category = value;
+            }
+        },
+        clear: function() {
+            this.type = this.category = null;
+        },
+        formatCitation: function(item) {
+            var array = [];
+            if (item.author) array.push(item.author);
+            if (item.pub) array.push('<i>'+item.pub+'</i>');
+            if (item.date) array.push(item.date);
+            return (array.length) ? array.join(', ') + '.' : '';
+        }
+    }
+});
+</script>
+
+</body>
+</html>
