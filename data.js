@@ -5,7 +5,7 @@ Object.values = function(obj) {
 }
 function f() {
     return [].slice.call(arguments).reduce(function(object, value) {
-        var key = value.replace(/\s&\s/,"_").replace(/[\s-]/g,"_").replace(/'/,'').toLowerCase();
+K        var key = value.replace(/\s&\s/,"_").replace(/[\s-]/g,"_").replace(/'/,'').toLowerCase();
         object[key] = value;
         return object;
     }, {});

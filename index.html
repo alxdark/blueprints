@@ -76,12 +76,13 @@ var app = new Vue({
     },
     created: function() {
         var arr = document.location.hash.split("=");
+        var value = decodeURIComponent(arr[1]);
         if (arr[0] === "#search") {
-            this.textValue = arr[1];
+            this.textValue = value;
         } else if (arr[0] === "#type") {
-            this.resetFilter(arr[1], 'type');
+            this.resetFilter(value, 'type');
         } else if (arr[0] === "#category") {
-            this.resetFilter(arr[1], 'category');
+            this.resetFilter(value, 'category');
         }
     },
     methods: {
