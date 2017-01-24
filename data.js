@@ -136,6 +136,7 @@ var data = [
 ,{title: "Who is my representative?", url: "http://whoismyrepresentative.com/", type: t.resource, cat: [c.congress], info: "Enter your zip code, get contact information for your congressional representative and senator."}
 ,{title: "Winter is coming: prospects for the American press under Trump.", type: t.article, cat: [c.media], url: "http://pressthink.org/2016/12/winter-coming-prospects-american-press-trump/", author: "Jay Rosen", pub: "PressThink", date: "28 Dec 2016", info: "A great explanation of how the press is currently failing, taking into account forces like false news, mistrust of the press, and Trump’s ability to distract and command the daily headlines."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", type: t.campaign, cat: [c.voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successess in local races."}
+,{title: "6 Rules of Islamophobia", url: "http://www.huffingtonpost.com/entry/islamophobia-america_us_587cf491e4b0e58057ff98e0", author: "Christopher Mathias", pub: "Huffington Post", date: "23 Jan 2017", type: t.article, cat: [c.islam]}
 ];
 //“”
 //,{title: "Pantsuit Nation", url: "https://www.facebook.com/WAPantsuitNation/", info: "Unfortunately this group is on Facebook so I can't tell you much about it."}
