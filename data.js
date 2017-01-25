@@ -15,7 +15,7 @@ var c = f("African-Americans", "Anti-Fascism", "Anti-Racism", "Anti-Trump", "Civ
 
 var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Mailing List", "News", "Organization", "Podcast", "Resource");
 
-var date = "2017-01-16";
+var date = "2017-01-24";
 
 var data = [
 {title: "#FightTrump", url: "https://fighttrump.co/", type: t.resource, cat: [c.weeklies], info: "“Sign up to help #FightTrump every day, week, or month.”"}
@@ -64,7 +64,7 @@ var data = [
 ,{title: "Flippable", url: "https://www.flippable.org/", type: t.resource, cat: [c.weeklies], info: "“Our mission is to turn America blue by building a movement to flip seats” focusing on weekly actions to flip state legislatures."}
 ,{title: "Former Mafia-linked figure describes association with Trump.", author: "Rosalind S. Helderman and Tom Hamburger", pub: "Washington Post", date: "17 May 2016", type: t.article, cat: [c.trump], url: "https://www.washingtonpost.com/politics/former-mafia-linked-figure-describes-association-with-trump/2016/05/17/cec6c2c6-16d3-11e6-aa55-670cabef46e0_story.html"}
 ,{title: "GovTrack", url: "https://www.govtrack.us/", type: t.resource, cat: [c.congress], info: "A good site to research your representative’s voting history, who is on what committee, and so forth."}
-,{title: "How an obscure U.S. policy effort could hurt American Muslims.", type: t.article, cat: [c.anti_racism, c.islam], url: "https://www.washingtonpost.com/national/how-an-obscure-policy-effort-could-hurt-american-muslims/2017/01/11/8ce93184-d76e-11e6-b8b2-cb5164beba6b_story.html", author: "Abigail Hauslohner", pub: "Washington Post", date: "11 Jan 2017", info: "Designating the Muslim Brotherhood a terrorist organization for the first time, the GOP could then use this against Mulsim advocacy organizations to brand them as supporters of terrorism (and not civil rights organizations)."}
+,{title: "How an obscure U.S. policy effort could hurt American Muslims.", type: t.article, cat: [c.anti_racism, c.islam], url: "https://www.washingtonpost.com/national/how-an-obscure-policy-effort-could-hurt-american-muslims/2017/01/11/8ce93184-d76e-11e6-b8b2-cb5164beba6b_story.html", author: "Abigail Hauslohner", pub: "Washington Post", date: "11 Jan 2017", info: "Designating the Muslim Brotherhood a terrorist organization for the first time, the GOP could then use this against Muslim advocacy organizations to brand them as supporters of terrorism (and not civil rights organizations)."}
 ,{title: "Human Rights Campaign", url: "https://www.hrc.org/", type: t.organization, cat: [c.lgbtq]}
 ,{title: "Immigrant Solidarity Network", url: "http://www.immigrantsolidarity.org/", type: t.organization, cat:  [c.immigration_refugees], info: "Lots of news and information."}
 ,{title: "Indivisible Action Calendar", url: "https://www.indivisibleguide.com/action-calendar", type: t.calendar, cat: [c.anti_trump]}
@@ -137,6 +137,15 @@ var data = [
 ,{title: "Winter is coming: prospects for the American press under Trump.", type: t.article, cat: [c.media], url: "http://pressthink.org/2016/12/winter-coming-prospects-american-press-trump/", author: "Jay Rosen", pub: "PressThink", date: "28 Dec 2016", info: "A great explanation of how the press is currently failing, taking into account forces like false news, mistrust of the press, and Trump’s ability to distract and command the daily headlines."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", type: t.campaign, cat: [c.voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successess in local races."}
 ,{title: "6 Rules of Islamophobia", url: "http://www.huffingtonpost.com/entry/islamophobia-america_us_587cf491e4b0e58057ff98e0", author: "Christopher Mathias", pub: "Huffington Post", date: "23 Jan 2017", type: t.article, cat: [c.islam]}
+,{title: "20 Lessons from the twentieth century", url: "https://www.facebook.com/timothy.david.snyder/posts/1206636702716110", type: t.article, cat: [c.anti_fascism, c.strategy], author: "Timothy Snyder", date: "15 Nov 2017", info: "A really pretty incredible Facebook post with 20 lessons we can take away from the dictatorships of the twentieth century (Hitler, Stalin, etc.)."}
+,{title: "Presterity", url: "https://presterity.org/", type: t.resource, cat: [c.anti_trump], info: "Another fact-checking site entirely devoted to Trump."}
+,{title: "Seattle Indivisibles Protecting the Progressive Agenda (SIPPA)", url: "http://seattleindivisibles.blogspot.com/", type: t.organization, cat: [c.seattle, c.elections], info: "It's a site with the indivisible game plan and it's in Seattle."}
+,{title: "Project 1461", url: "https://www.project1461.org/", type: t.mailing_list, cat: [c.elections, c.weeklies], info: "This looks like another daily or weekly email of actions to take."}
+,{title: "Research says there are ways to reduce racial bias. Calling people racist isn’t one of them.", url: "http://www.vox.com/identities/2016/11/15/13595508/racism-trump-research-study", author: "German Lopez", pub: "Vox", date: "15 Nov 2016", type: c.article, cat: [c.anti_racism]}
+,{title: "Donald Trump's Authoritarian Politics of Memory", url: "https://www.theatlantic.com/politics/archive/2017/01/donald-trumps-authoritarian-politics-of-memory/514004/", author: "Ruth Ben-Ghiat", pub: "The Atlantic", date: "22 Jan 2017", type: t.article, cat: [c.trump]}
+,{title: "The Danger of American Fascism.", url: "http://newdeal.feri.org/wallace/haw23.htm", author: "Henry A. Wallace", pub: "New York Times", date: "9 Apr 1944", type: t.article, cat: [c.anti_fascism], info: "Unfortunately we're back to this: what is fascism, is Trump a fascist (arguably yes, many of his followers are definitely fascists)."}
+,{title: "How Congress is voting.", url: "https://www.govtrack.us/congress/votes", type: t.resource, cat: [c.congress], info: "Best site I've found for getting information on how Congress is voting."}
+,{title: "Stand Up Republic", url: "https://standuprepublic.com/", type: t.organization, cat: [c.congress], info: "A conservative organization formed to resist Trump regime. Great to see resistance across the political spectrum."}
 ];
 //“”
 //,{title: "Pantsuit Nation", url: "https://www.facebook.com/WAPantsuitNation/", info: "Unfortunately this group is on Facebook so I can't tell you much about it."}
