@@ -18,17 +18,17 @@
                 <input placeholder="Search text" v-model="textValue">
             </div>
             <p>
-                <b>Genres</b>: 
-                <template v-for="(type, index) in Object.values(types)">
-                    <template v-if="index > 0">, </template>
-                    <a href="#" @click.prevent="resetFilter(type, 'type')">{{type}}</a>
-                </template>
-            </p>
-            <p>
                 <b>Categories</b>: 
                 <template v-for="(cat, index) in Object.values(categories)">
                     <template v-if="index > 0">, </template>
                     <a href="#" @click.prevent="resetFilter(cat, 'category')">{{cat}}</a>
+                </template>
+            </p>
+            <p>
+                <b>Genres</b>: 
+                <template v-for="(type, index) in Object.values(types)">
+                    <template v-if="index > 0">, </template>
+                    <a href="#" @click.prevent="resetFilter(type, 'type')">{{type}}</a>
                 </template>
             </p>
         </div>
@@ -42,11 +42,14 @@
             <template v-for="item in filteredData()">
                 <dt>
                     <a :href="item.url">{{item.title}}</a> 
-                    <span class="cite" v-html="formatCitation(item)"></span>
+                    <div class="url">{{item.url}}</div>
+                    <div v-if="item.facebook">
+                        <a :href="'https://www.facebook.com/' + item.facebook">On Facebook</a>
+                    </div>
+                    <div class="cite" v-html="formatCitation(item)"></div>
                 </dt>
-                <dd>
-                    {{item.info}}
-                </dd>
+                <dd v-html="item.info"></dd>
+
             </template>
         <dl>
     </section>
