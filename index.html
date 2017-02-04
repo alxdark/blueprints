@@ -41,10 +41,13 @@
         <dl>
             <template v-for="item in filteredData()">
                 <dt>
-                    <a :href="item.url">{{item.title}}</a> 
+                    <a :href="item.url"><span style="color: orange" v-if="item.fav">&#9733; </span>{{item.title}}</a> 
                     <div class="url">{{item.url}}</div>
                     <div v-if="item.facebook">
                         <a :href="'https://www.facebook.com/' + item.facebook">On Facebook</a>
+                    </div>
+                    <div v-if="item.twitter">
+                        <a :href="'https://www.twitter.com/' + item.twitter">On Twitter</a>
                     </div>
                     <div class="cite" v-html="formatCitation(item)"></div>
                 </dt>
