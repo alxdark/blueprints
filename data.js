@@ -61,7 +61,7 @@ var data = [
 ,{title: "Data Refuge Project", url: "https://www.datarefuge.org", type: t.resource, cat: [c.science, c.environment], info: "One of several data stores saving climate data before it is deleted by Trump administration."}
 ,{title: "Defending Accounts Against Common Attacks", url: "https://source.opennews.org/en-US/guides/defending-accounts/", type: t.resource, cat: [c.security]}
 ,{title: "Democratic Coalition Against Trump", url:"http://www.democraticcoalition.org/", type:t.organization, cat: [c.anti_trump], info:"Resisting Trump through research, boycotts, and so forth, a good opposition site."}
-,{title: "Digital Security Tips for Protesters", url: "https://www.eff.org/deeplinks/2016/11/digital-security-tips-for-protesters", type: t.resource, cat: [c.security]}
+,{title: "Digital Security Tips for Protesters", url: "https://www.eff.org/deeplinks/2016/11/digital-security-tips-for-protesters", type: t.resource, cat: [c.security], info: "Some repeated advice here, but some is unique to protests."}
 ,{title: "Dirty money: Trump and the Kazakh connection.", type: t.article, cat: [c.trump], url: "https://www.ft.com/content/33285dfa-9231-11e6-8df8-d3778b55a923", author: "Tom Burgis", pub: "Financial Times", date: "19 Oct 2016"}
 ,{title: "Donald Trump is Choosing His Cabinet. Here’s the Latest List.", url: "http://www.nytimes.com/interactive/2016/us/politics/donald-trump-administration.html", pub: "New York Times", type: t.resource, cat: [c.trump]}
 ,{title: "Donald Trump's Authoritarian Politics of Memory", url: "https://www.theatlantic.com/politics/archive/2017/01/donald-trumps-authoritarian-politics-of-memory/514004/", author: "Ruth Ben-Ghiat", pub: "The Atlantic", date: "22 Jan 2017", type: t.article, cat: [c.trump]}
@@ -164,7 +164,7 @@ var data = [
 ,{title: "We have 100 days to stop Donald Trump from systemically corrupting our institutions.", url: "http://www.vox.com/policy-and-politics/2016/11/17/13626514/trump-systemic-corruption", author: "Matthew Yglesias", pub: "Vox", date: "17 Nov 2016", type: t.article, cat: [c.strategy]}
 ,{title: "Welcoming America", url: "https://www.welcomingamerica.org/", type: t.organization, cat: [c.immigration_refugees], info: "Seattle is a member of this networks of “Welcoming Cities” that extends the concept of a sanctuary city. This is what Trump wants to attack."}
 ,{title: "What Do I Do About Trump?", url: "http://whatdoidoabouttrump.com/", type: t.organization, cat: [c.anti_trump], info: "This looks like another site renamed. General list of actions that exist right now, etc."}
-,{title: "WhatsApp", url: "https://www.whatsapp.com/", type: t.app, cat: [c.security], info: "Another encrypted messaging app. I see Signal being recommended over it however."}
+,{title: "WhatsApp", url: "https://www.whatsapp.com/", type: t.app, cat: [c.security], info: "Another encrypted messaging app. I list it here to encourage you to use Signal instead."}
 ,{title: "White House Inc.", url: "https://whitehouseinc.org/", type: t.resource, cat: [c.trump], info: "Since Trump hasn't divested in his businesses, this site connects you with one of his companies at random so you can talk to them about your policy concerns."}
 ,{title: "Who Decides? The status of women's reproductive rights in the US", url: "http://www.prochoiceamerica.org/government-and-you/who-decides/", type: t.resource, cat: [c.womens_rights], author: "NARAL", info: "Summary information about reproductive rights, state-by-state."}
 ,{title: "Who is my representative?", url: "http://whoismyrepresentative.com/", type: t.resource, cat: [c.congress], info: "Enter your zip code, get contact information for your congressional representative and senator."}
@@ -183,7 +183,13 @@ var data = [
 ,{title: "Calls for Change", url: "https://www.callsforchange.com/", type: t.resource, cat: [c.congress], info: "Another calling tool."}
 ,{title: "Climate Change Deniers", url: "https://www.ofa.us/climate-change-deniers/", type: t.resource, cat: [c.congress, c.environment], info: "The members of Congress who deny climate change, along with arguments to call out their intransigence that are specific to their jurisdictions."}
 ,{title: "Autocracy: Rules for Survival", url: "http://www.nybooks.com/daily/2016/11/10/trump-election-autocracy-rules-for-survival/", author: "Masha Gessen", pub: "New York Review of Books", date: "10 Nov 2016", type: t.article, cat: [c.strategy]}
-,{title: "Twitter Activist Security", url: "https://medium.com/@thegrugq/twitter-activist-security-7c806bae9cb0#.sh7dfsy9f", type: t.article, cat: [c.media, c.security], info: "Security for Tweeting.", date: "29 Jan 2017"}
+,{title: "Twitter Activist Security", url: "https://medium.com/@thegrugq/twitter-activist-security-7c806bae9cb0#.sh7dfsy9f", type: t.article, cat: [c.media, c.security], info: "Security for twitter users.", date: "29 Jan 2017"}
 ,{title: "Weekly Action Checklist for Democrats, Independents, and Republicans of Conscience", url: "https://jenniferhofmann.com/home/weekly-action-checklist-democrats-independents-republicans-conscience/", type: t.mailing_list, cat: [c.weeklies], info: "E-mail list with a weekly summary of actions to take."}
+,{title: "Tor Browser", url: "https://www.torproject.org/", type: t.app, cat: [c.security], info: "An open source web browser that helps defend you against traffic analysis, a form of network surveillance. Easy and important to use in some contexts."}
+,{title: "DuckDuckGo", url: "https://duckduckgo.com/", type: t.app, cat: [c.security], info: "DuckDuckGo is an Internet search engine that emphasizes protecting searchers' privacy and avoiding the filter bubble of personalized search results."}
+,{title: "Security in a Box", url: "https://securityinabox.org/", type: t.resource, cat: [c.security], info: "A very exhaustive web site on every aspect of digital and online security. Almost everyone can learning something by spending some time at this site."}
+,{title: "Secure Communication", url: "https://www.circl.lu/pub/dfak/SecureCommunication/", author: "Computer Incident Response Center", type: t.resource, cat: [c.security], info: "A very good security explainer that assumes no prior knowledge of any kind."}
+,{title: "RiseUp", url: "https://riseup.net/", type: t.organization, cat: [c.security], info: "Provides email, mailing lists, and private wikis for activists and activist organizations. Based in Seattle I think."}
+,{title: "Jitsi", url: "https://jitsi.org/", type: t.app, cat: [c.security], info: "Secure (encrypted) video calls and chat"}
 ];
 //“”
