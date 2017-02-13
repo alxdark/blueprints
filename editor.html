@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Blueprints against a Blitz</title>
+    <title>Blueprints for a Blackout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gudea:400,700">
@@ -12,23 +12,12 @@
 <body>
 <div id="app">
     <header>
-        <h1>Blueprints against a Blitz</h1>
-        <div class="box">
-            <div>
-                <input placeholder="Search text" v-model="textValue">
-            </div>
-            <p>
-                <template v-for="(cat, index) in Object.values(categories).sort()">
-                    <template v-if="index > 0">, </template>
-                    <a href="#" @click.prevent="resetFilter(cat, 'category')">{{cat}}</a>
-                </template>
-            </p>
-        </div>
+        <h1>Blueprints for a blackout</h1>
     </header>
     <section>
         <h3>
-            {{category}}{{textValue}} 
-            <button v-show="!!category" @click="clear">Clear Filter</button>
+            {{category}}{{type}}{{textValue}} 
+            <button v-show="!!category || !!type" @click="clear">Clear Filter</button>
         </h3>
         <dl>
             <template v-for="item in filteredData()">
@@ -75,9 +64,11 @@ var app = new Vue({
     el: '#app',
     data: {
         category: null,
+        type: null,
         textValue: null,
         items: data,
         categories: c,
+        types: t,
         date: new Date(date).toLocaleDateString()
     },
     created: function() {
@@ -85,6 +76,8 @@ var app = new Vue({
         var value = decodeURIComponent(arr[1]);
         if (arr[0] === "#search") {
             this.textValue = value;
+        } else if (arr[0] === "#type") {
+            this.resetFilter(value, 'type');
         } else if (arr[0] === "#category") {
             this.resetFilter(value, 'category');
         }
@@ -92,7 +85,7 @@ var app = new Vue({
     methods: {
         filteredData: function() {
             if (this.textValue) {
-                this.category = null;
+                this.type = this.category = null;
                 document.location.hash = "#search="+this.textValue;
                 return this.items.filter(function(item) {
                     return SEARCH_FIELDS.some(function(fieldName) {
@@ -104,15 +97,24 @@ var app = new Vue({
                 return this.items.filter(function(item) {
                     return item.cat.indexOf(this.category) > -1;
                 }, this);
+            } else if (this.type) {
+                document.location.hash = "#type=" + this.type;
+                return this.items.filter(function(item) {
+                    return item.type === this.type;
+                }, this);
             }
             return this.items;
         },
         resetFilter(value, type) {
-            this.textValue = this.category = null;
-            this.category = value;
+            this.textValue = this.type = this.category = null;
+            if (type === 'type') {
+                this.type = value;
+            } else {
+                this.category = value;
+            }
         },
         clear: function() {
-            this.category = null;
+            this.type = this.category = null;
         },
         formatCitation: function(item) {
             var array = [];

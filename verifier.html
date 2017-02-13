@@ -8,8 +8,8 @@
 </head>
 <body>
 <script>
-var validKeys = new Set(['title','url','pub','cat','fav','type','info','author','date','facebook','twitter']);
-var requiredKeys = ['title','url','type','cat'];
+var validKeys = new Set(['title','url','pub','cat','fav','info','author','date','facebook','twitter']);
+var requiredKeys = ['title','url','cat'];
 
 Object.values = function(obj) {
     var array = [];
@@ -49,8 +49,11 @@ data.forEach(function(entry, i) {
         write(i, "missing required property", difference.join(", "), entry);
     }
     var typeValues = Object.values(t);
-    if (typeValues.indexOf(entry.type) === -1) {
-        write(i, "type wrong", entry.type, entry);
+    var found = entry.cat.some(function(category) {
+        return (typeValues.indexOf(category) > -1);
+    });
+    if (!found) {
+        write(i, "type missing", entry.cat.join(", "), entry);
     }
     var catValues = Object.values(c);
     entry.cat.forEach(function(category) {
