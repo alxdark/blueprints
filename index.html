@@ -35,7 +35,10 @@
                 <dt>
                     <div><span style="color: orange" v-if="item.fav">&#9733; </span> <a :href="item.url">{{item.title}}</a></div>
                     <div class="url">{{item.url}}</div>
-                    <div class="cite" v-html="formatCitation(item)"></div>
+                    <div>
+                        <span class="cite" v-html="formatCitation(item)"></span> 
+                        <span class="cats" v-html="filteredCat(item)"></span>
+                    </div>
                 </dt>
                 <dd>
                     <div v-html="item.info"></div>
@@ -43,7 +46,7 @@
                         <a :href="'https://www.facebook.com/' + item.facebook" v-if="item.facebook">
                             <div class="facebook"></div> facebook
                         </a>
-                        <a :href="'https://www.twitter.com/' + item.twitter" v-if="item.facebook">
+                        <a :href="'https://www.twitter.com/' + item.twitter" v-if="item.twitter">
                             <div class="twitter"></div> twitter
                         </a>
                     </div>
@@ -53,18 +56,11 @@
     </section>
     <footer>
         <p>Site updated {{ date }}. Suggested additions encouraged via alxdark@gmail.com, 
-            or make a pull request on GitHub. </p>
-        <p>Background by <a href="http://www.marcbanderson.com/">Marc Anderson</a>. Website title taken 
-            from The Ex's <a href="http://exmailorder.nl/shop/ex-records/blueprints-for-a-blackout">
-            <cite>Blueprints for a Blackout</cite>.</a></p> 
+            or make a pull request on GitHub.  Background by 
+            <a href="http://www.marcbanderson.com/">Marc Anderson</a>.</p> 
     </footer>
 </div>
 <script>
-// cache sortKey on object, see how much this speeds up sort.
-data.sort(function(a,b) {
-    return a.title.toLowerCase().localeCompare(b.title.toLowerCase());
-});
-
 function itemFieldMatch(item, fieldName, textValue) {
     var field = item[fieldName];
     return (field && field.toLowerCase().indexOf(textValue.toLowerCase()) > -1);
@@ -106,6 +102,11 @@ var app = new Vue({
                 }, this);
             }
             return this.items;
+        },
+        filteredCat: function(item) {
+            var array = [].concat(item.cat);
+            array.splice(array.indexOf(this.category),1);
+            return (array.length) ? "["+array.join(', ')+"]" : "";
         },
         resetFilter(value, type) {
             this.textValue = this.category = null;

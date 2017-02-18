@@ -24,6 +24,13 @@ body {
 .twitter {
     background-image: url(twitter.svg);
 }
+.cats {
+    font-variant: small-caps;
+    font-size: smaller;
+    letter-spacing: 1px;
+    color: #666;
+    font-style: italic;
+}
 h1 {
     font-size: 22px;
 }
