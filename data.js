@@ -139,7 +139,7 @@ var data = [
 ,{title: "Safe Zone Project", url: "http://thesafezoneproject.com/", cat: [resource, lgbtq], info: "“A free online resource for creating powerful, effective LGBTQ awareness and ally training workshops.”"}
 ,{title: "Scientists March on Washington", url: "https://www.marchforscience.com/", facebook: "marchforscience", twitter: "ScienceMarchDC", cat: [event, science], info: "Nationwide marches being planned for Earch Day.", date: "22 Apr 2017"}
 ,{title: "Seattle Indivisibles Protecting the Progressive Agenda (SIPPA)", url: "http://seattleindivisibles.blogspot.com/", cat: [organization, seattle, elections], info: "It's a site with the indivisible game plan and it's in Seattle."}
-,{title: "Seattle Jewish Federation of Greater Seattle", url: "https://www.jewishinseattle.org/", cat: [organization, religious, judaism], info: "They wrote a letter “strongly condemning” Bannon appointmen"}
+,{title: "Seattle Jewish Federation of Greater Seattle", url: "https://www.jewishinseattle.org/", cat: [organization, religious, judaism], info: "They wrote a letter “strongly condemning” Bannon appointment."}
 ,{title: "Seattle Neighborhood Action Coalition", url: "https://www.neighborhoodaction.info/", cat: [organization, community_organizing], info: "A community organizing effor “A practical, people-powered solution to the many known and imminent threats of a dangerous and authoritarian Trump regime.” The organization has neighborhood NACs for each city district, that are meeting regularly, as well as at a meeting of all the NACs."}
 ,{title: "Seattle Resistance and Solidarity Calendar", url: "http://www.thestranger.com/events/resistance", pub: "The Stranger", cat: [calendar, seattle], info: "The Stranger’s calendar of events in Seattle."}
 ,{title: "Secure Communication", url: "https://www.circl.lu/pub/dfak/SecureCommunication/", author: "Computer Incident Response Center", cat: [resource, security], info: "A very good security explainer that assumes no prior knowledge of any kind."}
@@ -232,3 +232,4 @@ var data = [
 //http://www.truthdig.com/report/item/the_cancer_of_occupy_20120206 - strategy
 //http://www.ericachenoweth.com/wp-content/uploads/2012/01/INTS4626.Winter2014web.pdf
 //http://www.aeinstein.org/about/
+
