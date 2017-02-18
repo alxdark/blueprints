@@ -211,6 +211,7 @@ var data = [
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
 ,{title: "Yes California Independence Campaign", url: "http://www.yescalifornia.org/", cat: [organization, regionalism], info: "The campaign behind #calexit. I at least am entertained by this campaign."}
 ,{title: "#FightTrump", url: "https://fighttrump.co/", cat: [resource, weeklies], info: "“Sign up to help #FightTrump every day, week, or month.”"}
+,{title: "Resistance Resources", url: "http://www.pantsuitresources.com/", cat: [resource, trump, congress, strategy], info: "aka Pantsuit Resources, another research effort underway."}
 ];
 //“”
 
@@ -231,9 +232,3 @@ var data = [
 //http://www.truthdig.com/report/item/the_cancer_of_occupy_20120206 - strategy
 //http://www.ericachenoweth.com/wp-content/uploads/2012/01/INTS4626.Winter2014web.pdf
 //http://www.aeinstein.org/about/
-
-//,{title: "Cascadia Now!", url: "http://www.cascadianow.org/", cat: [organization, regionalism], info: "Non-profit to raise awareness of the Cascadia bioregion."}
-//,{title: "FairVote.com", url: "http://www.fairvote.org/", cat: [campaign, voting_rights], info: "Ranked choice voting, national interstate compact, ending gerrymandering, etc."}
-//,{title: "Immigrant Solidarity Network", url: "http://www.immigrantsolidarity.org/", cat: [organization, immigration_refugees], info: "Lots of news and information."}
-//,{title: "Move to Amend", url: "https://movetoamend.org/", cat: [campaign, voting_rights], info: "National movement to amend the constitution to undo Citizens United."}
-//,{title: "Washington Community Action Coalition", url: "http://washingtoncan.org/wordpress/", cat: [organization, community_organizing], info: "Last active in 2016 election, nothing since then about the election of Trump."}
