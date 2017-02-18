@@ -150,7 +150,7 @@ var data = [
 ,{title: "Sleeping Giants", url: "https://www.facebook.com/slpnggiants/", cat: [boycott, media], info: "This group is working on a campaign to pull advertisers from Breitbart and other right-wing hate sites."}
 ,{title: "So That Happened", url: "https://itunes.apple.com/us/podcast/so-that-happened/id945384774", pub: "Huffington Post", cat: [podcast, news]}
 ,{title: "Southern Coalition for Social Justice", url: "http://www.southerncoalition.org/", cat: [organization, voting_rights, economic_justice]}
-,{title: "Southern Poverty Law Center", url: "http://www.splc.org/", cat: [organization, african_americans], info: "The SPLC continues to do important research on hate organizations. It is a useful resource."}
+,{title: "Southern Poverty Law Center", url: "https://www.splcenter.org/", cat: [organization, african_americans], info: "The SPLC continues to do important research on hate organizations. It is a useful resource."}
 ,{title: "Spreadsheet of nomination process", url: "https://docs.google.com/spreadsheets/d/1Nx970-5j0ls4aJbmiKqwN0E3OfcpAqhXgM3zyfBZ4TM/htmlview?usp=sharing&sle=true#", cat: [resource, congress], info: "Who has gone through committee, when they are voting on whom."}
 ,{title: "Stand Up Republic", url: "https://standuprepublic.com/", cat: [organization, congress], info: "A conservative organization formed to resist Trump regime. Great to see resistance across the political spectrum."}
 ,{title: "Surveillance Self-Defence", url: "https://ssd.eff.org/", cat: [resource, security]}
