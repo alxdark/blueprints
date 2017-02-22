@@ -63,7 +63,7 @@ var data = [
 ,{title: "Confronting Fear: Final Report", url: "http://www.islamophobia.org/images/ConfrontingFear/Final-Report.pdf", author: "Council on American-Islamic Relations", cat: [resource, islam]}
 ,{title: "Council on American-Islamic Relations", url: "https://www.cair.com/press-center/action-alerts.html", cat: [organization, islam], info: "Infrequent action alerts, and an email newsletter that documents reported hate crimes across the country and CAIR’s follow-up. Informative."}
 ,{title: "Countable", url: "https://www.countable.us/", cat: [app, congress, news], info: "This is a very good application for reviewing what Congress is doing each day, and for tracking specific legislation."}
-,{title: "Daily Action", url: "https://dailyaction.org/", cat: [resource, weeklies], info: "“In 90 seconds, you can conscientiously object and be done with i” This one works entirely through your phone so you can make phone calls to your elected representatives."}
+,{title: "Daily Action", url: "https://dailyaction.org/", cat: [resource, weeklies], info: "“In 90 seconds, you can conscientiously object and be done with it.” This one works entirely through your phone so you can make phone calls to your elected representatives."}
 ,{title: "Dan Rather", url: "https://www.newsandgutsmedia.com/", cat: [person, media], info: "You know this guy.", facebook: "theDanRather", twitter: "danrather"}
 ,{title: "Data Refuge Project", url: "https://www.datarefuge.org", cat: [resource, science, environment], info: "One of several data stores saving climate data before it is deleted by Trump administration."}
 ,{title: "Defending Accounts Against Common Attacks", url: "https://source.opennews.org/en-US/guides/defending-accounts/", cat: [resource, security], info: "Securing your electronic communications."}
@@ -116,7 +116,7 @@ var data = [
 ,{title: "People are in the streets protesting Donald Trump. But when does protest actually work?", url: "https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/21/people-are-in-the-streets-protesting-donald-trump-but-when-does-protest-actually-work/", author: "Erica Chenoweth", pub: "Washington Post", date: "21 Nov 2016", cat: [article, strategy], info: "Yes, and the author explains when and why they do. Good overview of nonviolent resistance campaigns."}
 ,{title: "People for Washington", url: "http://peopleforwashington.com/", facebook: "peopleforWAexit", cat: [organization, regionalism], info: "Washington independence movement. #waexit"}
 ,{title: "Planned Parenthood", url: "https://www.plannedparenthood.org/", cat: [organization, womens_rights], info: "In most advanced industrial countries, family planning is a part of the health care provided by the government to all its citizens, but in America&hellip;"}
-,{title: "Pod Save America", url: "https://getcrookedmedia.com/here-have-a-podcast-78ee56b5a323#.x3p0xgjq9", cat: [podcast, news], pub: "Crooked Media", info: "The successor to “Keepin’ it 1600”, I haven’t heard it but it promises to be interesting."}
+,{title: "Pod Save America", url: "https://getcrookedmedia.com/here-have-a-podcast-78ee56b5a323#.x3p0xgjq9", cat: [podcast, news], pub: "Crooked Media", info: "The successor to “Keepin’ it 1600”."}
 ,{title: "Political Research Associates", url: "http://www.politicalresearch.org/", cat: [organization, civil_rights, strategy], info: "A lot of excellent resources here on the Right Wing and on how to respond to everything from militias taking over your town, to defending reproductive freedoms(!)", fav: true}
 ,{title: "PolitiFact", url: "http://www.politifact.com/", cat: [resource, news], info: "Washington Post and Tampa Bay Times?"}
 ,{title: "PopVox", url: "https://www.popvox.com/", cat: [organization, elections, congress], info: "Another site to track state and federal legislatures. I did not find it very helpful."}
@@ -137,7 +137,7 @@ var data = [
 ,{title: "Robert Reich", url: "http://robertreich.org/", cat: [person, strategy], info: "Former Secretary of Labor who is very vocal in opposition to Trump."}
 ,{title: "Run For Something", url: "https://www.runforsomething.net/", cat: [organization, elections], info: "Another organization recruiting political candidates under the age of 35."}
 ,{title: "Safe Zone Project", url: "http://thesafezoneproject.com/", cat: [resource, lgbtq], info: "“A free online resource for creating powerful, effective LGBTQ awareness and ally training workshops.”"}
-,{title: "Scientists March on Washington", url: "https://www.marchforscience.com/", facebook: "marchforscience", twitter: "ScienceMarchDC", cat: [event, science], info: "Nationwide marches being planned for Earch Day.", date: "22 Apr 2017"}
+,{title: "Scientists March on Washington", url: "https://www.marchforscience.com/", facebook: "marchforscience", twitter: "ScienceMarchDC", cat: [event, science], info: "Nationwide marches being planned for Earth Day.", date: "22 Apr 2017"}
 ,{title: "Seattle Indivisibles Protecting the Progressive Agenda (SIPPA)", url: "http://seattleindivisibles.blogspot.com/", cat: [organization, seattle, elections], info: "It's a site with the indivisible game plan and it's in Seattle."}
 ,{title: "Seattle Jewish Federation of Greater Seattle", url: "https://www.jewishinseattle.org/", cat: [organization, religious, judaism], info: "They wrote a letter “strongly condemning” Bannon appointment."}
 ,{title: "Seattle Neighborhood Action Coalition", url: "https://www.neighborhoodaction.info/", cat: [organization, community_organizing], info: "A community organizing effor “A practical, people-powered solution to the many known and imminent threats of a dangerous and authoritarian Trump regime.” The organization has neighborhood NACs for each city district, that are meeting regularly, as well as at a meeting of all the NACs."}
@@ -159,7 +159,7 @@ var data = [
 ,{title: "Tax March", url: "https://www.facebook.com/events/240189163102061/", cat: [event, trump], date: "15 Apr 2017", info: "A Trump protest specifically pointing out the dude has not released his tax returns."}
 ,{title: "The 65", url: "http://thesixtyfive.org/", cat: [resource, congress], info: "Calling scripts on virtually all issues."}
 ,{title: "The Action Network", url: "https://actionnetwork.org/", cat: [organization, strategy], info: "Free to individuals and small groups, this company provides support for large mailing lists. Probably not that useful over a mailing list service if you're small."}
-,{title: "The CAIR Project", url: "https://cairproject.org/", cat: [organization, womens_rights], info: "a Northwest abortion fund... We provide referrals, fundraising counseling, and financial help to pay for abortions. Funding is sent directly to the clini"}
+,{title: "The CAIR Project", url: "https://cairproject.org/", cat: [organization, womens_rights], info: "A Northwest abortion fund...“We provide referrals, fundraising counseling, and financial help to pay for abortions. Funding is sent directly to the clinic.”"}
 ,{title: "The Corleones of the Caspian: How Azerbaijan’s dictator woos the United States and Europe.", url: "http://foreignpolicy.com/2014/06/10/the-corleones-of-the-caspian/", author: "Michael Weiss", pub: "Foreign Policy", date: "10 Jun 2014", cat: [article, trump]}
 ,{title: "The Curious World of Donald Trump’s Private Russian Connections.", cat: [article, trump], url: "http://www.the-american-interest.com/2016/12/19/the-curious-world-of-donald-trumps-private-russian-connections/", author: "James S. Henry", pub: "The American Interest", date: "19 Dec 2016", info: "“…whatever the nature of President-elect Donald Trump’s relationship with President Putin, he has certainly managed to accumulate direct and indirect connections with a far-flung private Russian/FSU network of outright mobsters, oligarchs, fraudsters, and kleptocrats.”"}
 ,{title: "The Emoluments Clause: Its text, meaning, and application to Donald J. Trump.", url: "https://www.brookings.edu/research/the-emoluments-clause-its-text-meaning-and-application-to-donald-j-trump/", author: "Norman Eisen etc. al", pub: "The Brookings Institute", date: "16 Dec 2016", info: "“The Emoluments Clause, until recently not much discussed because its constraints have been taken for granted, constitutes a clear barrier to the intermingling of business and governmental interests that Donald J. Trump proposes to build into his conduct of the Presidency.”", cat: [article, civil_society]}
@@ -179,7 +179,7 @@ var data = [
 ,{title: "Tor Browser", url: "https://www.torproject.org/", cat: [app, security], info: "An open source web browser that helps defend you against traffic analysis, a form of network surveillance. Easy and important to use in some contexts."}
 ,{title: "Town Hall Project 2018", url: "https://townhallproject.com/", cat: [resource, congress], fav: true, info: "A list of all town hall and other public meetings that Congress are holding, all across the union."}
 ,{title: "Tracking Congress In The Age of Trump", url: "https://projects.fivethirtyeight.com/congress-trump-score/", author: "FiveThirtyEight", cat: [resource, congress], info: "A great summary of voting along with Trump or against him, you can easily find politicians who can and should be replaced, such Dean Healler (R-NV) or Cory Gardner (R-CO) who have voted 100% with Trump, though their districts leaned Clinton. There are more."}
-,{title: "Trump Confirmations", url: "https://www.washingtonpost.com/graphics/politics/trump-administration-appointee-tracker/database/", cat: [resource, trump], info: "Tracking about 700 executive positions that Trump will appoint that have to be confirmed by Congress. Will any grifter be denied a post? Visit this site to find ou"}
+,{title: "Trump Confirmations", url: "https://www.washingtonpost.com/graphics/politics/trump-administration-appointee-tracker/database/", cat: [resource, trump], info: "Tracking about 700 executive positions that Trump will appoint that have to be confirmed by Congress. Will any grifter be denied a post? Visit this site to find out."}
 ,{title: "Trump Promise Checker", url: "https://www.washingtonpost.com/graphics/politics/trump-promise-tracker/", pub: "Washington Post", info: "Another Trump fact checking site. All the promises on this site are specific and evil.", cat: [resource, trump]}
 ,{title: "Trump Promised", url: "https://trumppromised.us/", cat: [article, trump], info: "A running tally of all the things Trump promised, and the extent to which he had done nothing or flat out lied about what he was going to do."}
 ,{title: "Trump, His Children, and 500+ Potential Conflicts of Interest", url: "http://www.wsj.com/graphics/donald-trump-potential-conflicts-of-interest/", author: "Joel Eastwood, Coulter Jones and Julia Wolfe", pub: "Wall Street Journal", date: "19 Jan 2017", cat:[article, trump]}
@@ -212,24 +212,32 @@ var data = [
 ,{title: "Yes California Independence Campaign", url: "http://www.yescalifornia.org/", cat: [organization, regionalism], info: "The campaign behind #calexit. I at least am entertained by this campaign."}
 ,{title: "#FightTrump", url: "https://fighttrump.co/", cat: [resource, weeklies], info: "“Sign up to help #FightTrump every day, week, or month.”"}
 ,{title: "Resistance Resources", url: "http://www.pantsuitresources.com/", cat: [resource, trump, congress, strategy], info: "aka Pantsuit Resources, another research effort underway."}
+,{title: "#KnockEveryDoor", url: "https://knockeverydoor.org/", cat: [organization, elections], info: "Nationwide, volunteer-led canvasses to organize our communities against Trump"}
+,{title: "Movement 2017", url: "http://movementvote.org/", cat: [resource]}
+,{title: "Scholars Strategy Network", url: "http://www.scholarsstrategynetwork.org/", cat: [organization, strategy]}
+,{title: "Citizen Resource Center", url: "http://www.congressfoundation.org/citizen-engagement/citizen-resource-center", author: "Congressional Management Foundation", cat: [organization, strategy, elections, congress]}
+,{title: "Training for Change", url: "https://www.trainingforchange.org/tools", cat: [resource, strategy, community_organizing]}
+,{title: "America's Voice", url: "http://www.americasvoice.org/", cat: [organization, immigration_refugees], info: "They have a good blog."}
+,{title: "Handbook for Nonviolent Campaigns", url: "https://www.wri-irg.org/pubs/NonviolenceHandbook", cat: [resource, strategy]}
+,{title: "Global Nonviolent Action Database", url: "http://nvdatabase.swarthmore.edu/", cat: [resource, strategy]}
 ];
 //“”
 
-//http://www.americasvoice.org/
-//http://www.congressfoundation.org/projects/communicating-with-congress/citizen-centric-advocacy-2017
-// tech volunteering
-// http://www.techsandbalances.org/
-// http://www.progcode.co/
 //https://actionnetwork.org/forms/immigrants-are-heretostay
-//https://knockeverydoor.org/
-//http://movementvote.org/
-//http://www.scholarsstrategynetwork.org/
 //https://rationalinsurgent.com/2013/11/04/my-talk-at-tedxboulder-civil-resistance-and-the-3-5-rule/
 //https://permanent.access.gpo.gov/websites/usip/www.usip.org/pubs/specialreports/sr87.pdf
-//http://nvdatabase.swarthmore.edu/
-//https://www.wri-irg.org/pubs/NonviolenceHandbook
-//https://www.trainingforchange.org/tools
 //http://www.truthdig.com/report/item/the_cancer_of_occupy_20120206 - strategy
 //http://www.ericachenoweth.com/wp-content/uploads/2012/01/INTS4626.Winter2014web.pdf
 //http://www.aeinstein.org/about/
+//https://www.nytimes.com/2017/02/18/opinion/sunday/how-can-we-get-rid-of-trump.html?smid=tw-share
+//http://www.seattletimes.com/seattle-news/politics/in-tough-times-seattle-mosque-gets-added-boost-from-mayors-speech/
+// tech volunteering
+// http://www.techsandbalances.org/
+// http://www.progcode.co/
 
+// "Revised Travel Ban Exempts Those Who Already Obtained Visa." Vivian Salama (AP), 20 Feb 2017. 
+//    http://talkingpointsmemo.com/news/new-trump-executive-order-travel-ban
+// "It's legal for an immigration agent to pretend to be a police officer outside someone's door. But should it be?" Joel Rubin (Los Angeles Times), 20 Feb 2017.
+//    http://www.latimes.com/local/lanow/la-me-immigration-deportation-ruses-20170219-story.html
+//      Concerning because this cuts to the heart of having fear about reporting crimes to the police.
+//http://blog.cyrusmehta.com/2017/02/no-matter-how-many-new-travel-bans-trump-issues-maximum-power-does-not-mean-absolute-power.html

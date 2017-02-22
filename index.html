@@ -106,7 +106,7 @@ var app = new Vue({
         filteredCat: function(item) {
             var array = [].concat(item.cat);
             array.splice(array.indexOf(this.category),1);
-            return (array.length) ? "["+array.join(', ')+"]" : "";
+            return array.join(', ');
         },
         resetFilter(value, type) {
             this.textValue = this.category = null;
