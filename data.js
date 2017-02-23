@@ -21,7 +21,7 @@ var c = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Mailing
 var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Mailing List", "News", 
     "Organization", "Person", "Podcast", "Resource", "Video");
 
-var date = "2017-02-22";
+var date = "22 Feb 2017";
 
 var data = [
 {title: "#FightTrump", url: "https://fighttrump.co/", cat: [resource, weeklies], info: "“Sign up to help #FightTrump every day, week, or month.”"}
@@ -162,7 +162,7 @@ var data = [
 ,{title: "Shoulder to Shoulder", url: "http://www.shouldertoshouldercampaign.org/", cat: [campaign, islam], info: "“Standing with American Muslims; Upholding American Values.”"}
 ,{title: "Signal", url: "https://whispersystems.org/", cat: [app, security], info: "Encrypted messaging app. The Electronic Frontier Foundation recommends this app."}
 ,{title: "Sister District Project", url: "https://www.sisterdistrict.com/", cat: [campaign, elections], info: "“If you live in a safe blue or red district, your economic and volunteer resources can be channeled to a swing district that needs your help. We can change the map together.”"}
-,{title: "Sleeping Giants", url: "https://www.facebook.com/slpnggiants/", cat: [boycott, media], info: "This group is working on a campaign to pull advertisers from Breitbart and other right-wing hate sites."}
+,{title: "Sleeping Giants", url: "https://www.facebook.com/slpnggiants/", cat: [boycott, media], info: "This group is working on a campaign to pull advertisers from Breitbart and eventually, other right-wing hate sites."}
 ,{title: "So That Happened", url: "https://itunes.apple.com/us/podcast/so-that-happened/id945384774", pub: "Huffington Post", cat: [podcast, news]}
 ,{title: "Southern Coalition for Social Justice", url: "http://www.southerncoalition.org/", cat: [organization, voting_rights, economic_justice]}
 ,{title: "Southern Poverty Law Center", url: "https://www.splcenter.org/", cat: [organization, african_americans], info: "The SPLC continues to do important research on hate organizations. It is a useful resource."}

@@ -74,7 +74,7 @@ var app = new Vue({
         textValue: null,
         items: data,
         categories: c,
-        date: new Date(date).toLocaleDateString()
+        date: date
     },
     created: function() {
         var arr = document.location.hash.split("=");
