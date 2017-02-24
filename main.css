@@ -84,6 +84,16 @@ input {
     padding: 1rem 2rem 0rem 2rem;
     border-bottom: 3px double silver;
 }
+    .box p {
+        line-height: 1.4;
+    }
+    .box a {
+        padding: 2px 3px;
+    }
+    .selected {
+        background-color: #e5e5e5;
+        border-radius: 3px;
+    }
 .cite, .url {
     font-size: 14px;
 }

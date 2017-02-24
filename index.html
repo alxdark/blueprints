@@ -20,7 +20,7 @@
             <p>
                 <template v-for="(cat, index) in Object.values(categories).sort()">
                     <template v-if="index > 0">, </template>
-                    <a href="#" @click.prevent="resetFilter(cat, 'category')">{{cat}}</a>
+                    <a href="#" :class="{selected: isSelected(cat)}" @click.prevent="resetFilter(cat, 'category')">{{cat}}</a>
                 </template>
             </p>
         </div>
@@ -109,8 +109,11 @@ var app = new Vue({
             return array.join(', ');
         },
         resetFilter(value, type) {
+            var existingValue = this.category;
             this.textValue = this.category = null;
-            this.category = value;
+            if (existingValue !== value) {
+                this.category = value;
+            }
         },
         clear: function() {
             this.category = null;
@@ -121,6 +124,9 @@ var app = new Vue({
             if (item.pub) array.push('<i>'+item.pub+'</i>');
             if (item.date) array.push(item.date);
             return (array.length) ? array.join(', ') + '.' : '';
+        },
+        isSelected: function(cat) {
+            return cat === this.category;
         }
     }
 });

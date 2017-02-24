@@ -236,6 +236,7 @@ var data = [
 ,{title: "Winter is coming: prospects for the American press under Trump.", cat: [article, media], url: "http://pressthink.org/2016/12/winter-coming-prospects-american-press-trump/", author: "Jay Rosen", pub: "PressThink", date: "28 Dec 2016", info: "A great explanation of how the press is currently failing, taking into account forces like false news, mistrust of the press, and Trump’s ability to distract and command the daily headlines."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
 ,{title: "Yes California Independence Campaign", url: "http://www.yescalifornia.org/", cat: [organization, regionalism], info: "The campaign behind #calexit. I at least am entertained by this campaign."}
+,{title: "Informed Immigrant", url: "https://www.informedimmigrant.com/", cat: [immigration_refugees, resource], info: "Lots of information for immigrants on rights, current laws, etc. Good resource for further research."}
 ];
 //“” ’
 // Unreviewed
