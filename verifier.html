@@ -4,6 +4,20 @@
     <meta charset="utf-8">
     <title>Verifier: Blueprints for a Blackout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script>
+Object.values = function(obj) {
+    return Object.keys(obj).map(function(key) {
+        return obj[key];
+    });
+}
+function f() {
+    return [].slice.call(arguments).reduce(function(object, value) {
+        var key = value.replace(/\s&\s/,"_").replace(/[\s-]/g,"_").replace(/'/,'').toLowerCase();
+        object[key] = window[key] = value;
+        return object;
+    }, {});
+}
+</script>
     <script src="./data.js"></script>
 </head>
 <body>
