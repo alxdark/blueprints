@@ -1,27 +1,11 @@
-Object.values = function(obj) {
-    return Object.keys(obj).map(function(key) {
-        return obj[key];
-    });
-}
-function f() {
-    return [].slice.call(arguments).reduce(function(object, value) {
-        var key = value.replace(/\s&\s/,"_").replace(/[\s-]/g,"_").replace(/'/,'').toLowerCase();
-        object[key] = window[key] = value;
-        return object;
-    }, {});
-}
-
 var c = f("App", "Article", "Boycott", "Calendar", "Campaign", "Corruption", "Event", "Mailing List", "News", 
     "Organization", "Person", "Podcast", "Resource", "African-Americans", "Civil Rights", "Civil Society", 
     "Community Organizing", "Congress", "Economic Justice", "Elections", "Environment", "GOP", 
     "Gun Violence", "Healthcare", "Immigration & Refugees", "Islam", "Judaism", "LGBTQ", "Media", "News", 
     "Privacy", "Regionalism", "Religious", "Science", "Seattle", "Security", "Strategy", "Technology", "Trump", 
     "Video", "Voting Rights", "Weeklies", "Women's Rights");
-
 var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Mailing List", "News", 
     "Organization", "Person", "Podcast", "Resource", "Video");
-
-var date = "23 Feb 2017";
 
 var data = [
 {title: "#FightTrump", url: "https://fighttrump.co/", cat: [resource, weeklies], info: "“Sign up to help #FightTrump every day, week, or month.”"}
@@ -57,7 +41,7 @@ var data = [
 ,{title: "Cell 411", url: "https://getcell411.com/", cat: [app, civil_society, security], info: "Keep a group of citizens informed of emergencies, the need for rides, etc. Hard to describe, but check it out. Good for activists, good for building support communities where there are hate crimes, etc."}
 ,{title: "Church Council of Greater Seattle", url: "http://thechurchcouncil.org/", cat: [organization, religious], info: "“The Church Council of Greater Seattle convenes and catalyzes communities and people of faith to bring our spiritual commitments of love and reconciliation, peace and justice into the public square. We aspire together to weave a world of justice through right and equitable relationships with one another.”"}
 ,{title: "Citizen Resource Center", url: "http://www.congressfoundation.org/citizen-engagement/citizen-resource-center", author: "Congressional Management Foundation", cat: [organization, strategy, elections, congress]}
-,{title: "Civic Victories", url: "https://www.facebook.com/notes/emily-menon-bender/civic-victories/10154463245818301?hc_location=ufi", cat: [article, civil_society], info: "A list (hopefully to be maintained) of successes in opposing regime.", author: "Emily Menon Bender"}
+,{title: "Civic Victories", url: "https://www.facebook.com/notes/emily-menon-bender/civic-victories/10154463245818301?hc_location=ufi", cat: [article, civil_society], info: "A list (hopefully to be maintained) of successes in opposing the regime.", author: "Emily Menon Bender"}
 ,{title: "Civil resistance and the “3.5% Rule”", url: "https://rationalinsurgent.com/2013/11/04/my-talk-at-tedxboulder-civil-resistance-and-the-3-5-rule/", info: "https://rationalinsurgent.com/2013/11/04/my-talk-at-tedxboulder-civil-resistance-and-the-3-5-rule/", cat: [video, strategy, civil_society], info: "3.5% of the US population is 11.2 million people, by the way."}
 ,{title: "Climate Change Deniers", url: "https://www.ofa.us/climate-change-deniers/", cat: [resource, congress, environment], info: "The members of Congress who deny climate change, along with arguments to call out their intransigence that are specific to their jurisdictions."}
 ,{title: "Code Blue", url: "https://www.codeblue.team/", cat: [organization, elections], info: "Mission: rebuild a progressive voting majority in federal, state and local government."}
@@ -94,7 +78,7 @@ var data = [
 ,{title: "Foreign Policy: The Editor’s Room", url: "http://foreignpolicy.com/tag/the-e-r-podcast/", cat: [podcast], info: "This podcast was probably not always about the Trump administration. But these days it’s a very good place to hear discussion about the consequences of Trump for American foreign policy."}
 ,{title: "Former Mafia-linked figure describes association with Trump.", author: "Rosalind S. Helderman and Tom Hamburger", pub: "Washington Post", date: "17 May 2016", cat: [article, corruption], url: "https://www.washingtonpost.com/politics/former-mafia-linked-figure-describes-association-with-trump/2016/05/17/cec6c2c6-16d3-11e6-aa55-670cabef46e0_story.html"}
 ,{title: "Frightened by Donald Trump? You don’t know the half of it.", url: "https://www.theguardian.com/commentisfree/2016/nov/30/donald-trump-george-monbiot-misinformation", author: "George Monbiot", pub: "The Guardian", date: "30 Nov 2016", cat: [article, trump], info: "Despite the scary title, the article details the fact that Trump has stocked his administration with corporate propaganda hacks, many of whom were involved in Tea Party astroturfing."}
-,{title: "Front and Centered", url: "http://frontandcentered.org/", cat: [organization, environment, economic_justice], info: "“A statewide coalition of organizations and groups rooted in communities of color and people with lower incomes; we’re on the frontlines of economic and environmental change.” Good climate/environmental justic information here."}
+,{title: "Front and Centered", url: "http://frontandcentered.org/", cat: [organization, environment, economic_justice], info: "“A statewide coalition of organizations and groups rooted in communities of color and people with lower incomes; we’re on the frontlines of economic and environmental change.” Good climate/environmental justice information here."}
 ,{title: "Global Nonviolent Action Database", url: "http://nvdatabase.swarthmore.edu/", cat: [resource, strategy]}
 ,{title: "Government by White Nationalism Is Upon Us.", url: "http://www.slate.com/articles/news_and_politics/cover_story/2017/02/government_by_white_nationalism_is_upon_us.html", cat: [article, civil_society, trump], author: "James Bouie", pub: "Slate", date: "6 Feb 2017"}
 ,{title: "GovTrack", url: "https://www.govtrack.us/", cat: [resource, congress], info: "A good site to research your representative’s voting history, who is on what committee, and so forth."}
@@ -139,7 +123,7 @@ var data = [
 ,{title: "Progcode", url: "http://www.progcode.co/", cat: [technology, organization]}
 ,{title: "Project 1461", url: "https://www.project1461.org/", cat: [mailing_list, elections, weeklies], info: "Another daily email of actions to take, fairly substantive with a lot of education/reading included."}
 ,{title: "Project Vote", url: "http://www.projectvote.org/", cat:[organization, voting_rights]}
-,{title: "Prospects for the American press under Trump, part two.", cat: [article, media], url: "http://pressthink.org/2016/12/prospects-american-press-trump-part-two/", author: "Jay Rosen", pub: "PressThink", date: "28 Dec 2016", info: "Second article on how the press might respond."}
+,{title: "Prospects for the American press under Trump.", cat: [article, media], url: "http://pressthink.org/2016/12/prospects-american-press-trump-part-two/", author: "Jay Rosen", pub: "PressThink", date: "28 Dec 2016", info: "Second article on how the press might respond."}
 ,{title: "ProtonMail", url: "https://protonmail.com/", cat: [resource, security], info: "Secure email based in Switzerland."}
 ,{title: "re:act", url: "https://www.reactletter.com/", cat: [resource, weeklies],  info: "“re:act is a list of a few concrete things you can do to take action during the Trump presidency.” This one is long but it is emerging as one of my favorite of the weekly emails that are out there."}
 ,{title: "Refuse Facism", url: "https://refusefascism.org/", cat: [campaign, trump], info: "Leftist group that wants to force Trump/Pence out of power."}
@@ -233,21 +217,22 @@ var data = [
 ,{title: "White House Inc.", url: "https://whitehouseinc.org/", cat: [resource, trump, corruption], info: "Since Trump hasn’t divested in his businesses, this site connects you with one of his companies at random so you can talk to them about your policy concerns."}
 ,{title: "Who Decides? The status of women’s reproductive rights in the US", url: "http://www.prochoiceamerica.org/government-and-you/who-decides/", cat: [resource, womens_rights], author: "NARAL", info: "Summary information about reproductive rights, state-by-state."}
 ,{title: "Who is my representative?", url: "http://whoismyrepresentative.com/", cat: [resource, congress], info: "Enter your zip code, get contact information for your congressional representative and senator."}
-,{title: "Winter is coming: prospects for the American press under Trump.", cat: [article, media], url: "http://pressthink.org/2016/12/winter-coming-prospects-american-press-trump/", author: "Jay Rosen", pub: "PressThink", date: "28 Dec 2016", info: "A great explanation of how the press is currently failing, taking into account forces like false news, mistrust of the press, and Trump’s ability to distract and command the daily headlines."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
 ,{title: "Yes California Independence Campaign", url: "http://www.yescalifornia.org/", cat: [organization, regionalism], info: "The campaign behind #calexit. I at least am entertained by this campaign."}
+,{title: "Indivisible Radio", url: "http://www.wnyc.org/shows/indivisible/", cat: [podcast, elections], info: "“Indivisible is public radio’s national conversation about America in a time of change.” It’s a call-in show."}
+,{title: "WA Dream Coalition", url: "http://www.wadreamcoalition.org/", cat: [organization, immigration_refugees], info: "Organization for Dreamers in Washington state, education focused. Last blog post was March of 2016. I heard they are following Daniel Medina’s case."}
+,{title: "WA Immigrant Solidarity Network", url: "https://www.facebook.com/WAimmigrantsolidaritynetwork/", cat: [organization, immigration_refugees], info: "Organization of immigrant rights groups, lawyers, labor unions, and activists to support immigrant rights in Washington state."}
+,{title: "Don't Dismiss President Trump's Attacks on the Media as Mere Stupidity", url: "http://time.com/4675860/donald-trump-fake-news-attacks/", author: "Bret Stephens", pub: "Time", date: "21 Feb 2017", info: "This year’s Daniel Pearl Memorial Lecture at UCLA, this is a powerful piece about Trump’s assault on the press, and the acquiescence of conservativism to Trump’s take-over of the Republican party. The speaker is a journalist with the Wall Street Journal."}
 ];
 //“” ’
+
 // Unreviewed
-// http://www.aeinstein.org/free-resources/free-publications/english/
-// https://warisboring.com/america-has-misused-its-military-power-in-the-middle-east-29a2541022b4#.r2psaw56k
-// https://www.theguardian.com/commentisfree/2017/feb/19/populist-correctness-new-pc-culture-trump-america-brexit-britain
-//https://www.dissentmagazine.org/blog/gene-sharp-handbook-nonviolent-resistance-dictators-trump
-/*
-Know Your Rights images, phone sized, several languages:
-    http://unitedwedream.org/thank-deportation-defense-card-handy-phone/
-National Hotline (United We Dream) - 1-844-363-1423 [en, es]
-    http://unitedwedream.org/thank-deportation-defense-card-handy-phone/
-MigraMap (Map-based immigration agent reporting)
-    https://migramap.latinorebels.com/
-*/
+//https://docs.google.com/document/d/1VfNUuru8kJnYhHRrCI8SBhyoVt6LSOOXb0GbFM9jzqU/edit
+//http://www.aeinstein.org/free-resources/free-publications/english/
+//https://warisboring.com/america-has-misused-its-military-power-in-the-middle-east-29a2541022b4#.r2psaw56k
+//https://www.theguardian.com/commentisfree/2017/feb/19/populist-correctness-new-pc-culture-trump-america-brexit-britain
+//http://nymag.com/daily/intelligencer/2017/02/this-obscure-news-story-shows-how-trump-gets-away-with-it.html
+//http://www.wnyc.org/shows/indivisible/
+//https://www.fwd.us
+//http://altotrump.com/
+//https://elcomitewa.wordpress.com/ - acive, or transmuted into something else? Haven't posted since May 1, 2016
