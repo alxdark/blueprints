@@ -32,7 +32,15 @@
         <dl>
             <template v-for="item in filteredData()">
                 <dt>
-                    <div><span style="color: orange" v-if="item.fav">&#9733; </span> <a :href="item.url">{{item.title}}</a></div>
+                    <div class="social">
+                        <span style="color: orange" v-if="item.fav">&#9733; </span> <a class="title" :href="item.url">{{item.title}}</a>
+                        <a :href="'https://www.facebook.com/' + item.facebook" v-if="item.facebook">
+                            <span class="facebook"></span> <span>facebook</span>
+                        </a>
+                        <a :href="'https://www.twitter.com/' + item.twitter" v-if="item.twitter">
+                            <span class="twitter"></span> <span>twitter</span>
+                        </a>
+                    </div>
                     <div class="url">{{item.url}}</div>
                     <div>
                         <span class="cite" v-html="formatCitation(item)"></span> 
@@ -41,6 +49,7 @@
                 </dt>
                 <dd>
                     <div v-html="item.info"></div>
+                    <!--
                     <div style="margin-top: .5rem">
                         <a :href="'https://www.facebook.com/' + item.facebook" v-if="item.facebook">
                             <div class="facebook"></div> facebook
@@ -49,6 +58,7 @@
                             <div class="twitter"></div> twitter
                         </a>
                     </div>
+                    -->
                 </dd>
             </template>
         <dl>

@@ -13,13 +13,28 @@ body {
     overflow-x: hidden;
 }
 .facebook, .twitter {
-    width: 1rem;
     height: 1rem;
-    display: inline-block;
+    width: 1rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
+.social, .social a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    .social a span {
+        opacity: .7;
+    }
+    .social a:hover span {
+        opacity: 1;
+    }
+    .social a span:first-child {
+        margin-left: 1rem;
+        margin-right: .2rem;
+    }
+
 .facebook {
     background-image: url(facebook.svg);
 }
