@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Blueprints through a Blitzkrieg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gudea:400,700">
+    <link rel="stylesheet" href="./main.css">
     <script src="http://unpkg.com/vue/dist/vue.js"></script>
 </head>
 <body>
@@ -61,91 +61,7 @@
             remove resources if I find better or more recent replacements. </p> 
     </footer>
 </div>
-<script>
-Object.values = function(obj) {
-    return Object.keys(obj).map(function(key) {
-        return obj[key];
-    });
-}
-function f() {
-    return [].slice.call(arguments).reduce(function(object, value) {
-        var key = value.replace(/\s&\s/,"_").replace(/[\s-]/g,"_").replace(/'/,'').toLowerCase();
-        object[key] = window[key] = value;
-        return object;
-    }, {});
-}
-</script>
 <script src="./data.js"></script>
-<script>
-function itemFieldMatch(item, fieldName, textValue) {
-    var field = item[fieldName];
-    return (field && field.toLowerCase().indexOf(textValue.toLowerCase()) > -1);
-}
-var SEARCH_FIELDS = ["title","info","author","pub"];
-
-var app = new Vue({
-    el: '#app',
-    data: {
-        category: null,
-        textValue: null,
-        items: data,
-        categories: c,
-        date: "26 Feb 2017"
-    },
-    created: function() {
-        var arr = document.location.hash.split("=");
-        var value = decodeURIComponent(arr[1]);
-        if (arr[0] === "#search") {
-            this.textValue = value;
-        } else if (arr[0] === "#category") {
-            this.resetFilter(value, 'category');
-        }
-    },
-    methods: {
-        filteredData: function() {
-            if (this.textValue) {
-                this.category = null;
-                document.location.hash = "#search="+this.textValue;
-                return this.items.filter(function(item) {
-                    return SEARCH_FIELDS.some(function(fieldName) {
-                        return itemFieldMatch(item, fieldName, this.textValue);
-                    }, this);
-                }, this);
-            } else if (this.category) {
-                document.location.hash = "#category=" + this.category;
-                return this.items.filter(function(item) {
-                    return item.cat.indexOf(this.category) > -1;
-                }, this);
-            }
-            return this.items;
-        },
-        filteredCat: function(item) {
-            var array = [].concat(item.cat);
-            array.splice(array.indexOf(this.category),1);
-            return array.join(', ');
-        },
-        resetFilter(value, type) {
-            var existingValue = this.category;
-            this.textValue = this.category = null;
-            if (existingValue !== value) {
-                this.category = value;
-            }
-        },
-        clear: function() {
-            this.category = null;
-        },
-        formatCitation: function(item) {
-            var array = [];
-            if (item.author) array.push(item.author);
-            if (item.pub) array.push('<i>'+item.pub+'</i>');
-            if (item.date) array.push(item.date);
-            return (array.length) ? array.join(', ') + '.' : '';
-        },
-        isSelected: function(cat) {
-            return cat === this.category;
-        }
-    }
-});
-</script>
+<script src="./index.js"></script>
 </body>
 </html>
