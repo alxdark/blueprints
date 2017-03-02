@@ -10,7 +10,7 @@ var app = new Vue({
         textValue: null,
         items: data,
         categories: c,
-        date: "28 Feb 2017"
+        date: "1 Mar 2017"
     },
     created: function() {
         var arr = document.location.hash.split("=");
