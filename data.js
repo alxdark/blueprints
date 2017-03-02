@@ -15,7 +15,7 @@ var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Mailing
     "Organization", "Person", "Podcast", "Press Release", "Resource", "Video");
 
 var data = [
-,{title: "#FightTrump", url: "https://fighttrump.co/", cat: [resource, weeklies], info: "“Sign up to help #FightTrump every day, week, or month.”"}
+{title: "#FightTrump", url: "https://fighttrump.co/", cat: [resource, weeklies], info: "“Sign up to help #FightTrump every day, week, or month.”"}
 ,{title: "#GrabYourWallet", url: "https://grabyourwallet.org/", cat: [boycott], info: "Boycott of Trump products started after tapes of him bragging of sexual assault surfaced. "}
 ,{title: "#KnockEveryDoor", url: "https://knockeverydoor.org/", cat: [organization, elections], info: "Nationwide, volunteer-led canvasses to organize our communities against Trump"}
 ,{title: "#ResistTrump", url: "http://resisthere.org/", cat: [campaign, trump], info: "Another portal onto #ResistTrumpTuesdays by the Working Families Party."}
