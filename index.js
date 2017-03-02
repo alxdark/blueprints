@@ -1,3 +1,8 @@
+Object.values = function(obj) {
+    return Object.keys(obj).map(function(key) {
+        return obj[key];
+    });
+}
 function itemFieldMatch(item, fieldName, textValue) {
     var field = item[fieldName];
     return (field && field.toLowerCase().indexOf(textValue.toLowerCase()) > -1);
