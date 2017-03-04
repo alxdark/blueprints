@@ -21,6 +21,7 @@ var data = [
 ,{title: "#ResistTrump", url: "http://resisthere.org/", cat: [campaign, trump], info: "Another portal onto #ResistTrumpTuesdays by the Working Families Party."}
 ,{title: "20 Lessons from the twentieth century.", url: "https://www.facebook.com/timothy.david.snyder/posts/1206636702716110", cat: [article, strategy], author: "Timothy Snyder", date: "15 Nov 2017", info: "A thought-provoking Facebook post with 20 lessons we can take away from the dictatorships of the twentieth century (Hitler, Stalin, etc.)."}
 ,{title: "3 ways you can change the conversation about immigration on Facebook.", author: "Carly Goodman", pub: "AFSC Blog.",url: "https://www.afsc.org/blogs/media-uncovered/3-ways-change-conversation-immigration-facebook", date: "18 Nov 2016", cat: [article, immigration_refugees], info: "Good explanation of arguments that can be made to common criticisms and misconceptions about immigration issues."}
+,{title: "350.org", url: "https://350.org/", cat: [organization, environment], info: "Climate change movement."}
 ,{title: "43rd District Democrats", url: "http://43rddems.ngpvanhost.com/", cat: [organization, congress],info: "The fighting 43rd."}
 ,{title: "5 Calls", url: "https://5calls.org/", cat: [app, resource, congress], info: "Another service that organizes you and gives you five calls to make every day. I’ve heard it gives you a lot of calls to make."}
 ,{title: "6 Rules of Islamophobia.", url: "http://www.huffingtonpost.com/entry/islamophobia-america_us_587cf491e4b0e58057ff98e0", author: "Christopher Mathias", pub: "Huffington Post", date: "23 Jan 2017", cat: [article, islam], info: "The “6 big lies” of Islamophobia."}
@@ -39,6 +40,7 @@ var data = [
 ,{title: "Asian Counseling Referral Service", url: "https://acrs.org/", cat: [organization, immigration_refugees], info: "Services include application and fee waiver assistance, as well as ESL and English Citizenship classes, free, or available at low cost, to eligible applicants."}
 ,{title: "Autocracy: Rules for Survival", url: "http://www.nybooks.com/daily/2016/11/10/trump-election-autocracy-rules-for-survival/", author: "Masha Gessen", pub: "New York Review of Books", date: "10 Nov 2016", cat: [article, strategy], info: "Good advice, if pessimistic (I feel our institutions have been fighting back)."}
 ,{title: "Bill Moyers", url: "http://billmoyers.com/", cat: [person, media], facebook: "moyersandcompany", twitter: "BillMoyersHQ", info: "Another media personality with a lot to say about Trump regime."}
+,{title: "Black Lives Matter", url: "http://blacklivesmatter.com/", cat: [african_americans, organization, campaign]}
 ,{title: "Café to Go: A Quick Reference Guide for hosting World Café", url: "http://www.theworldcafe.com/wp-content/uploads/2015/07/Cafe-To-Go-Revised.pdf", author: "The World Café", cat: [article, community_organizing], date: "2015", info: "Many community organizing meetings have followed some variant of the process described here in some depth, to find collective ideas and consensus through conversations."}
 ,{title: "Call My Congress", url: "https://www.callmycongress.com/", cat: [resource, congress], info: "Another site to get contact information for your legislators."}
 ,{title: "Call The Halls Guide", url: "https://gumroad.com/l/callthehallsguide", cat: [resource, congress], info: "A PDF guide to lobbying Congress (looks like you need to pay for it, you can pay $0) if you want or need."}
@@ -146,6 +148,7 @@ var data = [
 ,{title: "Prospects for the American press under Trump.", cat: [article, media], url: "http://pressthink.org/2016/12/prospects-american-press-trump-part-two/", author: "Jay Rosen", pub: "PressThink", date: "28 Dec 2016", info: "Second article on how the press might respond."}
 ,{title: "ProtonMail", url: "https://protonmail.com/", cat: [resource, security], info: "Secure email based in Switzerland."}
 ,{title: "re:act", url: "https://www.reactletter.com/", cat: [resource, weeklies],  info: "“re:act is a list of a few concrete things you can do to take action during the Trump presidency.” This one is long but it is emerging as one of my favorite of the weekly emails that are out there."}
+,{title: "Readings on Nonviolence.", author: "Gene Sharp", pub: "Albert Einstein Institute", url: "http://www.aeinstein.org/free-resources/free-publications/english/", cat: [resource, strategy], info: "Sharp has been called the Clausewitz of nonviolent struggle. Some deep (and lengthy) strategic analysis here in “How Nonviolent Struggle Works” or “From Dictatorship to Democracy.”"}
 ,{title: "Refuse Facism", url: "https://refusefascism.org/", cat: [campaign, trump], info: "Leftist group that wants to force Trump/Pence out of power."}
 ,{title: "Republicans were wildly successful at suppressing voters in 2016.", cat: [article, voting_rights, gop],  url: "https://thinkprogress.org/2016-a-case-study-in-voter-suppression-258b5f90ddcd", author: "Alice Ollstein and Kira Lerner", pub: "Think Progress", date: "15 Nov 2016", info: "“Last week, the first election in 50 years without the full protection of the federal Voting Rights Act propelled Donald Trump to the White House.”", fav:true}
 ,{title: "Research says there are ways to reduce racial bias. Calling people racist isn’t one of them.", url: "http://www.vox.com/identities/2016/11/15/13595508/racism-trump-research-study", author: "German Lopez", pub: "Vox", date: "15 Nov 2016", cat: [article, strategy]}
@@ -237,6 +240,7 @@ var data = [
 ,{title: "Welcoming America", url: "https://www.welcomingamerica.org/", cat: [organization, immigration_refugees], info: "Seattle is a member of this networks of “Welcoming Cities” that extends the concept of a sanctuary city. This is what Trump wants to attack."}
 ,{title: "What Do I Do About Trump?", url: "http://whatdoidoabouttrump.com/", cat: [resource, strategy], info: "They pull together action items from over 30 organizations into one location. You might prefer this to dozens of emails sent to your inbox everyday."}
 ,{title: "What psychology teaches us about opposing an unpopular president.", url: "http://www.vox.com/the-big-idea/2017/2/2/14479726/majority-minority-politics-trump-psychology-resistance", cat: [article, strategy], author: "Robb Willer", pub: "Vox", date: "2 Feb 2017"}
+,{title: "What Really Scared Me About Trump's Speech", author: "Kelly Hayes", pub: "Truthout", date: "2 Mar 2017", cat: [article, trump], info: "The author argues that as Trump is being normalized, resisters to his administration operate under some delusions and misconceptions."}
 ,{title: "What the Fuck Just Happened Today?", url: "https://whatthefuckjusthappenedtoday.com/", cat: [news, mailing_list, trump], fav: true, info: "This is, bar none, the best daily summary of the Trump administration. If you can’t stand the news these days, this is sufficient to stay informed enough to act."}
 ,{title: "WhatsApp", url: "https://www.whatsapp.com/", cat: [app, security], info: "Another encrypted messaging app. I list it here to encourage you to use Signal instead."}
 ,{title: "White House Inc.", url: "https://whitehouseinc.org/", cat: [resource, trump, corruption], info: "Since Trump hasn’t divested in his businesses, this site connects you with one of his companies at random so you can talk to them about your policy concerns."}
@@ -247,7 +251,9 @@ var data = [
 ];
 //“” ’
 
+
 // Unreviewed
 //http://washingtonvotes.org/
-//http://www.aeinstein.org/free-resources/free-publications/english/
 //http://defendlocal.com/ - Campaign to Defend Local Solutions
+//http://nlc.org/sites/default/files/2017-02/NLC%20Preemption%20Report%202017.pdf
+//or http://www.nlc.org/preemption
