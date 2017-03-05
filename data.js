@@ -76,7 +76,6 @@ var data = [
 ,{title: "Do A Thing", url: "http://tinyletter.com/doathing/", cat: [weeklies, mailing_list], info: "5 minutes a day activism mailing list. Like Easy Action, very easy stuff to do."}
 ,{title: "Don't Dismiss President Trump's Attacks on the Media as Mere Stupidity", url: "http://time.com/4675860/donald-trump-fake-news-attacks/", author: "Bret Stephens", pub: "Time", date: "21 Feb 2017", info: "This year’s Daniel Pearl Memorial Lecture at UCLA, this is a powerful piece about Trump’s assault on the press, and the acquiescence of conservativism to Trump’s take-over of the Republican party. The speaker is a journalist with the Wall Street Journal.", cat: [article, civil_rights, media]}
 ,{title: "Donald Trump is Choosing His Cabinet Here’s the Latest List.", url: "http://www.nytimes.com/interactive/2016/us/politics/donald-trump-administration.html", pub: "New York Times", cat: [resource, trump]}
-,{title: "Donald Trump's Mystery $50 Million (or More) Loan.", url: "http://www.motherjones.com/politics/2017/02/does-trump-have-mystery-creditor", author: "Russ Choma", pub: "Mother Jones", date: "23 Feb 2017", info: "An example of Trump’s substantial debt, and how the holders of this debt (and his obligations to these debt holders) are not fully known.", cat: [article, corruption]}
 ,{title: "Donald Trump’s Authoritarian Politics of Memory", url: "https://www.theatlantic.com/politics/archive/2017/01/donald-trumps-authoritarian-politics-of-memory/514004/", author: "Ruth Ben-Ghiat", pub: "The Atlantic", date: "22 Jan 2017", cat: [article, trump]}
 ,{title: "DuckDuckGo", url: "https://duckduckgo.com/", cat: [app, security], info: "DuckDuckGo is an Internet search engine that emphasizes protecting searchers’ privacy and avoiding the filter bubble of personalized search results."}
 ,{title: "Easy Action", url: "http://tumblr.us14.list-manage1.com/subscribe?u=79af7f6abbb44dfecd7a25fc7&id=4a5099043d", cat: [mailing_list, weeklies], info: "A mailing list with things to do to resist Trump every week. This is the easiest of the lot so if you are truly overwhelmed, do this one."}
@@ -257,3 +256,13 @@ var data = [
 //http://defendlocal.com/ - Campaign to Defend Local Solutions
 //http://nlc.org/sites/default/files/2017-02/NLC%20Preemption%20Report%202017.pdf
 //or http://www.nlc.org/preemption
+//http://www.thestranger.com/we-saw-you/2016/12/06/24731801/what-to-do-when-you-see-a-swastika-or-other-hate-based-graffiti
+https://www.thenation.com/article/how-to-topple-a-dictator/
+//https://www.carw.org/
+//https://21progress.org/
+//http://fusewashington.org/
+//https://georgelakoff.com/2017/02/10/ten-points-for-democracy-activists/
+// actually just add lakoff as a person to resources, he has posted a number of good pieces
+// https://registerblue.com/
+//https://www.repealandreplacedavereichert.com/
+//http://www.elcentrodelaraza.com/
