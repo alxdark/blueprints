@@ -250,14 +250,13 @@ var data = [
 ];
 //“” ’
 
-
 // Unreviewed
 //http://washingtonvotes.org/
 //http://defendlocal.com/ - Campaign to Defend Local Solutions
 //http://nlc.org/sites/default/files/2017-02/NLC%20Preemption%20Report%202017.pdf
 //or http://www.nlc.org/preemption
 //http://www.thestranger.com/we-saw-you/2016/12/06/24731801/what-to-do-when-you-see-a-swastika-or-other-hate-based-graffiti
-https://www.thenation.com/article/how-to-topple-a-dictator/
+//https://www.thenation.com/article/how-to-topple-a-dictator/
 //https://www.carw.org/
 //https://21progress.org/
 //http://fusewashington.org/
