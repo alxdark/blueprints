@@ -280,3 +280,4 @@ var data = [
 //http://www.uniteguide.com/
 //https://resistancetoolkit.herokuapp.com/ - this is a nice resource
 //http://usdac.us/revolution ?!?
+//https://medium.com/@abby.brockman/despair-is-not-a-strategy-15-principles-of-hope-deba7ac2cb29#.qezh577zz

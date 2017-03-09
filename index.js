@@ -9,6 +9,7 @@ function itemFieldMatch(item, fieldName, textValue) {
 }
 var SEARCH_FIELDS = ["title","info","author","pub"];
 var app = new Vue({
+    el: document.getElementById('app'),
     data: {
         category: null,
         textValue: null,
@@ -75,10 +76,3 @@ var app = new Vue({
         }
     }
 });
-var pointer = setInterval(function() {
-    if (!app._isMounted) {
-        app.$mount("#app");
-        clearInterval(pointer);
-    }
-}, 10);
-
