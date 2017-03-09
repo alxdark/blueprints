@@ -1,4 +1,5 @@
 (function(doc, data) {
+
 var el = doc.getElementById('app');
 if (!el || !data) {
     console.log("el or data not found, aborting template");
