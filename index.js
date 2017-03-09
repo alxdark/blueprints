@@ -1,10 +1,3 @@
-(function(doc, data) {
-
-var el = doc.getElementById('app');
-if (!el || !data) {
-    console.log("el or data not found, aborting template");
-    return;
-}
 Object.values = function(obj) {
     return Object.keys(obj).map(function(key) {
         return obj[key];
@@ -83,4 +76,3 @@ var app = new Vue({
         }
     }
 });
-})(document, data);
