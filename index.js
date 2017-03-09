@@ -1,3 +1,8 @@
+(function(doc) {
+var el = doc.getElementById('app');
+if (!el) {
+    return;
+}
 Object.values = function(obj) {
     return Object.keys(obj).map(function(key) {
         return obj[key];
@@ -76,3 +81,4 @@ var app = new Vue({
         }
     }
 });
+})(document);
