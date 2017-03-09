@@ -9,7 +9,6 @@ function itemFieldMatch(item, fieldName, textValue) {
 }
 var SEARCH_FIELDS = ["title","info","author","pub"];
 var app = new Vue({
-    el: '#app',
     data: {
         category: null,
         textValue: null,
@@ -48,7 +47,9 @@ var app = new Vue({
         },
         filteredCat: function(item) {
             var array = [].concat(item.cat);
-            array.splice(array.indexOf(this.category),1);
+            if (this.category) {
+                array.splice(array.indexOf(this.category),1);
+            }
             return array.join(', ');
         },
         resetFilter(value, type) {
@@ -74,3 +75,10 @@ var app = new Vue({
         }
     }
 });
+var pointer = setInterval(function() {
+    if (!app._isMounted) {
+        app.$mount("#app");
+        clearInterval(pointer);
+    }
+}, 10);
+
