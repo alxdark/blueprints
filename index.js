@@ -1,6 +1,7 @@
-(function(doc) {
+(function(doc, data) {
 var el = doc.getElementById('app');
-if (!el) {
+if (!el || !data) {
+    console.log("el or data not found, aborting template");
     return;
 }
 Object.values = function(obj) {
@@ -81,4 +82,4 @@ var app = new Vue({
         }
     }
 });
-})(document);
+})(document, data);
