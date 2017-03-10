@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function() {
             textValue: null,
             items: data,
             categories: c,
-            date: "7 Mar 2017"
+            date: "9 Mar 2017"
         },
         created: function() {
             var arr = document.location.hash.split("=");
@@ -32,14 +32,14 @@ window.addEventListener("DOMContentLoaded", function() {
             filteredData: function() {
                 if (this.textValue) {
                     this.category = null;
-                    document.location.hash = "#search="+this.textValue;
+                    document.location.hash = "#search="+encodeURIComponent(this.textValue);
                     return this.items.filter(function(item) {
                         return SEARCH_FIELDS.some(function(fieldName) {
                             return itemFieldMatch(item, fieldName, this.textValue);
                         }, this);
                     }, this);
                 } else if (this.category) {
-                    document.location.hash = "#category=" + this.category;
+                    document.location.hash = "#category="+encodeURIComponent(this.category);
                     return this.items.filter(function(item) {
                         return item.cat.indexOf(this.category) > -1;
                     }, this);

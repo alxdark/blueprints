@@ -6,10 +6,11 @@ function f() {
     }, {});
 }
 var c = f("App", "Article", "Boycott", "Calendar", "Campaign", "Corruption", "Event", "Mailing List", "News", 
-    "Organization", "Person", "Podcast", "Resource", "African-Americans", "Civil Rights", "Civil Society", 
+    "Organization", "Person", "Podcast", "Resource", "Racial Justice", "Civil Rights", "Civil Society", 
     "Community Organizing", "Congress", "Economic Justice", "Elections", "Environment", "GOP", "Gun Violence", 
-    "Immigration & Refugees", "LGBTQ", "Media", "News", "Privacy", "Regionalism", "Religious Freedom", 
-    "Science", "Security", "Strategy", "Technology", "Trump", "Video", "Voting Rights", "Weeklies", "Women's Rights");
+    "Healthcare", "Immigration & Refugees", "LGBTQ", "Media", "News", "Privacy", "Regionalism", "Religious Freedom", 
+    "Science", "Security", "Strategy", "Technology", "Trump", "Video", "Voting Rights", "Washington State", "Weeklies", 
+    "Women's Rights");
 var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Mailing List", "News", 
     "Organization", "Person", "Podcast", "Press Release", "Resource", "Video");
 
@@ -22,7 +23,7 @@ var data = [
 ,{title: "21 Progress", url: "https://21progress.org/", cat: [organization, community_organizing], info: "“21 Progress provides programs that empower leaders among the hard working people of Washington and advances bold ideas for economic and social justice.”"}
 ,{title: "3 ways you can change the conversation about immigration on Facebook.", author: "Carly Goodman", pub: "AFSC Blog.",url: "https://www.afsc.org/blogs/media-uncovered/3-ways-change-conversation-immigration-facebook", date: "18 Nov 2016", cat: [article, immigration_refugees], info: "Good explanation of arguments that can be made to common criticisms and misconceptions about immigration issues."}
 ,{title: "350.org", url: "https://350.org/", cat: [organization, environment], info: "Climate change movement."}
-,{title: "43rd District Democrats", url: "http://43rddems.ngpvanhost.com/", cat: [organization, congress],info: "The fighting 43rd."}
+,{title: "43rd District Democrats", url: "http://43rddems.ngpvanhost.com/", cat: [organization, washington_state],info: "The fighting 43rd."}
 ,{title: "5 Calls", url: "https://5calls.org/", cat: [app, resource, congress], info: "Another service that organizes you and gives you five calls to make every day. I’ve heard it gives you a lot of calls to make."}
 ,{title: "6 Rules of Islamophobia.", url: "http://www.huffingtonpost.com/entry/islamophobia-america_us_587cf491e4b0e58057ff98e0", author: "Christopher Mathias", pub: "Huffington Post", date: "23 Jan 2017", cat: [article, religious_freedom], info: "The “6 big lies” of Islamophobia."}
 ,{title: "A guide to rebuilding the Democratic Party, from the ground up.", url: "http://www.vox.com/the-big-idea/2017/1/5/14176156/rebuild-democratic-party-dnc-strategy", author: "Theda Skicpol", pub: "Vox", date: "5 Jan 2017", cat: [article, elections], info: "This is a good corrective to a lot of unproductive talk and action these days. They agree with the Indivisble approach, focus on legislative and gubernatorial races, and note that the left has nothing financially or organizationally to counter far-right institutions (not the GOP per se)."}
@@ -40,13 +41,13 @@ var data = [
 ,{title: "Asian Counseling Referral Service", url: "https://acrs.org/", cat: [organization, immigration_refugees], info: "Services include application and fee waiver assistance, as well as ESL and English Citizenship classes, free, or available at low cost, to eligible applicants."}
 ,{title: "Autocracy: Rules for Survival", url: "http://www.nybooks.com/daily/2016/11/10/trump-election-autocracy-rules-for-survival/", author: "Masha Gessen", pub: "New York Review of Books", date: "10 Nov 2016", cat: [article, strategy], info: "Good advice, if pessimistic (I feel our institutions have been fighting back)."}
 ,{title: "Bill Moyers", url: "http://billmoyers.com/", cat: [person, media], facebook: "moyersandcompany", twitter: "BillMoyersHQ", info: "Another media personality with a lot to say about Trump regime."}
-,{title: "Black Lives Matter", url: "http://blacklivesmatter.com/", cat: [african_americans, organization, campaign], info: "BLM seems very decentralized, so I’m not sure if this site is “official” per se."}
+,{title: "Black Lives Matter", url: "http://blacklivesmatter.com/", cat: [racial_justice, organization, campaign], info: "BLM seems very decentralized, so I’m not sure if this site is “official” per se."}
 ,{title: "Café to Go: A Quick Reference Guide for hosting World Café", url: "http://www.theworldcafe.com/wp-content/uploads/2015/07/Cafe-To-Go-Revised.pdf", author: "The World Café", cat: [article, community_organizing], date: "2015", info: "Many community organizing meetings have followed some variant of the process described here in some depth, to find collective ideas and consensus through conversations."}
 ,{title: "Call My Congress", url: "https://www.callmycongress.com/", cat: [resource, congress], info: "Another site to get contact information for your legislators."}
 ,{title: "Call The Halls Guide", url: "https://gumroad.com/l/callthehallsguide", cat: [resource, congress], info: "A PDF guide to lobbying Congress (looks like you need to pay for it, you can pay $0) if you want or need."}
 ,{title: "Call Them In", url: "http://www.callthemin.com/", cat: [resource, weeklies], info: "“Timely email reminders with tailored call scripts at your fingertips, so you can oppose Donald Trump’s agenda and back progressive legislation in a meaningful way.”"}
 ,{title: "Calls for Change", url: "https://www.callsforchange.com/", cat: [resource, weeklies], info: "Another site that sends out calls to make."}
-,{title: "Campaign Zero", url: "http://www.joincampaignzero.org/", cat: [campaign, african_americans], info: "Black Lives Matter/police accountability."}
+,{title: "Campaign Zero", url: "http://www.joincampaignzero.org/", cat: [campaign, racial_justice], info: "Black Lives Matter/police accountability."}
 ,{title: "Cascadia Climate Action Calendar", url: "http://cascadiaclimateaction.org/", cat: [calendar, environment], info: "The best calendar in Seattle for climate change events."}
 ,{title: "Catalytic Community Calendar", url: "http://www.catalyticcommunity.org/calendar/", cat: [calendar], info: "Another good calendar for events in Seattle."}
 ,{title: "Cell 411", url: "https://getcell411.com/", cat: [app, civil_society, security], info: "Keep a group of citizens informed of emergencies, the need for rides, etc. Hard to describe, but check it out. Good for activists, good for building support communities where there are hate crimes, etc."}
@@ -76,12 +77,12 @@ var data = [
 ,{title: "Dirty money: Trump and the Kazakh connection.", cat: [article, corruption], url: "https://www.ft.com/content/33285dfa-9231-11e6-8df8-d3778b55a923", author: "Tom Burgis", pub: "Financial Times", date: "19 Oct 2016"}
 ,{title: "Do A Thing", url: "http://tinyletter.com/doathing/", cat: [weeklies, mailing_list], info: "5 minutes a day activism mailing list. Like Easy Action, very easy stuff to do."}
 ,{title: "Don't Dismiss President Trump's Attacks on the Media as Mere Stupidity", url: "http://time.com/4675860/donald-trump-fake-news-attacks/", author: "Bret Stephens", pub: "Time", date: "21 Feb 2017", info: "This year’s Daniel Pearl Memorial Lecture at UCLA, this is a powerful piece about Trump’s assault on the press, and the acquiescence of conservativism to Trump’s take-over of the Republican party. The speaker is a journalist with the Wall Street Journal.", cat: [article, civil_rights, media]}
-,{title: "Donald Trump is Choosing His Cabinet Here’s the Latest List.", url: "http://www.nytimes.com/interactive/2016/us/politics/donald-trump-administration.html", pub: "New York Times", cat: [resource, trump]}
+,{title: "Donald Trump is Choosing His Cabinet. Here’s the Latest List.", url: "http://www.nytimes.com/interactive/2016/us/politics/donald-trump-administration.html", pub: "New York Times", cat: [resource, trump]}
 ,{title: "Donald Trump’s Authoritarian Politics of Memory", url: "https://www.theatlantic.com/politics/archive/2017/01/donald-trumps-authoritarian-politics-of-memory/514004/", author: "Ruth Ben-Ghiat", pub: "The Atlantic", date: "22 Jan 2017", cat: [article, trump]}
 ,{title: "DuckDuckGo", url: "https://duckduckgo.com/", cat: [app, security], info: "DuckDuckGo is an Internet search engine that emphasizes protecting searchers’ privacy and avoiding the filter bubble of personalized search results."}
 ,{title: "Easy Action", url: "http://tumblr.us14.list-manage1.com/subscribe?u=79af7f6abbb44dfecd7a25fc7&id=4a5099043d", cat: [mailing_list, weeklies], info: "A mailing list with things to do to resist Trump every week. This is the easiest of the lot so if you are truly overwhelmed, do this one."}
-,{title: "El Centro de la Raza", url: "http://www.elcentrodelaraza.com/", cat: [organization, immigration_refugees], info: "As an organization grounded in the Latino community, the organization works to build unity across all racial and economic sectors, for all the good things, like equity, freedom, and justice."}
-,{title: "Electronic Frontier Foundation", url: "https://www.eff.org/", cat: [organization, privacy, technology], info: "This isn’t super sexy for a lot of people, but issues like state surveillance are critically important, and the EFF is one of the few organizations defending civil liberties in this sphere."}
+,{title: "El Centro de la Raza", url: "http://www.elcentrodelaraza.org/", cat: [organization, immigration_refugees], info: "As an organization grounded in the Latino community, the organization works to build unity across all racial and economic sectors, for all the good things, like equity, freedom, and justice."}
+,{title: "Electronic Frontier Foundation", url: "https://www.eff.org/", cat: [organization, privacy, technology], info: "This isn’t super sexy for a lot of people, but issues like state surveillance are critically important, and the EFF is one of the few organizations defending digitl civil liberties."}
 ,{title: "Everytown for Gun Safety", url:"http://everytown.org/", cat: [organization, gun_violence], info: "Everytown is a movement of Americans working together to end gun violence and build safer communities."}
 ,{title: "Experts in authoritarianism advise to keep a list of things subtly changing around you, so you’ll remember.", url: "https://medium.com/@Amy_Siskind", author: "Amy Siskind", cat: [person, corruption, civil_society], info: "Amy Siskind has been documenting the erosion of laws and norms since Trump came to power. It’s invaluable, and damning."}
 ,{title: "FactCheck.org", url: "http://www.factcheck.org/", cat: [resource, news], info: "Annenberg Public Policy Center at the University of Pennsylvania"}
@@ -127,7 +128,7 @@ var data = [
 ,{title: "Moms Demand Action", url: "http://momsdemandaction.org/", cat: [organization, gun_violence], info: "“Much like Mothers Against Drunk Driving was created to reduce drunk driving, Moms Demand Action for Gun Sense in America was created to demand action from legislators, state and federal; companies; and educational institutions to establish common-sense gun reforms.”"}
 ,{title: "Movement 2017", url: "http://movementvote.org/", cat: [resource, elections]}
 ,{title: "Muslim Association of Puget Sound", url: "http://www.mapsredmond.org/", cat: [organization, religious_freedom], info: "They have been responding to vandalism of mosques in our region (at the least, there’re probably doing more)."}
-,{title: "NAACP", url: "http://www.naacp.org/", cat: [organization, african_americans], info: "“The NAACP is the nation’s oldest, largest and most widely recognized grassroots-based civil rights organization.”"}
+,{title: "NAACP", url: "http://www.naacp.org/", cat: [organization, racial_justice], info: "“The NAACP is the nation’s oldest, largest and most widely recognized grassroots-based civil rights organization.”"}
 ,{title: "NARAL Pro-Choice America", url: "http://www.naral.org/", cat: [organization, womens_rights]}
 ,{title: "National Democratic Party", url: "https://www.democrats.org/", cat: [organization, congress], info: "The opposition party."}
 ,{title: "National Democratic Redistricting Committee", url: "https://democraticredistricting.com/", cat: [organization, congress, voting_rights]}
@@ -140,14 +141,14 @@ var data = [
 ,{title: "Organizing for Action", url: "https://www.facebook.com/OFA/", cat: [organization, community_organizing],info: "This was originally an organization to support Obama’s presidency, it has recently become a little more active in organizing against Trump."}
 ,{title: "People are in the streets protesting Donald Trump. But when does protest actually work?", url: "https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/21/people-are-in-the-streets-protesting-donald-trump-but-when-does-protest-actually-work/", author: "Erica Chenoweth", pub: "Washington Post", date: "21 Nov 2016", cat: [article, strategy], info: "Yes, and the author explains when and why they do. Good overview of nonviolent resistance campaigns."}
 ,{title: "People for Washington", url: "http://peopleforwashington.com/", facebook: "peopleforWAexit", cat: [organization, regionalism], info: "Washington independence movement. #waexit"}
-,{title: "Planned Parenthood", url: "https://www.plannedparenthood.org/", cat: [organization, womens_rights], info: "In most advanced industrial countries, family planning is a part of the health care provided by the government to all its citizens, but in America&hellip;"}
+,{title: "Planned Parenthood", url: "https://www.plannedparenthood.org/", cat: [organization, healthcare, womens_rights], info: "In most advanced industrial countries, family planning is a part of the health care provided by the government to all its citizens, but in America&hellip;"}
 ,{title: "Pod Save America", url: "https://getcrookedmedia.com/here-have-a-podcast-78ee56b5a323#.x3p0xgjq9", cat: [podcast, news], pub: "Crooked Media", info: "The successor to “Keepin’ it 1600”."}
 ,{title: "Political Research Associates", url: "http://www.politicalresearch.org/", cat: [organization, civil_rights, strategy], info: "A lot of excellent resources here on the Right Wing and on how to respond to everything from militias taking over your town, to defending reproductive freedoms(!)", fav: true}
 ,{title: "PolitiFact", url: "http://www.politifact.com/", cat: [resource, news], info: "Washington Post and Tampa Bay Times?"}
 ,{title: "PopVox", url: "https://www.popvox.com/", cat: [organization, elections, congress], info: "Another site to track state and federal legislatures. I did not find it very helpful."}
 ,{title: "Presterity", url: "https://presterity.org/", cat: [resource, trump], info: "Another fact-checking site entirely devoted to Trump. Not sure yet how useful or up-to-date this site is."}
 ,{title: "Progcode", url: "http://www.progcode.co/", cat: [technology, organization]}
-,{title: "Project 1461", url: "https://www.project1461.org/", cat: [mailing_list, elections, weeklies], info: "Another daily email of actions to take, fairly substantive with a lot of education/reading included."}
+,{title: "Project 1461", url: "https://www.project1461.org/", cat: [mailing_list, weeklies], info: "Another daily email of actions to take, fairly substantive with a lot of education/reading included."}
 ,{title: "Project Vote", url: "http://www.projectvote.org/", cat: [organization, voting_rights]}
 ,{title: "Prospects for the American press under Trump.", cat: [article, media], url: "http://pressthink.org/2016/12/prospects-american-press-trump-part-two/", author: "Jay Rosen", pub: "PressThink", date: "28 Dec 2016", info: "Second article on how the press might respond."}
 ,{title: "ProtonMail", url: "https://protonmail.com/", cat: [resource, security], info: "Secure email based in Switzerland."}
@@ -183,7 +184,7 @@ var data = [
 ,{title: "Sleeping Giants", url: "https://www.facebook.com/slpnggiants/", cat: [boycott, media], info: "This group is working on a campaign to pull advertisers from Breitbart and eventually, other right-wing hate sites."}
 ,{title: "So That Happened", url: "https://itunes.apple.com/us/podcast/so-that-happened/id945384774", pub: "Huffington Post", cat: [podcast, news]}
 ,{title: "Southern Coalition for Social Justice", url: "http://www.southerncoalition.org/", cat: [organization, voting_rights, economic_justice]}
-,{title: "Southern Poverty Law Center", url: "https://www.splcenter.org/", cat: [organization, african_americans], info: "The SPLC continues to do important research on hate organizations. It is a useful resource."}
+,{title: "Southern Poverty Law Center", url: "https://www.splcenter.org/", cat: [organization, racial_justice], info: "The SPLC continues to do important research on hate organizations. It is a useful resource."}
 ,{title: "Spreadsheet of nomination process", url: "https://docs.google.com/spreadsheets/d/1Nx970-5j0ls4aJbmiKqwN0E3OfcpAqhXgM3zyfBZ4TM/htmlview?usp=sharing&sle=true#", cat: [resource, congress], info: "Who has gone through committee, when they are voting on whom."}
 ,{title: "Stand Up Republic", url: "https://standuprepublic.com/", cat: [organization, congress], info: "A conservative organization formed by Evan McMullin and Mindy Finn to resist Trump regime. Great to see resistance across the political spectrum."}
 ,{title: "State Innovation Exchange", url: "https://stateinnovation.org/", cat: [organization, regionalism, civil_society], info: "“Advancing progressive change in the states.”"}
@@ -253,31 +254,31 @@ var data = [
 ,{title: "Who Decides? The status of women’s reproductive rights in the US", url: "http://www.prochoiceamerica.org/government-and-you/who-decides/", cat: [resource, womens_rights], author: "NARAL", info: "Summary information about reproductive rights, state-by-state."}
 ,{title: "Who is my representative?", url: "http://whoismyrepresentative.com/", cat: [resource, congress], info: "Enter your zip code, get contact information for your congressional representative and senator."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
-,{title: "Yes California Independence Campaign", url: "http://www.yescalifornia.org/", cat: [organization, regionalism], info: "The campaign behind #calexit. I at least am entertained by this campaign."}
+,{title: "Yes California Independence Campaign", url: "http://www.yescalifornia.org/", cat: [organization, regionalism], info: "The campaign behind #calexit."}
+,{title: "Obamacare is working and repealing it would be a catastrophe.", url: "https://www.ofa.us/why-obamacare-matters/", pub: "Organizing for Action", cat: [article, healthcare]}
+,{title: "Washington Votes", url: "http://washingtonvotes.org/", cat: [resource, washington_state], info: "The best resource I have found for looking up information on bills in the Washington state legislature."}
+,{title: "Hate Has No Home Here - Ballard Sign Crowdfund", url: "https://www.gofundme.com/hate-has-no-home-here-ballard", cat: [civil_society, campaign], info: "Funding to print out a bunch of anti-hate signs that can be distributed through Ballard inexpensively."}
+,{title: "An Alternative Strategy for Democratic Success: Growing a New Electorate", url: "http://washingtonmonthly.com/2017/02/22/an-alternative-strategy-for-democratic-success-growing-a-new-electorate/", author: "Nancy LeTourneau", pub: "Washington Monthly", date: "22 Feb 2017", cat: [article, community_organizing, elections]}
+,{title: "Solidarity Is", url: "https://www.solidarityis.org/", cat: [campaign, racial_justice], info: "“Standing in deep, multiracial solidarity, we pledge&hellip;” Training materials and examples of extensive attempts to build solidarity between communities."}
+,{title: "Showing Up For Racial Justice (SURJ)", url: "http://www.showingupforracialjustice.org/", cat: [organization, racial_justice], info: "“SURJ is a national network of groups and individuals organizing White people for racial justice.”"}
+,{title: "Register Me First", url: "https://registermefirst.com/", cat: [campaign, racial_justice, religious_freedom], author: "CAIR", info: "“If they want to register American Muslims, they’ll have to #RegisterMeFirst.” A promise to sign such a registry en masse."}
+,{title: "Despair Is Not A Strategy", url: "https://medium.com/@abby.brockman/despair-is-not-a-strategy-15-principles-of-hope-deba7ac2cb29", cat: [article, strategy], author: "Abby Brockman", pub: "Medium", date: "6 Mar 2017", info: "Like the title says&hellip; work on your attitude."}
+,{title: "American Immigration Council", url: "https://americanimmigrationcouncil.org/", cat: [organization, immigration_refugees], info: "Looks like a think tank to me, with very comprehensive backgrounders on all aspects of immigration."}
 ];
 //“” ’
 
 // Unreviewed
-//http://washingtonvotes.org/
 //http://defendlocal.com/ - Campaign to Defend Local Solutions
 //http://nlc.org/sites/default/files/2017-02/NLC%20Preemption%20Report%202017.pdf
 //or http://www.nlc.org/preemption
-//https://www.gofundme.com/hate-has-no-home-here-ballard
 //http://billmoyers.com/story/bernie-alums-think-theyve-found-secret-reaching-trump-voters/
-//http://washingtonmonthly.com/2017/02/22/an-alternative-strategy-for-democratic-success-growing-a-new-electorate/
-//https://www.solidarityis.org/
-//http://www.showingupforracialjustice.org/
-//https://registermefirst.com/
-//American Immigration Lawyers Association
-//American Immigration Council
 //Innovation Law Lab
 //American Immigration Representation Project
 //https://mappingpoliceviolence.org/
 //https://www.checkthepolice.org/
-//https://staywoke.typeform.com/to/yernqh
+//https://staywoke.typeform.com/to/yernqh - no idea what this is for
 //http://www.drumnyc.org/wp-content/uploads/2017/02/ABriefGuideforReportingRaidsonSocialMedia.docx.pdf
 //http://www.law.nyu.edu/immigrantrightsclinic/community-resources/videos/ - pretty good KYR videos
 //http://www.uniteguide.com/
 //https://resistancetoolkit.herokuapp.com/ - this is a nice resource
 //http://usdac.us/revolution ?!?
-//https://medium.com/@abby.brockman/despair-is-not-a-strategy-15-principles-of-hope-deba7ac2cb29#.qezh577zz
