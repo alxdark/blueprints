@@ -78,7 +78,7 @@ var data = [
 ,{title: "Defending Accounts Against Common Attacks", url: "https://source.opennews.org/en-US/guides/defending-accounts/", cat: [resource, security], info: "Securing your electronic communications."}
 ,{title: "Define American", url: "https://defineamerican.com/", cat: [organization, immigration_refugees], info: "Support for undocumented immigrants. See their #FactsMatter campaign for useful op-ed information."}
 ,{title: "Democratic Coalition Against Trump", url:"http://www.democraticcoalition.org/", cat: [organization], info:"Resisting Trump through research, boycotts, and so forth, a good opposition site."}
-,{title: "Despair Is Not A Strategy", url: "https://medium.com/@abby.brockman/despair-is-not-a-strategy-15-principles-of-hope-deba7ac2cb29", cat: [article, strategy], author: "Abby Brockman", pub: "Medium", date: "6 Mar 2017", info: "Like the title says&hellip; work on your attitude."}
+,{title: "Despair Is Not A Strategy", url: "https://medium.com/@abby.brockman/despair-is-not-a-strategy-15-principles-of-hope-deba7ac2cb29", cat: [article, self_care], author: "Abby Brockman", pub: "Medium", date: "6 Mar 2017", info: "Like the title says&hellip; work on your attitude."}
 ,{title: "Digital Security Tips for Protesters", url: "https://www.eff.org/deeplinks/2016/11/digital-security-tips-for-protesters", cat: [resource, security], info: "Some repeated advice here, but some is unique to protests."}
 ,{title: "Dirty money: Trump and the Kazakh connection.", cat: [article, corruption], url: "https://www.ft.com/content/33285dfa-9231-11e6-8df8-d3778b55a923", author: "Tom Burgis", pub: "Financial Times", date: "19 Oct 2016"}
 ,{title: "Do A Thing", url: "http://tinyletter.com/doathing/", cat: [weeklies, mailing_list], info: "5 minutes a day activism mailing list. Like Easy Action, very easy stuff to do."}
@@ -95,7 +95,6 @@ var data = [
 ,{title: "Faith Action Network", url: "http://fanwa.org/", cat: [organization, religious_freedom], info: "They have a legislative agenda that is worth knowing about as it’s the practical stuff you’d want to see passed in Washington state."}
 ,{title: "Fear, Inc.", url: "https://islamophobianetwork.com/", cat: [resource, religious_freedom], info: "A very in-depth look at the organizations, speakers and funders of anti-Islamic extremists."}
 ,{title: "Fight The Good Fight Seattle", url: "http://www.ftgf-seattle.com/", cat: [calendar], info: "Another Seattle city calendar with a lot of good stuff in it."}
-,{title: "Find Your Lane", url: "http://www.hive-mind.com/findyourlane/", date: "15 March 2017", cat: [event, community_organizing], info: "Interorganizational networking event and an activism fair to find organizations to participant in. 7pm-10pm, Metropolist : 2931 1st Ave S, Seattle."}
 ,{title: "Finding Steady Ground", url: "http://www.findingsteadyground.com/", cat: [resource, self_care], info: "If you feel burnt out or overwhelmed, maybe spend some time reading what this site has to say about taking care of yourself for the long haul."}
 ,{title: "Flippable", url: "https://www.flippable.org/", cat: [organization, elections], info: "“Our mission is to turn America blue by building a movement to flip seats” focusing on weekly actions to flip state legislatures."}
 ,{title: "Foreign Policy: The Editor’s Room", url: "http://foreignpolicy.com/tag/the-e-r-podcast/", cat: [podcast], info: "This podcast was probably not always about the Trump administration. But these days it’s a very good place to hear discussion about the consequences of Trump for American foreign policy."}
@@ -136,7 +135,7 @@ var data = [
 ,{title: "Let America Vote", url: "https://www.letamericavote.org/", cat: [organization, voting_rights], info: "New organization started by Jason Kander to focus on voting rights."}
 ,{title: "Lightning Bolt", url: "http://www.lightningbolt.vision/", cat: [resource, civil_society], info: "Prepper culture for leftists."}
 ,{title: "MALDEF (The Latino Legal Voice for Civil Rights in America)", url: "http://www.maldef.org/", cat: [organization, civil_rights, immigration_refugees]}
-,{title: "March for Science, Seattle", url: "https://www.facebook.com/events/123680848146054/", cat: [event, congress, environment, civil_society]}
+,{title: "March for Science, Seattle", url: "http://seascimarch.org/", cat: [event, congress, environment, civil_society]}
 ,{title: "Moms Demand Action", url: "http://momsdemandaction.org/", cat: [organization, gun_violence], info: "“Much like Mothers Against Drunk Driving was created to reduce drunk driving, Moms Demand Action for Gun Sense in America was created to demand action from legislators, state and federal; companies; and educational institutions to establish common-sense gun reforms.”"}
 ,{title: "Movement 2017", url: "http://movementvote.org/", cat: [resource, elections]}
 ,{title: "Muslim Association of Puget Sound", url: "http://www.mapsredmond.org/", cat: [organization, religious_freedom], info: "They have been responding to vandalism of mosques in our region (at the least, there’re probably doing more)."}
@@ -174,7 +173,7 @@ var data = [
 ,{title: "Register Me First", url: "https://registermefirst.com/", cat: [campaign, racial_justice, religious_freedom], author: "CAIR", info: "“If they want to register American Muslims, they’ll have to #RegisterMeFirst.” A promise to sign such a registry en masse."}
 ,{title: "Repeal and Replace Dave Reichart", url: "https://www.repealandreplacedavereichert.com/", cat: [campaign, elections, congress], info: "Campaign to repeal and replace WA-8 congressional district’s Trump-defending congresscritter."}
 ,{title: "Republicans were wildly successful at suppressing voters in 2016.", cat: [article, voting_rights, gop],  url: "https://thinkprogress.org/2016-a-case-study-in-voter-suppression-258b5f90ddcd", author: "Alice Ollstein and Kira Lerner", pub: "Think Progress", date: "15 Nov 2016", info: "“Last week, the first election in 50 years without the full protection of the federal Voting Rights Act propelled Donald Trump to the White House.”", fav:true}
-,{title: "Research says there are ways to reduce racial bias. Calling people racist isn’t one of them.", url: "http://www.vox.com/identities/2016/11/15/13595508/racism-trump-research-study", author: "German Lopez", pub: "Vox", date: "15 Nov 2016", cat: [article, strategy]}
+,{title: "Research says there are ways to reduce racial bias. Calling people racist isn’t one of them.", url: "http://www.vox.com/identities/2016/11/15/13595508/racism-trump-research-study", author: "German Lopez", pub: "Vox", date: "15 Nov 2016", cat: [article, strategy, racial_justice]}
 ,{title: "Resistance Calendar", url: "https://www.resistancecalendar.org/", cat: [calendar], info: "National event calendar."}
 ,{title: "Resistance Resources", url: "http://www.pantsuitresources.com/", cat: [resource, trump, congress, strategy], info: "aka Pantsuit Resources, another research effort underway."}
 ,{title: "ReWa", url: "http://www.rewa.org/get-involved/volunteer-opportunities/", cat: [organization, immigration_refugees], info: "An organization that specifically helps with refugee relocation to our area."}
@@ -292,5 +291,9 @@ var data = [
 //https://www.eff.org/wp/digital-privacy-us-border-2017
 //https://www.nytimes.com/2017/03/09/opinion/connecting-trumps-dots-to-russia.html?smid=tw-share - summarizes situation
 //https://www.washingtonpost.com/lifestyle/style/pro-trump-media-sets-the-agenda-with-lies-heres-how-traditional-media-can-take-it-back/2017/03/11/4f30f768-050a-11e7-b9fa-ed727b644a0b_story.html
+//http://www.cnbc.com/2017/03/12/fearful-immigrants-are-offered-anti-deportation-training.html
+//https://supportkind.org/
+//http://www.outdooralliance.org/blog/2017/3/13/how-to-write-a-letter-to-the-editor
+//http://www.independent.co.uk/news/world/americas/us-mosques-threats-double-islamophobia-threats-vandalism-2017-cair-american-islamic-relations-a7631581.html
 
 //https://actionnetwork.org/forms/wa-rapid-response-volunteer-team
