@@ -8,7 +8,7 @@ function f() {
 var c = f("App", "Article", "Boycott", "Calendar", "Campaign", "Corruption", "Event", "Mailing List", "News", 
     "Organization", "Person", "Podcast", "Resource", "Racial Justice", "Civil Rights", "Civil Society", 
     "Community Organizing", "Congress", "Economic Justice", "Elections", "Environment", "GOP", "Gun Violence", 
-    "Healthcare", "Immigration & Refugees", "LGBTQ", "Media", "News", "Privacy", "Regionalism", "Religious Freedom", 
+    "Healthcare", "Homelessness", "Immigration & Refugees", "LGBTQ", "Media", "News", "Privacy", "Regionalism", "Religious Freedom", 
     "Science", "Security", "Self-Care", "Strategy", "Technology", "Trump", "Video", "Voting Rights", 
     "Washington State", "Weeklies", "Women's Rights");
 var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Mailing List", "News", 
@@ -20,6 +20,7 @@ var data = [
 ,{title: "#KnockEveryDoor", url: "https://knockeverydoor.org/", cat: [organization, elections], info: "Nationwide, volunteer-led canvasses to organize our communities against Trump"}
 ,{title: "#ResistTrump", url: "http://resisthere.org/", cat: [campaign, trump], info: "Another portal onto #ResistTrumpTuesdays by the Working Families Party."}
 ,{title: "20 Lessons from the twentieth century.", url: "https://www.facebook.com/timothy.david.snyder/posts/1206636702716110", cat: [article, strategy], author: "Timothy Snyder", date: "15 Nov 2017", info: "A thought-provoking Facebook post with 20 lessons we can take away from the dictatorships of the twentieth century (Hitler, Stalin, etc.)."}
+,{title: "2016 Homeless Needs Assessment", author: "City of Seattle", cat: [resource, homelessness], url: "http://coshumaninterests.wpengine.netdna-cdn.com/wp-content/uploads/2017/03/City-of-Seattle-Needs-Assesment-Report-Draft-FINAL.pdf", info: "Lots of data about homelessness in Seattle. A good place to ground discussion of the issue."}
 ,{title: "21 Progress", url: "https://21progress.org/", cat: [organization, community_organizing], info: "“21 Progress provides programs that empower leaders among the hard working people of Washington and advances bold ideas for economic and social justice.”"}
 ,{title: "3 ways you can change the conversation about immigration on Facebook.", author: "Carly Goodman", pub: "AFSC Blog.",url: "https://www.afsc.org/blogs/media-uncovered/3-ways-change-conversation-immigration-facebook", date: "18 Nov 2016", cat: [article, immigration_refugees], info: "Good explanation of arguments that can be made to common criticisms and misconceptions about immigration issues."}
 ,{title: "350.org", url: "https://350.org/", cat: [organization, environment], info: "Climate change movement."}
@@ -37,12 +38,13 @@ var data = [
 ,{title: "America’s Voice", url: "http://www.americasvoice.org/", cat: [organization, immigration_refugees], info: "They have a good blog."}
 ,{title: "American Bridge PAC", url: "https://americanbridgepac.org/", cat: [resource, congress], info: "Focus on research and ad campaigns to hold Republicans accountable for their malfeasance."}
 ,{title: "American Civil Liberties Union", url: "https://www.aclu.org/", cat: [organization, civil_rights, privacy]}
-,{title: "American Friends Service Committee", url: "https://www.afsc.org/", cat: [organization, religious_freedom], info: "They have a blog and a mailing list, but not sure how much is happening here. However I did get a good article or two from their blog."}
+,{title: "American Friends Service Committee", url: "https://www.afsc.org/actioncenter", cat: [organization, religious_freedom], info: "They have a blog and a mailing list, but not sure how much is happening here. However I did get a good article or two from their blog."}
 ,{title: "American Immigration Council", url: "https://americanimmigrationcouncil.org/", cat: [organization, immigration_refugees], info: "Looks like a think tank to me, with very comprehensive backgrounders on all aspects of immigration."}
 ,{title: "An Alternative Strategy for Democratic Success: Growing a New Electorate", url: "http://washingtonmonthly.com/2017/02/22/an-alternative-strategy-for-democratic-success-growing-a-new-electorate/", author: "Nancy LeTourneau", pub: "Washington Monthly", date: "22 Feb 2017", cat: [article, community_organizing, elections]}
 ,{title: "Anti-Defamation League", url: "http://www.adl.org/", cat: [organization, religious_freedom], info: "The ADL “fights anti-Semitism and all forms of bigotry, defends democratic ideals and protects civil rights for all.”"}
 ,{title: "Asian Counseling Referral Service", url: "https://acrs.org/", cat: [organization, immigration_refugees], info: "Services include application and fee waiver assistance, as well as ESL and English Citizenship classes, free, or available at low cost, to eligible applicants."}
 ,{title: "Autocracy: Rules for Survival", url: "http://www.nybooks.com/daily/2016/11/10/trump-election-autocracy-rules-for-survival/", author: "Masha Gessen", pub: "New York Review of Books", date: "10 Nov 2016", cat: [article, strategy], info: "Good advice, if pessimistic (she suggests our institutions won’t fight back at all)."}
+,{title: "Backbone Campaign", url: "http://www.backbonecampaign.org/", cat: [campaign, organization, environment], info: "“Backbone Campaign provides artful activism & creative organizing tools, training & action support for the 99%.”"}
 ,{title: "Bill Moyers", url: "http://billmoyers.com/", cat: [person, media], facebook: "moyersandcompany", twitter: "BillMoyersHQ", info: "Another media personality with a lot to say about Trump regime."}
 ,{title: "Black Lives Matter", url: "http://blacklivesmatter.com/", cat: [racial_justice, organization, campaign], info: "BLM seems very decentralized, so I’m not sure if this site is “official” per se."}
 ,{title: "Café to Go: A Quick Reference Guide for hosting World Café", url: "http://www.theworldcafe.com/wp-content/uploads/2015/07/Cafe-To-Go-Revised.pdf", author: "The World Café", cat: [article, community_organizing], date: "2015", info: "Many community organizing meetings have followed some variant of the process described here in some depth, to find collective ideas and consensus through conversations."}
@@ -103,6 +105,7 @@ var data = [
 ,{title: "Front and Centered", url: "http://frontandcentered.org/", cat: [organization, environment, economic_justice], info: "“A statewide coalition of organizations and groups rooted in communities of color and people with lower incomes; we’re on the frontlines of economic and environmental change.” Good climate/environmental justice information here."}
 ,{title: "Fuse: Together for Progress", url: "http://fusewashington.org/", cat: [organization, community_organizing], info: "I believe this organization is more active on the east side of the state, but they are involved in other campaigns."}
 ,{title: "FWD.us", url: "https://www.fwd.us", cat: [organization, immigration_refugees], info: "This looks like a tech-industry sponsored, pro-immigration reform organization. No Seattle chapter at this time."}
+,{title: "Gender Justice League", url: "http://www.genderjusticeleague.org/", cat: [lgbtq, organization], info: "“Gender Justice League has focused on elevating civil and human rights for trans and gender diverse people by creating community through advocacy efforts and shared leadership development.”"}
 ,{title: "George Lakoff", url: "https://georgelakoff.com/blog/", cat: [person, strategy], twitter: "georgelakoff", facebook: "George-Lakoff-Official-165643503477608", info: "Cognitive anthropologist who has done extensive research on conservative worldviews and recently, the mindset behind the Trump voter."}
 ,{title: "Global Nonviolent Action Database", url: "http://nvdatabase.swarthmore.edu/", cat: [resource, strategy]}
 ,{title: "Government by White Nationalism Is Upon Us.", url: "http://www.slate.com/articles/news_and_politics/cover_story/2017/02/government_by_white_nationalism_is_upon_us.html", cat: [article, civil_society, trump], author: "James Bouie", pub: "Slate", date: "6 Feb 2017"}
@@ -128,6 +131,7 @@ var data = [
 ,{title: "Islam Fact Check", url: "http://islamfactcheck.org/", cat: [resource, religious_freedom]}
 ,{title: "Jitsi", url: "https://jitsi.org/", cat: [app, security], info: "Secure (encrypted) video calls and chat"}
 ,{title: "K-12 Coalition to Protect Undocumented Students", url: "http://www.undocustudentcoalitionwa.org/", cat: [organization, immigration_refugees], info: "“All students, regardless of immigration status, have a constitutional right to attend public K-12 education (Plyler vs. Doe, 457 U.S. 202, 1982).... we urge Washington State school districts to support their school staff, undocumented students and families through the following 3 recommended actions...”"}
+,{title: "Kids in Need of Defense (KIND)", url: "https://supportkind.org/", cat: [organization, immigration_refugees], info: "KIND represents unaccompanied immigrant and refugee children in their deportation proceedings."}
 ,{title: "Know Your Rights", url: "http://unitedwedream.org/thank-deportation-defense-card-handy-phone/", author: "United We Dream", cat: [resource, immigration_refugees], info: "Good KYR cheat sheets, phone sized, several languages, and a hotline to call if you see ICE agents."}
 ,{title: "Lambda Legal", url: "https://www.lambdalegal.org/", cat: [organization, lgbtq]}
 ,{title: "Lawyers’ Committee for Civil Rights Under Law", url: "https://lawyerscommittee.org/", cat: [organization, civil_rights], info: "In addition to civil rights cases, this organization was very active in receiving reports of vote irregularities during the election."}
@@ -136,6 +140,7 @@ var data = [
 ,{title: "Lightning Bolt", url: "http://www.lightningbolt.vision/", cat: [resource, civil_society], info: "Prepper culture for leftists."}
 ,{title: "MALDEF (The Latino Legal Voice for Civil Rights in America)", url: "http://www.maldef.org/", cat: [organization, civil_rights, immigration_refugees]}
 ,{title: "March for Science, Seattle", url: "http://seascimarch.org/", cat: [event, congress, environment, civil_society]}
+,{title: "Migration Policy Institute", url: "http://www.migrationpolicy.org/", cat: [organization, immigration_refugees], info: "A DC think tank with lots of research on the migration of people worldwide."}
 ,{title: "Moms Demand Action", url: "http://momsdemandaction.org/", cat: [organization, gun_violence], info: "“Much like Mothers Against Drunk Driving was created to reduce drunk driving, Moms Demand Action for Gun Sense in America was created to demand action from legislators, state and federal; companies; and educational institutions to establish common-sense gun reforms.”"}
 ,{title: "Movement 2017", url: "http://movementvote.org/", cat: [resource, elections]}
 ,{title: "Muslim Association of Puget Sound", url: "http://www.mapsredmond.org/", cat: [organization, religious_freedom], info: "They have been responding to vandalism of mosques in our region (at the least, there’re probably doing more)."}
@@ -148,7 +153,8 @@ var data = [
 ,{title: "Natural Resources Defense Council", url: "https://www.nrdc.org/", cat: [organization, environment], info: "“The Natural Resources Defense Council works to safeguard the earth.”"}
 ,{title: "Nifty Fifty", url: "https://www.fiftynifty.org/", cat: [campaign, congress], info: "“This is a grassroots challenge to get friends in 50 states to make calls to their congresspeople about an issue they care about.” To a greater extent than similar projects, this effort seeks to extend networks across the country."}
 ,{title: "Northwest Immigrant Rights Project", url: "https://www.nwirp.org/", cat: [organization, immigration_refugees], info: "Volunteer opportunities: general intake volunteers (college students looking to enter law school); volunteer translators/interpreters; document processing volunteers."}
-,{title: "Obamacare is working and repealing it would be a catastrophe.", url: "https://www.ofa.us/why-obamacare-matters/", pub: "Organizing for Action", cat: [resource, healthcare], info: "This is a large collection of resources to draw upon when advocating for the ACA. With handy ways to share each resource on social media&hellip;it's a good idea for other causes."}
+,{title: "Obamacare is working and repealing it would be a catastrophe.", url: "https://www.ofa.us/why-obamacare-matters/", pub: "Organizing for Action", cat: [resource, healthcare], info: "This is a large collection of resources to draw upon when advocating for the ACA. With handy ways to share each resource on social media&hellip;it’s a good idea for other causes."}
+,{title: "Office of Immigrant and Refugee Affairs, City of Seattle", url: "http://www.seattle.gov/iandraffairs", cat: [immigration_refugees, organization], info: "There’s a lot of good data here about immigrant and refugee communities in our city."}
 ,{title: "One America", url: "http://weareoneamerica.org/", cat: [organization, immigration_refugees], info: "“OneAmerica’s mission is to advance the fundamental principles of democracy and justice through building power in immigrant communities, in collaboration with key allies.” I have met OneAmerica organizers at events, they are out there."}
 ,{title: "OpenSecrets", url: "http://www.opensecrets.org/search", cat: [resource, congress],info: "Voting records and positions."}
 ,{title: "Organizing for Action", url: "https://www.facebook.com/OFA/", cat: [organization, community_organizing],info: "This was originally an organization to support Obama’s presidency, it has recently become a little more active in organizing against Trump."}
@@ -229,6 +235,7 @@ var data = [
 ,{title: "The Spy Who Wrote the Trump-Russia Memos: It Was 'Hair-Raising' Stuff", url: "http://www.motherjones.com/politics/2017/01/spy-who-wrote-trump-russia-memos-it-was-hair-raising-stuff", author: "David Corn", pub: "Mother Jones", date: "13 Jan 2017", cat: [article, corruption]}
 ,{title: "The voting rights manifesto: a state-by-state plan to defend democracy.", author: "Daniel Nichanian", pub: "Vox", url: "http://www.vox.com/the-big-idea/2016/12/15/13957714/voting-rights-states-ballot-franchise-civil-rights", info: "“Access to the franchise is now the object of an all-out political battle. Those committed to protecting people’s right to vote — as well as their actual ability to exercise this right — must organize accordingly.”", date: "15 Dec 2016", cat: [article, voting_rights] }
 ,{title: "The Weeds", url: "http://www.vox.com/the-weeds", pub: "Vox", cat: [podcast, news]}
+,{title: "These Bernie Alums Think They’ve Found the Secret to Reaching Trump Voters", author: "Tim Murphy", pub: "BillMoyers.com", date: "3 Mar 2017", url: "http://billmoyers.com/story/bernie-alums-think-theyve-found-secret-reaching-trump-voters/", info: "Intriguing article about “deep canvassing” efforts like SwingLeft.", cat: [article, elections]}
 ,{title: "Toolkit to Defend Against ICE Raids and Community Arrests", url: "http://www.immdefense.org/raids-toolkit/", cat: [resource, immigration_refugees, civil_rights], info: "Very detailed discussion of past ICE practices and preparation for the future."}
 ,{title: "Tor Browser", url: "https://www.torproject.org/", cat: [app, security], info: "An open source web browser that helps defend you against traffic analysis, a form of network surveillance. Easy and important to use in some contexts."}
 ,{title: "Town Hall Project 2018", url: "https://townhallproject.com/", cat: [resource, congress], fav: true, info: "A list of all town hall and other public meetings that Congress are holding, all across the union."}
@@ -251,12 +258,12 @@ var data = [
 ,{title: "Unite Guide", url: "http://www.uniteguide.com/", cat: [resource, elections, community_organizing], info: "How we used social media to organize about 1m people across 50 states since the week of the 2016 presidential election.”"}
 ,{title: "United We Dream", url: "http://weareuwd.org/", cat: [organization, immigration_refugees], info: "Focused on immigrants with DACA and DAPA status, as well as higher education issues for “Dreamers”."}
 ,{title: "Vote Riders", url: "http://www.voteriders.org/", cat: [organization, voting_rights]}
-,{title: "Washington Dream Coalition", url: "http://www.wadreamcoalition.org/", cat: [organization, immigration_refugees], info: "Organization for Dreamers in Washington state, education focused. Last blog post was March of 2016. I heard they are following Daniel Medina’s case."}
-,{title: "Washington Immigrant Solidarity Network", url: "http://waimmigrantsolidaritynetwork.org/", cat: [organization, immigration_refugees], info: "Organization of immigrant rights groups, lawyers, labor unions, and activists to support immigrant rights in Washington state.", facebook: "WAimmigrantsolidaritynetwork"}
-,{title: "Washington State Immigration Community Events Calendar", url: "https://www.nwirp.org/calendar-of-community-immigration-events/", cat: [calendar], info: "Know your rights presentations and the like throughout Washington state."}
 ,{title: "Wall of Us", url: "https://www.wall-of-us.org/", cat: [resource, weeklies],  info: "“Four concrete acts of resistance delivered to your inbox each week.”"}
 ,{title: "Wallingford Indivisible", url: "https://www.facebook.com/groups/260964084339252/", cat: [organization, elections, congress], info: "Originall Wallingford Area Resistance, large group that has adopted Indivisible approach to engagement."}
+,{title: "Washington Dream Coalition", url: "http://www.wadreamcoalition.org/", cat: [organization, immigration_refugees], info: "Organization for Dreamers in Washington state, education focused. Last blog post was March of 2016. I heard they are following Daniel Medina’s case."}
+,{title: "Washington Immigrant Solidarity Network", url: "http://waimmigrantsolidaritynetwork.org/", cat: [organization, immigration_refugees], info: "Organization of immigrant rights groups, lawyers, labor unions, and activists to support immigrant rights in Washington state.", facebook: "WAimmigrantsolidaritynetwork"}
 ,{title: "Washington Post", url: "https://www.washingtonpost.com/", cat: [news], info: "I believe this national paper did the best reporting on the Trump campaign and is a good place to read about the day’s news."}
+,{title: "Washington State Immigration Community Events Calendar", url: "https://www.nwirp.org/calendar-of-community-immigration-events/", cat: [calendar], info: "Know your rights presentations and the like throughout Washington state."}
 ,{title: "Washington Votes", url: "http://washingtonvotes.org/", cat: [resource, washington_state], info: "The best resource I have found for looking up information on bills in the Washington state legislature."}
 ,{title: "We have 100 days to stop Donald Trump from systemically corrupting our institutions.", url: "http://www.vox.com/policy-and-politics/2016/11/17/13626514/trump-systemic-corruption", author: "Matthew Yglesias", pub: "Vox", date: "17 Nov 2016", cat: [article, strategy]}
 ,{title: "We have at most a year to defend American democracy, perhaps less.", url: "http://international.sueddeutsche.de/post/157058066625/we-have-at-most-a-year-to-defend-american", author: "Matthias Kolb interviewing Timothy Snyder", pub: "SZ", date: "7 Feb 2017", info: "This interview lays out in simple and incontrovertible terms that the administration is following the same “playbook” as the Nazi Party in the 1930s.", cat: [article, civil_society], fav: true}
@@ -274,16 +281,13 @@ var data = [
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
 ,{title: "Yes California Independence Campaign", url: "http://www.yescalifornia.org/", cat: [organization, regionalism], info: "The campaign behind #calexit."}
 ];
+
 //“” ’
-// Unreviewed
+
 //http://defendlocal.com/ - Campaign to Defend Local Solutions
 //http://nlc.org/sites/default/files/2017-02/NLC%20Preemption%20Report%202017.pdf
-//or http://www.nlc.org/preemption
+//http://www.nlc.org/preemption
 //http://billmoyers.com/story/bernie-alums-think-theyve-found-secret-reaching-trump-voters/
-//Innovation Law Lab
-//American Immigration Representation Project
-//https://mappingpoliceviolence.org/
-//https://www.checkthepolice.org/
 //https://staywoke.typeform.com/to/yernqh - no idea what this is for
 //http://www.drumnyc.org/wp-content/uploads/2017/02/ABriefGuideforReportingRaidsonSocialMedia.docx.pdf
 //http://www.law.nyu.edu/immigrantrightsclinic/community-resources/videos/ - pretty good KYR videos
@@ -292,8 +296,17 @@ var data = [
 //https://www.nytimes.com/2017/03/09/opinion/connecting-trumps-dots-to-russia.html?smid=tw-share - summarizes situation
 //https://www.washingtonpost.com/lifestyle/style/pro-trump-media-sets-the-agenda-with-lies-heres-how-traditional-media-can-take-it-back/2017/03/11/4f30f768-050a-11e7-b9fa-ed727b644a0b_story.html
 //http://www.cnbc.com/2017/03/12/fearful-immigrants-are-offered-anti-deportation-training.html
-//https://supportkind.org/
 //http://www.outdooralliance.org/blog/2017/3/13/how-to-write-a-letter-to-the-editor
-//http://www.independent.co.uk/news/world/americas/us-mosques-threats-double-islamophobia-threats-vandalism-2017-cair-american-islamic-relations-a7631581.html
+//https://resistbot.io/
+//https://www.afsc.org/blogs/media-uncovered/four-tips-talking-about-trumps-muslim-ban?utm_source=Mar2017AFSCNow
+//https://www.afsc.org/sanctuaryeverywhere
+//https://www.afsc.org/actioncenter
+//http://ccmc.org/tips/write-and-be-counted-op-eds-and-letters/
+//https://www.splcenter.org/20150126/speak-responding-everyday-bigotry
+//http://pages.ucsd.edu/~zhajnal/page5/documents/voterIDhajnaletal.pdf
+//https://docs.google.com/spreadsheets/d/1y5QASbrOOu42RmxoxTBI6zWer89ICTvMky0b2d02Kok/edit#gid=0
+//https://www.nytimes.com/2017/02/10/opinion/a-game-plan-for-senate-democrats.html
+//https://www.theguardian.com/us-news/2017/jan/30/statistics-trump-administration-numbers-manipulation
+//https://www.theguardian.com/commentisfree/2017/feb/11/americans-arent-attached-democracy-rule-law
 
 //https://actionnetwork.org/forms/wa-rapid-response-volunteer-team

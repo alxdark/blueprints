@@ -75,6 +75,9 @@ data.forEach(function(entry, i) {
             write(i, "category wrong", category, entry);
         }
     });
+    if (entry.info && entry.info.indexOf("'") > -1) {
+        write(i, "unsmart inch mark", entry.info);
+    }
 });
 </script>
 </body>
