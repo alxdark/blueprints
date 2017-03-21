@@ -78,6 +78,9 @@ data.forEach(function(entry, i) {
     if (entry.info && entry.info.indexOf("'") > -1) {
         write(i, "unsmart inch mark", entry.info);
     }
+    if (entry.cat.indexOf("Article") > -1 && !/[\.\?]/.test(entry.title[entry.title.length-1])) {
+        write(i, "article title does not have period", entry.title, entry);
+    }
 });
 </script>
 </body>
