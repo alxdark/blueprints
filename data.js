@@ -27,6 +27,7 @@ var data = [
 ,{title: "43rd District Democrats", url: "http://43rddems.ngpvanhost.com/", cat: [organization, washington_state],info: "The fighting 43rd."}
 ,{title: "5 Calls", url: "https://5calls.org/", cat: [app, resource, congress], info: "Another service that organizes you and gives you five calls to make every day. I’ve heard it gives you a lot of calls to make."}
 ,{title: "6 Rules of Islamophobia.", url: "http://www.huffingtonpost.com/entry/islamophobia-america_us_587cf491e4b0e58057ff98e0", author: "Christopher Mathias", pub: "Huffington Post", date: "23 Jan 2017", cat: [article, religious_freedom], info: "The “6 big lies” of Islamophobia."}
+,{title: "A Game Plan for Senate Democrats.", author: "Sarah Binder", pub: "New York Times", date: "10 Feb 2017", url: "https://www.nytimes.com/2017/02/10/opinion/a-game-plan-for-senate-democrats.html", cat: [article, strategy], info: "The many ways Senate democrats can procedurally slow down Republicans."}
 ,{title: "A guide to rebuilding the Democratic Party, from the ground up.", url: "http://www.vox.com/the-big-idea/2017/1/5/14176156/rebuild-democratic-party-dnc-strategy", author: "Theda Skicpol", pub: "Vox", date: "5 Jan 2017", cat: [article, elections], info: "This is a good corrective to a lot of unproductive talk and action these days. They agree with the Indivisble approach, focus on legislative and gubernatorial races, and note that the left has nothing financially or organizationally to counter far-right institutions (not the GOP per se)."}
 ,{title: "A Journalist’s Manual: Field Guide to Anti-Muslim Extremists.", url: "https://www.splcenter.org/20161025/journalists-manual-field-guide-anti-muslim-extremists", cat: [article, religious_freedom], author: "Southern Poverty Law Center", date: "25 Oct 2016", info: "Overview from Southern Poverty Law Center."}
 ,{title: "A message to my doomed colleagues in the American media.", url: "https://medium.com/@alexey__kovalev/message-to-american-media-from-russia-6e2e76eeae77", author: "Alexey Kovalev", pub: "Medium.com", date: "12 Jan 2017", cat: [article, media], info: "A Russian reporter notes that Trump’s press events are following the model established by Putin, (which are pure propaganda circuses). He believes the response should be to forget the press pools and engage in more investigative journalism."}
@@ -69,6 +70,7 @@ var data = [
 ,{title: "Coalition of Anti-Racist Whites", url: "https://www.carw.org/", cat: [organization, civil_rights]}
 ,{title: "Code Blue", url: "https://www.codeblue.team/", cat: [organization, elections], info: "Mission: rebuild a progressive voting majority in federal, state and local government."}
 ,{title: "Collectiva Legal del Pueblo", url: "http://colectivalegal.org/", cat: [organization, immigration_refugees],info: "Small organization that provides legal advice and “know your rights” trainings to immigrant communities. They have some volunteer opportunities (particularly if you speak Spanish)."}
+,{title: "Color of Change", url: "https://www.colorofchange.org/", cat: [resource, racial_justice], info: "An organization that provides tools to start online campaigns for racial justice."}
 ,{title: "Common Cause", url: "http://www.commoncause.org/", cat: [organization, civil_society, voting_rights], info: "“We work to create open, honest, and accountable government that serves the public interest; promote equal rights, opportunity, and representation for all; and empower all people to make their voices heard in the political process.” Honestly this seems like a DC outfit to me that just asks for money."}
 ,{title: "Communities Rising!", url: "https://www.communitiesrisingus.org/", cat: [organization, community_organizing], facebook: "CommunitiesRisingUSA", info: "A community organizing effort, a little younger than SNAC. It is also currently organizing meetings by neighborhood and planning future activities."}
 ,{title: "Community Environmental Legal Defense Fund", url: "http://celdf.org/", cat: [organization, environment, civil_society, regionalism], info: "“We assist communities to develop first-in-the-nation, groundbreaking laws to protect rights – including worker, environmental, and democratic rights, and rights of nature. CELDF provides free and low cost legal services, grassroots organizing, and education, to communities, states, and countries facing injustice.” Seem to have a number of Washington state initiatives."}
@@ -99,6 +101,7 @@ var data = [
 ,{title: "FactCheck.org", url: "http://www.factcheck.org/", cat: [resource, news], info: "Annenberg Public Policy Center at the University of Pennsylvania"}
 ,{title: "Faith Action Network", url: "http://fanwa.org/", cat: [organization, religious_freedom], info: "They have a legislative agenda that is worth knowing about as it’s the practical stuff you’d want to see passed in Washington state."}
 ,{title: "Fear, Inc.", url: "https://islamophobianetwork.com/", cat: [resource, religious_freedom], info: "A very in-depth look at the organizations, speakers and funders of anti-Islamic extremists."}
+,{title: "Fight For The Future", url: "https://www.fightforthefuture.org/", cat: [organization, campaign, civil_society, strategy], info: "Including a proposal to fund A-Teams: “Terrified about Trump? Quit your job, start an A-Team. We’ll fund it. Read this.”"}
 ,{title: "Fight The Good Fight Seattle", url: "http://www.ftgf-seattle.com/", cat: [calendar], info: "Another Seattle city calendar with a lot of good stuff in it."}
 ,{title: "Finding Steady Ground", url: "http://www.findingsteadyground.com/", cat: [resource, self_care], info: "If you feel burnt out or overwhelmed, maybe spend some time reading what this site has to say about taking care of yourself for the long haul."}
 ,{title: "Flippable", url: "https://www.flippable.org/", cat: [organization, elections], info: "“Our mission is to turn America blue by building a movement to flip seats” focusing on weekly actions to flip state legislatures."}
@@ -125,6 +128,7 @@ var data = [
 ,{title: "How to Defeat Those Who are Waging War on Science.", url: "https://blogs.scientificamerican.com/guest-blog/how-to-defeat-those-who-are-waging-war-on-science/", author: "Jonathan Foley and Christine Arena", pub: "Scientific American", date: "27 Feb 2017", info: "It’s no accident they illustrated this article with anti-science paragon, EPA Administrator Scott Pruitt.", cat: [article, strategy, science]}
 ,{title: "How to Get Out of the Cycle of Outrage In a Trump World.", url: "https://journal.thriveglobal.com/how-to-get-out-of-the-cycle-of-outrage-in-a-trump-world-ffc5b2aa1b5f", author: "Arianna Huffington", pub: "Thrive Global", date: "6 Feb 2017", cat: [article, self_care]}
 ,{title: "How To Topple a Dictator (inteview with Erica Chenoweth).", url: "https://www.thenation.com/article/how-to-topple-a-dictator/", info: "Chenoweth’s research points to the importance of numbers in nonviolent mobilization. Numbers matter. Nonviolent movements can achieve this because they can involve more and more sectors of society&mdash;indeed they must do this, or they will probably fail.", author: "Waleed Shahid", pub: "The Nation", date: "24 Feb 2017", cat: [article, strategy, civil_society]}
+,{title: "How to Write a Letter to the Editor.", url: "http://www.outdooralliance.org/blog/2017/3/13/how-to-write-a-letter-to-the-editor", pub: "Outdoor Alliance", cat: [article, strategy], info: "Tips for your letter to the editor."}
 ,{title: "Human Rights Campaign", url: "https://www.hrc.org/", cat: [organization, lgbtq]}
 ,{title: "Indivisible Action Calendar/Capitol Calendar", url: "https://www.indivisibleguide.com/action-calendar", cat: [calendar], info: "This has a good summary of activities happening in Congress, and what you should focus on when calling."}
 ,{title: "Indivisible Radio", url: "http://www.wnyc.org/shows/indivisible/", cat: [podcast, elections], info: "“Indivisible is public radio’s national conversation about America in a time of change.” It’s a call-in show."}
@@ -261,6 +265,7 @@ var data = [
 ,{title: "Ultraviolet", url: "https://weareultraviolet.org/", cat: [organization, womens_rights], info: "“UltraViolet is a powerful and rapidly growing community of people from all walks of life mobilized to fight sexism and expand women’s rights, from politics and government to media and pop culture.”"}
 ,{title: "Understanding Trump.", url: "https://georgelakoff.com/2016/07/23/understanding-trump-2/", cat: [article, trump], info: "Another explanation for why social conservatives support Trump. (Social conservatives are disturbing as described by Lakoff, but it does explain the unexplainable.)"}
 ,{title: "Unite Guide", url: "http://www.uniteguide.com/", cat: [resource, elections, community_organizing], info: "How we used social media to organize about 1m people across 50 states since the week of the 2016 presidential election.”"}
+,{title: "United to Protect Democracy", url: "https://unitedtoprotectdemocracy.org/", cat: [organization, civil_society], info: "“a nonpartisan nonprofit with an urgent goal: to hold the President and the Executive Branch accountable to the laws and longstanding practices that have protected our democracy through both Democratic and Republican Administrations...”"}
 ,{title: "United We Dream", url: "http://weareuwd.org/", cat: [organization, immigration_refugees], info: "Focused on immigrants with DACA and DAPA status, as well as higher education issues for “Dreamers”."}
 ,{title: "Vote Riders", url: "http://www.voteriders.org/", cat: [organization, voting_rights]}
 ,{title: "Voter Identification Laws and the Suppression of Minority Votes.", url: "http://pages.ucsd.edu/~zhajnal/page5/documents/voterIDhajnaletal.pdf", author: "Hajnal, Lajevardi, Nielson", cat: [article, voting_rights], info: "The impact of voter ID laws on voter suppression."}
@@ -286,7 +291,6 @@ var data = [
 ,{title: "Who is my representative?", url: "http://whoismyrepresentative.com/", cat: [resource, congress], info: "Enter your zip code, get contact information for your congressional representative and senator."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
 ,{title: "Write and Be Counted: Op-Eds and Letters.", url: "http://ccmc.org/tips/write-and-be-counted-op-eds-and-letters/", cat: [resource, strategy, media], pub: "Communications Consortium Media Center", info: "Lots of help for writing letters and op-eds."}
-,{title: "Yes California Independence Campaign", url: "http://www.yescalifornia.org/", cat: [organization, regionalism], info: "The campaign behind #calexit."}
 ];
 
 //“” ’
@@ -294,14 +298,9 @@ var data = [
 //http://defendlocal.com/ - Campaign to Defend Local Solutions
 //http://nlc.org/sites/default/files/2017-02/NLC%20Preemption%20Report%202017.pdf
 //http://www.nlc.org/preemption
-//http://www.law.nyu.edu/immigrantrightsclinic/community-resources/videos/ - pretty good KYR videos
-//https://resistancetoolkit.herokuapp.com/ - this is a nice resource
-//https://www.eff.org/wp/digital-privacy-us-border-2017
-//http://www.cnbc.com/2017/03/12/fearful-immigrants-are-offered-anti-deportation-training.html
-//http://www.outdooralliance.org/blog/2017/3/13/how-to-write-a-letter-to-the-editor
+//http://www.law.nyu.edu/immigrantrightsclinic/community-resources/videos/
 //https://www.afsc.org/blogs/media-uncovered/four-tips-talking-about-trumps-muslim-ban
 //https://www.splcenter.org/20150126/speak-responding-everyday-bigotry
-//https://www.nytimes.com/2017/02/10/opinion/a-game-plan-for-senate-democrats.html
 //http://www.detentionwatchnetwork.org/
 //http://www.trumpinfo.org/
-//https://www.colorofchange.org/
+//https://beyondthemoment.org/
