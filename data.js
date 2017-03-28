@@ -48,8 +48,10 @@ var data = [
 ,{title: "Asian Counseling Referral Service", url: "https://acrs.org/", cat: [organization, immigration_refugees], info: "Services include application and fee waiver assistance, as well as ESL and English Citizenship classes, free, or available at low cost, to eligible applicants."}
 ,{title: "Autocracy: Rules for Survival.", url: "http://www.nybooks.com/daily/2016/11/10/trump-election-autocracy-rules-for-survival/", author: "Masha Gessen", pub: "New York Review of Books", date: "10 Nov 2016", cat: [article, strategy], info: "Good advice, if pessimistic (she suggests our institutions won’t fight back at all)."}
 ,{title: "Backbone Campaign", url: "http://www.backbonecampaign.org/", cat: [campaign, organization, environment], info: "“Backbone Campaign provides artful activism & creative organizing tools, training & action support for the 99%.”"}
+,{title: "Beyond the Moment", url: "https://beyondthemoment.org/", info: "Organization coordinating protest events on May Day.", cat: [event], date: "1 May 207"}
 ,{title: "Bill Moyers", url: "http://billmoyers.com/", cat: [person, media], facebook: "moyersandcompany", twitter: "BillMoyersHQ", info: "Another media personality with a lot to say about Trump regime."}
 ,{title: "Black Lives Matter", url: "http://blacklivesmatter.com/", cat: [racial_justice, organization, campaign], info: "BLM seems very decentralized, so I’m not sure if this site is “official” per se."}
+,{title: "Breitbart-led right-wing media ecosystem altered broader media agenda.", url: "http://www.cjr.org/analysis/breitbart-media-trump-harvard-study.php", author: "Benkler et all", pub: "Columbia Journalism Review", date: "3 Mar 2017", cat: [article, media]}
 ,{title: "Café to Go: A Quick Reference Guide for hosting World Café.", url: "http://www.theworldcafe.com/wp-content/uploads/2015/07/Cafe-To-Go-Revised.pdf", author: "The World Café", cat: [article, community_organizing], date: "2015", info: "Many community organizing meetings have followed some variant of the process described here in some depth, to find collective ideas and consensus through conversations."}
 ,{title: "Call My Congress", url: "https://www.callmycongress.com/", cat: [resource, congress], info: "Another site to get contact information for your legislators."}
 ,{title: "Call The Halls Guide", url: "https://gumroad.com/l/callthehallsguide", cat: [resource, congress], info: "A PDF guide to lobbying Congress (looks like you need to pay for it, you can pay $0) if you want or need."}
@@ -132,6 +134,7 @@ var data = [
 ,{title: "Human Rights Campaign", url: "https://www.hrc.org/", cat: [organization, lgbtq]}
 ,{title: "Indivisible Action Calendar/Capitol Calendar", url: "https://www.indivisibleguide.com/action-calendar", cat: [calendar], info: "This has a good summary of activities happening in Congress, and what you should focus on when calling."}
 ,{title: "Indivisible Radio", url: "http://www.wnyc.org/shows/indivisible/", cat: [podcast, elections], info: "“Indivisible is public radio’s national conversation about America in a time of change.” It’s a call-in show."}
+,{title: "Indivisible Washington", url: "http://indivisibleguidewa.com/", cat: [resource, congress, elections], info: "This resource tries to be a clearinghouse of information for indivisible groups across the state"}
 ,{title: "Indivisible: A Practical Guide for Resisting the Trump Agenda", url: "https://www.indivisibleguide.com/", cat: [resource, strategy, community_organizing], info: "“Former congressional staffers reveal best practices for making Congress listen.” In addition to a strategy guide that is being widely read right now, they are organizing local chapters that are pursuing this strategy, please take a look."}
 ,{title: "Informed Immigrant", url: "https://www.informedimmigrant.com/", cat: [immigration_refugees, resource], info: "Lots of information for immigrants on rights, current laws, etc. Good resource for further research."}
 ,{title: "Inspire Seattle", url: "http://inspireseattle.org/", cat: [organization, community_organizing], info: "Works “to create connection throughout our community and better community through activism” through “fun, supportive gatherings” to pursue progressive politics."}
@@ -166,6 +169,7 @@ var data = [
 ,{title: "One America", url: "http://weareoneamerica.org/", cat: [organization, immigration_refugees], info: "“OneAmerica’s mission is to advance the fundamental principles of democracy and justice through building power in immigrant communities, in collaboration with key allies.” I have met OneAmerica organizers at events, they are out there."}
 ,{title: "OpenSecrets", url: "http://www.opensecrets.org/search", cat: [resource, congress],info: "Voting records and positions."}
 ,{title: "Organizing for Action", url: "https://www.facebook.com/OFA/", cat: [organization, community_organizing],info: "This was originally an organization to support Obama’s presidency, it has recently become a little more active in organizing against Trump."}
+,{title: "Our States", url: "https://www.ourstates.org/", cat: [resource, congress], info: "Blocking the Republican agenda state-by-state, in the state legislatures. A simple but very helpful guide."}
 ,{title: "People are in the streets protesting Donald Trump. But when does protest actually work?", url: "https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/21/people-are-in-the-streets-protesting-donald-trump-but-when-does-protest-actually-work/", author: "Erica Chenoweth", pub: "Washington Post", date: "21 Nov 2016", cat: [article, strategy], info: "Yes, and the author explains when and why they do. Good overview of nonviolent resistance campaigns."}
 ,{title: "People for Washington", url: "http://peopleforwashington.com/", facebook: "peopleforWAexit", cat: [organization, regionalism], info: "Washington independence movement. #waexit"}
 ,{title: "Planned Parenthood", url: "https://www.plannedparenthood.org/", cat: [organization, healthcare, womens_rights], info: "In most advanced industrial countries, family planning is a part of the health care provided by the government to all its citizens, but in America&hellip;"}
@@ -303,4 +307,3 @@ var data = [
 //https://www.splcenter.org/20150126/speak-responding-everyday-bigotry
 //http://www.detentionwatchnetwork.org/
 //http://www.trumpinfo.org/
-//https://beyondthemoment.org/
