@@ -120,6 +120,7 @@ var data = [
 ,{title: "GovTrack", url: "https://www.govtrack.us/", cat: [resource, congress], info: "A good site to research your representative’s voting history, who is on what committee, and so forth."}
 ,{title: "Greater Seattle Neighborhood Action Coalition", url: "https://www.neighborhoodaction.info/", cat: [organization, community_organizing], info: "A community organizing effort. “A practical, people-powered solution to the many known and imminent threats of a dangerous and authoritarian Trump regime.” The organization has neighborhood NACs for each city district, that are meeting regularly, as well as at a meeting of all the NACs."}
 ,{title: "Handbook for Nonviolent Campaigns", url: "https://www.wri-irg.org/pubs/NonviolenceHandbook", cat: [resource, strategy]}
+,{title: "Hate Free Delridge", url: "https://www.facebook.com/hatefreedelridge/", cat: [organization, racial_justice], info: "Anti-hate network that has extended throughout Seattle."}
 ,{title: "Hate Has No Home Here - Ballard Sign Crowdfund", url: "https://www.gofundme.com/hate-has-no-home-here-ballard", cat: [civil_society, campaign], info: "Funding to print out a bunch of anti-hate signs that can be distributed through Ballard inexpensively."}
 ,{title: "House and Senate Committee Contacts", url: "https://docs.google.com/spreadsheets/d/1y5QASbrOOu42RmxoxTBI6zWer89ICTvMky0b2d02Kok/edit#gid=0", cat: [resource, congress], info: "You can’t find this list very easily on the Internet. Print it out. Put it in a safe. These are the committee phone numbers for both houses of Congress.", fav: true}
 ,{title: "How an obscure U.S. policy effort could hurt American Muslims.", cat: [article, religious_freedom], url: "https://www.washingtonpost.com/national/how-an-obscure-policy-effort-could-hurt-american-muslims/2017/01/11/8ce93184-d76e-11e6-b8b2-cb5164beba6b_story.html", author: "Abigail Hauslohner", pub: "Washington Post", date: "11 Jan 2017", info: "Designating the Muslim Brotherhood a terrorist organization for the first time, the GOP could then use this against Muslim advocacy organizations to brand them as supporters of terrorism (and not civil rights organizations)."}
@@ -194,6 +195,7 @@ var data = [
 ,{title: "Research says there are ways to reduce racial bias. Calling people racist isn’t one of them.", url: "http://www.vox.com/identities/2016/11/15/13595508/racism-trump-research-study", author: "German Lopez", pub: "Vox", date: "15 Nov 2016", cat: [article, strategy, racial_justice]}
 ,{title: "Resistance Calendar", url: "https://www.resistancecalendar.org/", cat: [calendar], info: "National event calendar."}
 ,{title: "Resistance Resources", url: "http://www.pantsuitresources.com/", cat: [resource, trump, congress, strategy], info: "aka Pantsuit Resources, another research effort underway."}
+,{title: "Resistance School", url: "https://www.resistanceschool.com/", cat: [event, strategy], info: "“A free four session practical training program to sharpen the tools we need to fight for our values at the federal, state, and local levels.”", date: "5, 12, 20, 27 Apr 2017"}
 ,{title: "ResistBot", fav: true, url: "https://resistbot.io/", cat: [weeklies, congress, resource], info: "Brilliant SMS-based bot that will allow you to write Congress while you’re on the bus, or anywhere else. Text Resist to 50409 to get started."}
 ,{title: "ReWa", url: "http://www.rewa.org/get-involved/volunteer-opportunities/", cat: [organization, immigration_refugees], info: "An organization that specifically helps with refugee relocation to our area."}
 ,{title: "RISE When We Fall", url: "https://risewhenwefall.org/#pledge", info: "I’m confused about this site, but give them your email and they send you lots of information about what your representatives are doing, including town halls, their votes, etc.", cat: [resource, congress]}
@@ -307,3 +309,6 @@ var data = [
 //https://www.splcenter.org/20150126/speak-responding-everyday-bigotry
 //http://www.detentionwatchnetwork.org/
 //http://www.trumpinfo.org/
+//https://www.contactingcongress.org/ - this is the best thing I've found for this
+//https://torrentfreak.com/vpn-services-anonymous-review-2017-170304/
+//http://aidnw.org/
