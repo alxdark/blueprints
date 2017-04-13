@@ -299,6 +299,7 @@ var data = [
 ,{title: "Who is my representative?", url: "http://whoismyrepresentative.com/", cat: [resource, congress], info: "Enter your zip code, get contact information for your congressional representative and senator."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
 ,{title: "Write and Be Counted: Op-Eds and Letters.", url: "http://ccmc.org/tips/write-and-be-counted-op-eds-and-letters/", cat: [resource, strategy, media], pub: "Communications Consortium Media Center", info: "Lots of help for writing letters and op-eds."}
+,{title: "Know Your Rights Flyers, Posters & Trainings", url: "https://www.immdefense.org/ice-home-and-community-arrests/", cat: [resource, immigration_refugees], info: "Good KYR flyers in many languages, as well as posters explaining what should be documented if you witness an immigration raid. Very good after-the-fact prompts to write down all that is known about an incident."}
 ];
 
 //“” ’
@@ -314,3 +315,4 @@ var data = [
 //https://www.contactingcongress.org/ - this is the best thing I've found for this
 //https://torrentfreak.com/vpn-services-anonymous-review-2017-170304/
 //http://aidnw.org/
+//https://www.theguardian.com/us-news/2017/apr/03/donald-trump-immigration-deportation-protest-secret-agenda
