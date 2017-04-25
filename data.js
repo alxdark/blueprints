@@ -160,7 +160,6 @@ var data = [
 ,{title: "Lightning Bolt", url: "http://www.lightningbolt.vision/", cat: [resource, civil_society], info: "Prepper culture for leftists."}
 ,{title: "Make It Work", url: "http://www.makeitworkcampaign.org/", cat: [campaign], info: "A three-year education campaign advocating for raising wages, closing the pay gap, more affordable child and elder care, and providing family leave."}
 ,{title: "MALDEF (The Latino Legal Voice for Civil Rights in America)", url: "http://www.maldef.org/", cat: [organization, civil_rights, immigration_refugees]}
-,{title: "March for Science, Seattle", url: "http://seascimarch.org/", cat: [event, congress, environment, civil_society]}
 ,{title: "Migration Policy Institute", url: "http://www.migrationpolicy.org/", cat: [organization, immigration_refugees], info: "A DC think tank with lots of research on the migration of people worldwide."}
 ,{title: "Moms Demand Action", url: "http://momsdemandaction.org/", cat: [organization, gun_violence], info: "“Much like Mothers Against Drunk Driving was created to reduce drunk driving, Moms Demand Action for Gun Sense in America was created to demand action from legislators, state and federal; companies; and educational institutions to establish common-sense gun reforms.”"}
 ,{title: "Movement 2017", url: "http://movementvote.org/", cat: [resource, elections]}
@@ -212,7 +211,6 @@ var data = [
 ,{title: "Resistance Calendar", url: "https://www.resistancecalendar.org/", cat: [calendar], info: "National event calendar."}
 ,{title: "Resistance from within: Federal workers push back against Trump.", url: "https://www.washingtonpost.com/politics/resistance-from-within-federal-workers-push-back-against-trump/2017/01/31/c65b110e-e7cb-11e6-b82f-687d6e6a3e7c_story.html", author: "Juliet Eilperin, Lisa Rein, and Marc Fisher", pub: "Washington Post", date: "31 Jan 2017", cat: [article, civil_society]}
 ,{title: "Resistance Resources", url: "http://www.pantsuitresources.com/", cat: [resource, trump, congress, strategy], info: "aka Pantsuit Resources, another research effort underway."}
-,{title: "Resistance School", url: "https://www.resistanceschool.com/", cat: [event, strategy], info: "“A free four session practical training program to sharpen the tools we need to fight for our values at the federal, state, and local levels.”", date: "5, 12, 20, 27 Apr 2017"}
 ,{title: "ResistBot", fav: true, url: "https://resistbot.io/", cat: [weeklies, congress, resource], info: "Brilliant SMS-based bot that will allow you to write Congress while you’re on the bus, or anywhere else. Text Resist to 50409 to get started."}
 ,{title: "ReWa", url: "http://www.rewa.org/get-involved/volunteer-opportunities/", cat: [organization, immigration_refugees], info: "An organization that specifically helps with refugee relocation to our area."}
 ,{title: "RISE When We Fall", url: "https://risewhenwefall.org/#pledge", info: "I’m confused about this site, but give them your email and they send you lots of information about what your representatives are doing, including town halls, their votes, etc.", cat: [resource, congress]}
@@ -223,7 +221,6 @@ var data = [
 ,{title: "Safe Zone Project", url: "http://thesafezoneproject.com/", cat: [resource, lgbtq], info: "“A free online resource for creating powerful, effective LGBTQ awareness and ally training workshops.”"}
 ,{title: "Sanctuary Movement", url: "http://www.sanctuarynotdeportation.org/", cat: [campaign, immigration_refugees, religious_freedom], info: "“A growing movement of immigrant and over 700 faith communities doing what Congress and the Administration refuse to do: protect and stand with immigrants facing deportation.” There is a little activity at this site, as churches respond to recent administration attacks on immigrants."}
 ,{title: "Scholars Strategy Network", url: "http://www.scholarsstrategynetwork.org/", cat: [organization, strategy]}
-,{title: "Scientists March on Washington", url: "https://www.marchforscience.com/", facebook: "marchforscience", twitter: "ScienceMarchDC", cat: [event, science], info: "Nationwide marches being planned for Earth Day.", date: "22 Apr 2017"}
 ,{title: "Seattle Indivisible", url: "https://www.seattleindivisible.com/", cat: [organization, elections, congress]}
 ,{title: "Seattle Jewish Federation of Greater Seattle", url: "https://www.jewishinseattle.org/", cat: [organization, religious_freedom], info: "They wrote a letter strongly condemning Bannon appointment."}
 ,{title: "Seattle Resistance and Solidarity Calendar", url: "http://www.thestranger.com/events/resistance", pub: "The Stranger", cat: [calendar], info: "The Stranger’s calendar of events in Seattle."}
@@ -317,6 +314,7 @@ var data = [
 ,{title: "Who is my representative?", url: "http://whoismyrepresentative.com/", cat: [resource, congress], info: "Enter your zip code, get contact information for your congressional representative and senator."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
 ,{title: "Write and Be Counted: Op-Eds and Letters.", url: "http://ccmc.org/tips/write-and-be-counted-op-eds-and-letters/", cat: [resource, strategy, media], pub: "Communications Consortium Media Center", info: "Lots of help for writing letters and op-eds."}
+,{title: "May Day March for Workers and Immigrant Rights", url: "https://www.facebook.com/events/1600651136614959/", date: "1 May 2017", cat: [event, immigration_refugees, civil_society]}
 ];
 
 //“” ’
