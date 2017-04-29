@@ -36,8 +36,7 @@ var data = [
 ,{title: "Advocates for Immigrants in Detention Northwest (AID NW)", url: "http://aidnw.org/", cat: [organization, immigration_refugees], info: "They run a few programs at the Northwest Detention Center to support detainees there."}
 ,{title: "All of Trump’s Russia Ties, in 7 Charts.", url: "http://www.politico.com/magazine/story/2017/03/connections-trump-putin-russia-ties-chart-flynn-page-manafort-sessions-214868", author: "Michael Crowley", pub: "Politico", date: "Mar 2017", info: "Note this does not include his extensive ties to oligarchs in former Soviet Republics.", cat: [article, trump, corruption]}
 ,{title: "AllSides", url: "http://www.allsides.com/", cat: [resource, news], info: "This site claims to show “all sides” of the news so as to reduce bias. More accurately I would say they cull news items with different biases so you can see them together."}
-,{title: "Altotrump!", url: "http://altotrump.com/", cat: [campaign, immigration_refugees], info: "A campaign started by the National Day Laborer Organizing Network (NDLON). I was impressed with their “Know Your Rights” materials."}
-,{title: "America’s Voice", url: "http://www.americasvoice.org/", cat: [organization, immigration_refugees], info: "They have a must read blog."}
+,{title: "America’s Voice", url: "http://www.americasvoice.org/", fav: true, cat: [organization, immigration_refugees], info: "They have a must read blog."}
 ,{title: "American Bridge PAC", url: "https://americanbridgepac.org/", cat: [resource, congress], info: "Focus on research and ad campaigns to hold Republicans accountable for their malfeasance."}
 ,{title: "American Civil Liberties Union", url: "https://www.aclu.org/", cat: [organization, civil_rights, privacy]}
 ,{title: "American Friends Service Committee", url: "https://www.afsc.org/actioncenter", cat: [organization, religious_freedom], info: "They have a blog and a mailing list, but not sure how much is happening here. However I did get a good article or two from their blog."}
@@ -88,6 +87,7 @@ var data = [
 ,{title: "Data Refuge Project", url: "https://www.datarefuge.org", cat: [resource, science, environment], info: "One of several data stores saving climate data before it is deleted by Trump administration."}
 ,{title: "Defending Accounts Against Common Attacks", url: "https://source.opennews.org/en-US/guides/defending-accounts/", cat: [resource, security], info: "Securing your electronic communications."}
 ,{title: "Define American", url: "https://defineamerican.com/", cat: [organization, immigration_refugees], info: "Support for undocumented immigrants. See their #FactsMatter campaign for useful op-ed information."}
+,{title: "Democracy 21", url: "http://www.democracy21.org/", cat: [organization, civil_society], info: "“Nonpartisan organization dedicated to making democracy work for all Americans.” Pretty dry site but they do focus on corruption and the influence of money on politics."}
 ,{title: "Democratic Coalition Against Trump", url:"http://www.democraticcoalition.org/", cat: [organization], info:"Resisting Trump through research, boycotts, and so forth, a good opposition site."}
 ,{title: "Despair Is Not A Strategy.", url: "https://medium.com/@abby.brockman/despair-is-not-a-strategy-15-principles-of-hope-deba7ac2cb29", cat: [article, self_care], author: "Abby Brockman", pub: "Medium", date: "6 Mar 2017", info: "Like the title says&hellip; work on your attitude."}
 ,{title: "Detention Watch Network", url: "http://www.detentionwatchnetwork.org/", cat: [organization, immigration_refugees, prison_reform], info: "“Detention Watch Network is a national membership organization that brings together advocates from diverse backgrounds to unify strategy, build partnerships and strengthen the movement to end immigration detention.”"}
@@ -104,11 +104,13 @@ var data = [
 ,{title: "Everytown for Gun Safety", url:"http://everytown.org/", cat: [organization, gun_violence], info: "Everytown is a movement of Americans working together to end gun violence and build safer communities."}
 ,{title: "Experts in authoritarianism advise to keep a list of things subtly changing around you, so you’ll remember.", url: "https://medium.com/@Amy_Siskind", author: "Amy Siskind", cat: [person, corruption, civil_society], info: "Amy Siskind has been documenting the erosion of laws and norms since Trump came to power. It’s invaluable, and damning."}
 ,{title: "FactCheck.org", url: "http://www.factcheck.org/", cat: [resource, news], info: "Annenberg Public Policy Center at the University of Pennsylvania"}
+,{title: "Fair Immigration Reform Movement (FAIR)", url: "https://fairimmigration.org/", cat: [organization, immigration_refugees], info: "This is not the right-wing FAIR group, which also exists."}
 ,{title: "Faith Action Network", url: "http://fanwa.org/", cat: [organization, religious_freedom], info: "They have a legislative agenda that is worth knowing about as it’s the practical stuff you’d want to see passed in Washington state."}
 ,{title: "Fear, Inc.", url: "https://islamophobianetwork.com/", cat: [resource, religious_freedom], info: "A very in-depth look at the organizations, speakers and funders of anti-Islamic extremists."}
 ,{title: "Fight For The Future", url: "https://www.fightforthefuture.org/", cat: [organization, campaign, civil_society, strategy], info: "Including a proposal to fund A-Teams: “Terrified about Trump? Quit your job, start an A-Team. We’ll fund it. Read this.”"}
 ,{title: "Fight The Good Fight Seattle", url: "http://www.ftgf-seattle.com/", cat: [calendar], info: "Another Seattle city calendar with a lot of good stuff in it."}
 ,{title: "Finding Steady Ground", url: "http://www.findingsteadyground.com/", cat: [resource, self_care], info: "If you feel burnt out or overwhelmed, maybe spend some time reading what this site has to say about taking care of yourself for the long haul."}
+,{title: "Five Easy Steps to Prepare for Your Lobby Visit", url: "http://www.aila.org/infonet/five-steps-to-prepare-for-your-lobby-visit", cat: [resource, congress], pub: "American Immigration Lawyers Association", info: "Information about visiting your elected representatives. "}
 ,{title: "Flippable", url: "https://www.flippable.org/", cat: [organization, elections], info: "“Our mission is to turn America blue by building a movement to flip seats” focusing on weekly actions to flip state legislatures."}
 ,{title: "Foreign Policy: The Editor’s Room", url: "http://foreignpolicy.com/tag/the-e-r-podcast/", cat: [podcast], info: "This podcast was probably not always about the Trump administration. But these days it’s a very good place to hear discussion about the consequences of Trump for American foreign policy."}
 ,{title: "Former Mafia-linked figure describes association with Trump.", author: "Rosalind S. Helderman and Tom Hamburger", pub: "Washington Post", date: "17 May 2016", cat: [article, corruption], url: "https://www.washingtonpost.com/politics/former-mafia-linked-figure-describes-association-with-trump/2016/05/17/cec6c2c6-16d3-11e6-aa55-670cabef46e0_story.html"}
@@ -139,7 +141,8 @@ var data = [
 ,{title: "How To Topple a Dictator (inteview with Erica Chenoweth).", url: "https://www.thenation.com/article/how-to-topple-a-dictator/", info: "Chenoweth’s research points to the importance of numbers in nonviolent mobilization. Numbers matter. Nonviolent movements can achieve this because they can involve more and more sectors of society&mdash;indeed they must do this, or they will probably fail.", author: "Waleed Shahid", pub: "The Nation", date: "24 Feb 2017", cat: [article, strategy, civil_society]}
 ,{title: "How to Write a Letter to the Editor.", url: "http://www.outdooralliance.org/blog/2017/3/13/how-to-write-a-letter-to-the-editor", pub: "Outdoor Alliance", cat: [article, strategy], info: "Tips for your letter to the editor."}
 ,{title: "Human Rights Campaign", url: "https://www.hrc.org/", cat: [organization, lgbtq]}
-,{title: "Immigrant Ally Toolkit", url: "https://www.indivisibleguide.com/resources/online/immigrant-ally-toolkit/", cat: [resource, immigration_refugees]}
+,{title: "Immigrant Ally Toolkit", url: "https://www.indivisibleguide.com/resources/online/immigrant-ally-toolkit/", pub: "Indivisible", cat: [resource, immigration_refugees], info: "A toolkit for activists wanting to become allies on immigration issues (if you are directly impacted by these policies, there are better resources listed here for you)."}
+,{title: "Immigration Impact", url: "https://immigrationimpact.com/", cat: [organization, immigration_refugees], pub: "American Immigration Council", info: "Another public policy organization devoted to immigration. Lots of comprehensive information."}
 ,{title: "Indivisible Action Calendar/Capitol Calendar", url: "https://www.indivisibleguide.com/action-calendar", cat: [calendar], info: "This has a good summary of activities happening in Congress, and what you should focus on when calling."}
 ,{title: "Indivisible Radio", url: "http://www.wnyc.org/shows/indivisible/", cat: [podcast, elections], info: "“Indivisible is public radio’s national conversation about America in a time of change.” It’s a call-in show."}
 ,{title: "Indivisible Washington", url: "http://indivisibleguidewa.com/", cat: [resource, congress, elections], info: "This resource tries to be a clearinghouse of information for indivisible groups across the state"}
@@ -160,6 +163,7 @@ var data = [
 ,{title: "Lightning Bolt", url: "http://www.lightningbolt.vision/", cat: [resource, civil_society], info: "Prepper culture for leftists."}
 ,{title: "Make It Work", url: "http://www.makeitworkcampaign.org/", cat: [campaign], info: "A three-year education campaign advocating for raising wages, closing the pay gap, more affordable child and elder care, and providing family leave."}
 ,{title: "MALDEF (The Latino Legal Voice for Civil Rights in America)", url: "http://www.maldef.org/", cat: [organization, civil_rights, immigration_refugees]}
+,{title: "May Day March for Workers and Immigrant Rights", url: "https://www.facebook.com/events/1600651136614959/", date: "1 May 2017", cat: [event, immigration_refugees, civil_society]}
 ,{title: "Migration Policy Institute", url: "http://www.migrationpolicy.org/", cat: [organization, immigration_refugees], info: "A DC think tank with lots of research on the migration of people worldwide."}
 ,{title: "Moms Demand Action", url: "http://momsdemandaction.org/", cat: [organization, gun_violence], info: "“Much like Mothers Against Drunk Driving was created to reduce drunk driving, Moms Demand Action for Gun Sense in America was created to demand action from legislators, state and federal; companies; and educational institutions to establish common-sense gun reforms.”"}
 ,{title: "Movement 2017", url: "http://movementvote.org/", cat: [resource, elections]}
@@ -239,11 +243,11 @@ var data = [
 ,{title: "Spreadsheet of nomination process", url: "https://docs.google.com/spreadsheets/d/1Nx970-5j0ls4aJbmiKqwN0E3OfcpAqhXgM3zyfBZ4TM/htmlview?usp=sharing&sle=true#", cat: [resource, congress], info: "Who has gone through committee, when they are voting on whom."}
 ,{title: "Stand Up Republic", url: "https://standuprepublic.com/", cat: [organization, congress], info: "A conservative organization formed by Evan McMullin and Mindy Finn to resist Trump regime. Great to see resistance across the political spectrum."}
 ,{title: "State Innovation Exchange", url: "https://stateinnovation.org/", cat: [organization, regionalism, civil_society], info: "“Advancing progressive change in the states.”"}
+,{title: "State of the Swamp", url: "https://stateoftheswamp.com/", cat: [resource, trump, corruption], info: "“Ethics in President Trump’s first 100 days”"}
 ,{title: "Statisticians fear Trump White House will manipulate figures to fit narrative.", url: "https://www.theguardian.com/us-news/2017/jan/30/statistics-trump-administration-numbers-manipulation", author: "Mona Chalabi", pub: "The Guardian", date: "30 Jan 2017", info: "Not all doom and gloom, but this article reviews the possibilities for administration malfeasance in this area.", cat: [article, corruption]}
 ,{title: "Surveillance Self-Defence", url: "https://ssd.eff.org/", cat: [resource, security]}
 ,{title: "SwingLeft", url: "https://swingleft.org/", cat: [campaign, elections], info: "Finds a swing district near you so you can support a Democrat and keep them in the House."}
 ,{title: "Talking Points Memo", url: "http://talkingpointsmemo.com/", cat: [news], info: "The daily headlines here tend to be attention grabbing and don’t always weed out the critical news from the chaffe. However the editor, Josh Marshall, has very good analyses of political developments."}
-,{title: "Tax March", url: "https://www.facebook.com/events/240189163102061/", cat: [event, trump], date: "15 Apr 2017", info: "A Trump protest specifically pointing out the dude has not released his tax returns."}
 ,{title: "Techs and Balances", url: "http://www.techsandbalances.org/", cat: [technology, organization]}
 ,{title: "The 65", url: "http://thesixtyfive.org/", cat: [resource, congress], info: "Calling scripts on virtually all issues."}
 ,{title: "The Action Network", url: "https://actionnetwork.org/", cat: [organization, strategy], info: "Free to individuals and small groups, this company provides support for large mailing lists. Probably not that useful over a mailing list service if you’re small."}
@@ -314,11 +318,8 @@ var data = [
 ,{title: "Who is my representative?", url: "http://whoismyrepresentative.com/", cat: [resource, congress], info: "Enter your zip code, get contact information for your congressional representative and senator."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
 ,{title: "Write and Be Counted: Op-Eds and Letters.", url: "http://ccmc.org/tips/write-and-be-counted-op-eds-and-letters/", cat: [resource, strategy, media], pub: "Communications Consortium Media Center", info: "Lots of help for writing letters and op-eds."}
-,{title: "May Day March for Workers and Immigrant Rights", url: "https://www.facebook.com/events/1600651136614959/", date: "1 May 2017", cat: [event, immigration_refugees, civil_society]}
 ];
-
 //“” ’
 //https://www.theguardian.com/us-news/2017/apr/03/donald-trump-immigration-deportation-protest-secret-agenda
 //https://istrumpatmaralago.org/
 //https://www.womensmarch.com/
-//https://fairimmigration.org/about/
