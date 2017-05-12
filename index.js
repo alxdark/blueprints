@@ -55,7 +55,7 @@ window.addEventListener("DOMContentLoaded", function() {
                 }
                 return array.join(', ');
             },
-            resetFilter(value, type) {
+            resetFilter: function(value, type) {
                 var existingValue = this.category;
                 this.textValue = this.category = null;
                 if (existingValue !== value) {

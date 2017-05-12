@@ -171,7 +171,7 @@ var data = [
 ,{title: "Make It Work", url: "http://www.makeitworkcampaign.org/", cat: [campaign], info: "A three-year education campaign advocating for raising wages, closing the pay gap, more affordable child and elder care, and providing family leave."}
 ,{title: "MALDEF (The Latino Legal Voice for Civil Rights in America)", url: "http://www.maldef.org/", cat: [organization, civil_rights, immigration_refugees]}
 ,{title: "May Day March for Workers and Immigrant Rights", url: "https://www.facebook.com/events/1600651136614959/", date: "1 May 2017", cat: [event, immigration_refugees, civil_society]}
-,{title: "Migration Policy Institute", url: "http://www.migrationpolicy.org/", cat: [organization, immigration_refugees], info: "A DC think tank with lots of research on the migration of people worldwide."}
+,{title: "Migration Policy Institute", url: "http://www.migrationpolicy.org/", cat: [organization, immigration_refugees], info: "A policy institute that publishes deep research papers on migration and federal policy."}
 ,{title: "Moms Demand Action", url: "http://momsdemandaction.org/", cat: [organization, gun_violence], info: "“Much like Mothers Against Drunk Driving was created to reduce drunk driving, Moms Demand Action for Gun Sense in America was created to demand action from legislators, state and federal; companies; and educational institutions to establish common-sense gun reforms.”"}
 ,{title: "Movement 2017", url: "http://movementvote.org/", cat: [resource, elections]}
 ,{title: "Muslim Association of Puget Sound", url: "http://www.mapsredmond.org/", cat: [organization, religious_freedom], info: "They have been responding to vandalism of mosques in our region (at the least, there’re probably doing more)."}
@@ -331,9 +331,13 @@ var data = [
 //“” ’
 //https://www.theguardian.com/us-news/2017/apr/03/donald-trump-immigration-deportation-protest-secret-agenda
 //https://istrumpatmaralago.org/
+//https://istrumpatbedminster.org/
 //https://www.womensmarch.com/
 //http://saveourepa.com/
 //http://nymag.com/daily/intelligencer/2017/04/every-terrifying-thing-that-donald-trump-has-done.html - The worst president in American history is not rhetoric.
 //http://billmoyers.com/story/toxic-talking-jim-hoggan-desmogblog/
 //http://rooseveltinstitute.org/obama-trump-voters-expect-change-dont-trust-gop/
-
+//http://www.endisolation.org/
+//http://www.pogo.org/ - Project on Government Oversight
+//https://dearfcc.org/
+//https://hbr.org/2017/01/how-protests-become-successful-social-movements
