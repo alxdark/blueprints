@@ -33,7 +33,7 @@
             <template v-for="item in filteredData()">
                 <dt>
                     <div class="social">
-                        <span style="color: orange" v-if="item.fav">&#9733; </span> <a class="title" :href="item.url">{{item.title}}</a>
+                        <span class="fav" v-if="item.fav">&#9733; </span> <a class="title" :href="item.url">{{item.title}}</a>
                         <a :href="'https://www.facebook.com/' + item.facebook" v-if="item.facebook">
                             <span class="facebook"></span> <span>facebook</span>
                         </a>

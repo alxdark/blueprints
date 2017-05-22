@@ -34,7 +34,10 @@ body {
         margin-left: 1rem;
         margin-right: .2rem;
     }
-
+.fav {
+    color: orange;
+    padding-right: .3rem;
+}
 .facebook {
     background-image: url(facebook.svg);
 }
