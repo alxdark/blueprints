@@ -12,7 +12,7 @@ body {
     background-color: white;
     overflow-x: hidden;
 }
-.facebook, .twitter {
+.facebook, .twitter, .youtube {
     height: 1rem;
     width: 1rem;
     background-size: contain;
@@ -43,6 +43,9 @@ body {
 }
 .twitter {
     background-image: url(twitter.svg);
+}
+.youtube {
+    background-image: url(youtube.svg);
 }
 .cats {
     font-variant: small-caps;
