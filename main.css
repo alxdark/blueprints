@@ -19,19 +19,21 @@ body {
     background-repeat: no-repeat;
     background-position: center bottom;
 }
-.social, .social a {
+.name, .name a {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-    .social a span {
-        opacity: .7;
+    .name a span {
+        opacity: .5;
     }
-    .social a:hover span {
+    .name a:hover span {
         opacity: 1;
     }
-    .social a span:first-child {
+    .title + .social {
         margin-left: 1rem;
+    }
+    .social {
         margin-right: .2rem;
     }
 .fav {

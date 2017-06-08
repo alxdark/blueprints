@@ -32,16 +32,20 @@
         <dl>
             <template v-for="item in filteredData()">
                 <dt>
-                    <div class="social">
-                        <span class="fav" v-if="item.fav">&#9733; </span> <a class="title" :href="item.url">{{item.title}}</a>
-                        <a :href="'https://www.facebook.com/' + item.facebook" v-if="item.facebook">
-                            <span class="facebook"></span> <span>facebook</span>
+                    <div class="name">
+                        <span class="fav" v-if="item.fav">&#9733; </span> 
+                        <a class="title" :href="item.url">{{item.title}}</a>
+                        <a class="social" target="_blank"
+                            :href="'https://www.facebook.com/' + item.facebook" v-if="item.facebook">
+                            <span class="facebook"></span><!-- <span>facebook</span>-->
                         </a>
-                        <a :href="'https://www.twitter.com/' + item.twitter" v-if="item.twitter">
-                            <span class="twitter"></span> <span>twitter</span>
+                        <a class="social" target="_blank"
+                            :href="'https://www.twitter.com/' + item.twitter" v-if="item.twitter">
+                            <span class="twitter"></span><!-- <span>twitter</span>-->
                         </a>
-                        <a :href="'https://www.youtube.com/user/' + item.youtube" v-if="item.youtube">
-                            <span class="youtube"></span> <span>youtube</span>
+                        <a class="social" target="_blank"
+                            :href="'https://www.youtube.com/user/' + item.youtube" v-if="item.youtube">
+                            <span class="youtube"></span><!-- <span>youtube</span>-->
                         </a>
                     </div>
                     <div class="url">{{item.url}}</div>
