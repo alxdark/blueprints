@@ -182,7 +182,7 @@ var data = [
 ,{title: "Lambda Legal", url: "https://www.lambdalegal.org/", cat: [organization, lgbtq], twitter: "LambdaLegal", facebook: "lambdalegal"}
 ,{title: "Lawyers’ Committee for Civil Rights Under Law", url: "https://lawyerscommittee.org/", cat: [organization, civil_rights], info: "In addition to civil rights cases, this organization was very active in receiving reports of vote irregularities during the election.", facebook: "lawyerscommittee", twitter: "LawyersComm"}
 ,{title: "League of Conservation Voters Scorecard", url: "http://scorecard.lcv.org/", cat: [resource, environment], info: "Environmental voting history of your reps."}
-,{title: "Let America Vote", url: "https://www.letamericavote.org/", cat: [organization, voting_rights], info: "New organization started by Jason Kander to focus on voting rights.", twitter: "Let_AmericaVote", facebook: "letamericavote"}
+,{title: "Let America Vote", url: "https://www.letamericavote.org/", cat: [organization, voting_rights], info: "New organization started by Jason Kander to focus on voting rights.", twitter: "letamericavote", facebook: "letamericavote"}
 ,{title: "Lightning Bolt", url: "http://www.lightningbolt.vision/", cat: [resource, civil_society], info: "Prepper culture for leftists."}
 ,{title: "Make It Work", url: "http://www.makeitworkcampaign.org/", cat: [campaign], info: "A three-year education campaign advocating for raising wages, closing the pay gap, more affordable child and elder care, and providing family leave."}
 ,{title: "MALDEF (The Latino Legal Voice for Civil Rights in America)", url: "http://www.maldef.org/", cat: [organization, civil_rights, immigration_refugees]}
