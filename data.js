@@ -5,17 +5,18 @@ function f() {
         return object;
     }, {});
 }
-var c = f("App", "Article", "Boycott", "Budget", "Calendar", "Campaign", "Corruption", "Event", "Mailing List", "News", 
-    "Organization", "Person", "Podcast", "Resource", "Racial Justice", "Civil Rights", "Civil Society", 
-    "Community Organizing", "Congress", "Economic Justice", "Elections", "Environment", "GOP", "Gun Violence", 
-    "Healthcare", "Homelessness", "Immigration & Refugees", "LGBTQ", "Media", "News", "Prison Reform", "Privacy", 
-    "Regionalism", "Religious Freedom", "Russia", "Science", "Security", "Self-Care", "Strategy", "Technology", "Trump", 
-    "Video", "Voting Rights", "Washington State", "Weeklies", "Women's Rights");
+var c = f("App", "Article", "Boycott", "Budget", "Calendar", "Campaign", "Corruption", "Criminal Justice", "Event", 
+    "Mailing List", "News", "Organization", "Person", "Podcast", "Resource", "Racial Justice", "Civil Rights", 
+    "Civil Society", "Community Organizing", "Congress", "Economic Justice", "Elections", "Environment", "GOP", 
+    "Gun Violence", "Healthcare", "Homelessness", "Immigration & Refugees", "LGBTQ", "Media", "News", 
+    "Prison Reform", "Privacy", "Regionalism", "Religious Freedom", "Russia", "Science", "Security", "Self-Care", 
+    "Strategy", "Technology", "Trump", "Video", "Voting Rights", "Washington State", "Weeklies", "Women's Rights");
 var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Mailing List", "News", "Organization", 
     "Person", "Podcast", "Press Release", "Resource", "Video");
 
 var data = [
  {title: "#GrabYourWallet", url: "https://grabyourwallet.org/", cat: [boycott], info: "Boycott of Trump products started after tapes of him bragging of sexual assault surfaced. "}
+,{title: "#IAmStillIn", url: "https://iamstillin.org/", cat: [campaign, environment], info: "“Tell the 194 Countries Committed to the Paris Agreement that You’re Still In [the Paris Climate Agreement].”"}
 ,{title: "#KnockEveryDoor", url: "https://knockeverydoor.org/", cat: [organization, elections], info: "Nationwide, volunteer-led canvasses to organize our communities against Trump"}
 ,{title: "#RealNews on Trump et L'Affaire Russe: A Resource Page", url: "https://lawfareblog.com/realnews-trump-et-laffaire-russe-resource-page", cat: [resource, russia, trump, corruption], info: "A very comprehensive backgrounder on what is known of Trump’s ties to Russia, Putin, and the Russian mafia.", fav: true}
 ,{title: "#ResistTrump", url: "http://resisthere.org/", cat: [campaign, trump], info: "Another portal onto #ResistTrumpTuesdays by the Working Families Party."}
@@ -27,6 +28,7 @@ var data = [
 ,{title: "43rd District Democrats", url: "http://43rddems.ngpvanhost.com/", cat: [organization, washington_state],info: "The fighting 43rd."}
 ,{title: "5 Calls", url: "https://5calls.org/", cat: [app, resource, congress], info: "Another service that organizes you and gives you five calls to make every day. I’ve heard it gives you a lot of calls to make."}
 ,{title: "6 Rules of Islamophobia.", url: "http://www.huffingtonpost.com/entry/islamophobia-america_us_587cf491e4b0e58057ff98e0", author: "Christopher Mathias", pub: "Huffington Post", date: "23 Jan 2017", cat: [article, religious_freedom], info: "The “6 big lies” of Islamophobia."}
+,{title: "A Definitive Guide to the GOP Insiders Enabling Donald Trump.", author: "Sarah Ellison", pub: "Vanity Fair", date: "Aug 2017", url: "http://www.vanityfair.com/news/2017/06/donald-trump-enablers", cat: [article, trump, congress], info: "the men propping up a Donald Trump presidency."}
 ,{title: "A Game Plan for Senate Democrats.", author: "Sarah Binder", pub: "New York Times", date: "10 Feb 2017", url: "https://www.nytimes.com/2017/02/10/opinion/a-game-plan-for-senate-democrats.html", cat: [article, strategy], info: "The many ways Senate democrats can procedurally slow down Republicans."}
 ,{title: "A guide to rebuilding the Democratic Party, from the ground up.", url: "http://www.vox.com/the-big-idea/2017/1/5/14176156/rebuild-democratic-party-dnc-strategy", author: "Theda Skicpol", pub: "Vox", date: "5 Jan 2017", cat: [article, elections], info: "This is a good corrective to a lot of unproductive talk and action these days. They agree with the Indivisble approach, focus on legislative and gubernatorial races, and note that the left has nothing financially or organizationally to counter far-right institutions (not the GOP per se)."}
 ,{title: "A Journalist’s Manual: Field Guide to Anti-Muslim Extremists.", url: "https://www.splcenter.org/20161025/journalists-manual-field-guide-anti-muslim-extremists", cat: [article, religious_freedom], author: "Southern Poverty Law Center", date: "25 Oct 2016", info: "Overview from Southern Poverty Law Center."}
@@ -86,7 +88,7 @@ var data = [
 ,{title: "Community Initiatives for Visiting Immigrants in Confinement (CIVIC)", url: "http://www.endisolation.org/", cat: [organization, immigration_refugees], info: "“CIVIC is the national immigration detention visitation network, which is working to end U.S. immigration detention...”", facebook: "endisolation", twitter: "endisolation"}
 ,{title: "Confronting Fear: Final Report", url: "http://www.islamophobia.org/images/ConfrontingFear/Final-Report.pdf", author: "Council on American-Islamic Relations", cat: [resource, religious_freedom]}
 ,{title: "Contacting Congress", url: "https://www.contactingcongress.org/", cat: [resource, congress], info: "One thing I really like about this site (other than that it is fast and easy), is that it includes links to all the media accounts for each representative.", fav: true}
-,{title: "Corporate Backers of Hate", url: "http://www.backersofhate.org/en/", cat: [resource, trump, immigration_refugees], info: "The companies that contract for ICE, or other profit from Trump’s anti-immigrant agenda and the private prison system."}
+,{title: "Corporate Backers of Hate", url: "http://www.backersofhate.org/en/", cat: [resource, criminal_justice, immigration_refugees], info: "The companies that contract for ICE, or other profit from Trump’s anti-immigrant agenda and the private prison system."}
 ,{title: "Council on American-Islamic Relations", url: "https://www.cair.com/press-center/action-alerts.html", cat: [organization, religious_freedom], info: "Infrequent action alerts, and an email newsletter that documents reported hate crimes across the country and CAIR’s follow-up. Informative.", facebook: "CAIRNational", twitter: "CAIRNational", youtube: "CAIRtv"}
 ,{title: "Countable", url: "https://www.countable.us/", cat: [app, congress, news], info: "This is a very good application for reviewing what Congress is doing each day, and for tracking specific legislation."}
 ,{title: "Daily Action", url: "https://dailyaction.org/", cat: [resource, weeklies], info: "“In 90 seconds, you can conscientiously object and be done with it.” This one works entirely through your phone so you can make phone calls to your elected representatives."}
@@ -129,7 +131,7 @@ var data = [
 ,{title: "Former Mafia-linked figure describes association with Trump.", author: "Rosalind S. Helderman and Tom Hamburger", pub: "Washington Post", date: "17 May 2016", cat: [article, corruption], url: "https://www.washingtonpost.com/politics/former-mafia-linked-figure-describes-association-with-trump/2016/05/17/cec6c2c6-16d3-11e6-aa55-670cabef46e0_story.html"}
 ,{title: "Frightened by Donald Trump? You don’t know the half of it.", url: "https://www.theguardian.com/commentisfree/2016/nov/30/donald-trump-george-monbiot-misinformation", author: "George Monbiot", pub: "The Guardian", date: "30 Nov 2016", cat: [article, trump], info: "Despite the scary title, the article details the fact that Trump has stocked his administration with corporate propaganda hacks, many of whom were involved in Tea Party astroturfing."}
 ,{title: "Front and Centered", url: "http://frontandcentered.org/", cat: [organization, environment, economic_justice], info: "“A statewide coalition of organizations and groups rooted in communities of color and people with lower incomes; we’re on the frontlines of economic and environmental change.” Good climate/environmental justice information here.", twitter: "frontandcenterd", facebook: "frontandcentered"}
-,{title: "Fuse: Together for Progress", url: "http://fusewashington.org/", cat: [organization, community_organizing], info: "I believe this organization is more active on the east side of the state, but they are involved in other campaigns.", twitter: "fusewa", facebook: "FuseWashington", youtube: "fusewa"}
+,{title: "Fuse: Together for Progress", url: "http://fusewashington.org/", cat: [organization, community_organizing, washington_state], info: "I believe this organization is more active on the east side of the state, but they are involved in other campaigns.", twitter: "fusewa", facebook: "FuseWashington", youtube: "fusewa"}
 ,{title: "FWD.us", url: "https://www.fwd.us", cat: [organization, immigration_refugees], info: "This looks like a tech-industry sponsored, pro-immigration reform organization. No Seattle chapter at this time.", twitter: "FWD_us", facebook: "fwdus"}
 ,{title: "Gender Justice League", url: "http://www.genderjusticeleague.org/", cat: [lgbtq, organization], info: "“Gender Justice League has focused on elevating civil and human rights for trans and gender diverse people by creating community through advocacy efforts and shared leadership development.”", twitter: "GenderJusticeWA", facebook: "GenderJusticeLeague"}
 ,{title: "George Lakoff", url: "https://georgelakoff.com/blog/", cat: [person, strategy], twitter: "georgelakoff", facebook: "George-Lakoff-Official-165643503477608", info: "Cognitive anthropologist who has done extensive research on conservative worldviews and recently, the mindset behind the Trump voter."}
@@ -161,6 +163,7 @@ var data = [
 ,{title: "Human Rights Campaign", url: "https://www.hrc.org/", cat: [organization, lgbtq], facebook: "humanrightscampaign", twitter: "HRC"}
 ,{title: "Immigrant Ally Toolkit", url: "https://www.indivisibleguide.com/resources/online/immigrant-ally-toolkit/", pub: "Indivisible", cat: [resource, immigration_refugees], info: "A toolkit for activists wanting to become allies on immigration issues (if you are directly impacted by these policies, there are better resources listed here for you)."}
 ,{title: "Immigration Impact", url: "http://immigrationimpact.com/", cat: [organization, immigration_refugees], pub: "American Immigration Council", info: "Another public policy organization devoted to immigration. Lots of comprehensive information.", facebook: "122037065517", twitter: "immcouncil"}
+,{title: "Impeach Trump Now", url: "https://impeachdonaldtrumpnow.org/", cat: [campaign, trump], info: "Sign here to impeach Donald Trump now. Lays out the case of impeachment."}
 ,{title: "In lieu of a CBO score, an overview of the expected effects of the GOP health-care bill.", pub: "Washington Post", author: "Philip Bump", date: "4 May 2017", cat: [article, healthcare], url: "https://www.washingtonpost.com/news/politics/wp/2017/05/04/in-lieu-of-a-cbo-score-heres-an-overview-of-the-expected-effects-of-the-gop-health-care-bill/", info: "The GOP couldn’t get a CBO score on this bill and also get it passed. This is as close as we’ll get."}
 ,{title: "Indivisible (National Organization)", url: "https://www.indivisibleguide.com/", cat: [resource, strategy, community_organizing], info: "“Former congressional staffers reveal best practices for making Congress listen.” Many excellent resources for citizen advocacy; their resource guide is a bedrock of this resistance.", facebook: "indivisibleguide", twitter: "IndivisibleTeam"}
 ,{title: "Indivisible Action Calendar/Capitol Calendar", url: "https://www.indivisibleguide.com/action-calendar", cat: [calendar], info: "This has a good summary of activities happening in Congress, and what you should focus on when calling."}
@@ -221,7 +224,7 @@ var data = [
 ,{title: "PolitiFact", url: "http://www.politifact.com/", cat: [resource, news], info: "Washington Post and Tampa Bay Times?"}
 ,{title: "PopVox", url: "https://www.popvox.com/", cat: [organization, elections, congress], info: "Another site to track state and federal legislatures. I did not find it very helpful."}
 ,{title: "Presterity", url: "https://presterity.org/", cat: [resource, trump], info: "Another fact-checking site entirely devoted to Trump. Not sure yet how useful or up-to-date this site is."}
-,{title: "Prison Divestment Movement", url: "https://prisondivest.com/", cat: [organization]}
+,{title: "Prison Divestment Movement", url: "https://prisondivest.com/", cat: [organization, criminal_justice]}
 ,{title: "Progcode", url: "http://www.progcode.co/", cat: [technology, organization]}
 ,{title: "Project 1461", url: "https://www.project1461.org/", cat: [mailing_list, weeklies], info: "Another daily email of actions to take, fairly substantive with a lot of education/reading included."}
 ,{title: "Project on Government Oversight", url: "http://www.pogo.org/", cat: [organization, civil_society], info: "“...a nonpartisan independent watchdog that champions good government reforms.” Currently investigating the lack of reporting on private prisons."}
@@ -294,8 +297,10 @@ var data = [
 ,{title: "The GOP’s Age of Authoritarianism Has Only Just Begun.", url: "http://nymag.com/daily/intelligencer/2016/10/the-gops-age-of-authoritarianism-has-only-just-begun.html?mid=twitter-share-di", author: "Jonathan Chait", pub: "New York Magazine", date: "30 Oct 2016", cat: [article, gop]}
 ,{title: "The Internet Defense League", url: "https://www.internetdefenseleague.org/", cat: [privacy, civil_society, campaign], info: "Defends the Internet from bad laws, like the end of net neutrality."}
 ,{title: "The Leadership Conference", url: "http://www.civilrights.org", cat: [organization, civil_rights], info: "A very established civil and human rights coalition. Like many such organizations, they have a number of reports they have put out on different issues, and they issue press releases."}
+,{title: "The Marshall Project", url: "https://www.themarshallproject.org/", cat: [organization, criminal_justice], info: "Nonprofit journalism about criminal justice."}
 ,{title: "The Movement for Black Lives", url: "https://policy.m4bl.org/", cat: [campaign, racial_justice], info: "A detailed platform for the Black Lives Matter movement. "}
 ,{title: "The Myth of the Rust Belt Revolt.", url: "http://www.slate.com/articles/news_and_politics/politics/2016/12/the_myth_of_the_rust_belt_revolt.html", author: "Konstantin Kilibarda and Daria Roithmayr", pub: "Slate", date: "1 Dec 2016", cat: [article, elections]}
+,{title: "The National Immigration Project", url: "http://www.nationalimmigrationproject.org/", cat: [immigration_refugees, organization], info: "“&hellip;provides technical assistance and support to community-based immigrant organizations, legal practitioners, and all advocates working to advance the rights of noncitizens.”"}
 ,{title: "The People’s Calendar", url: "https://www.risestronger.org/events", pub: "RiseStronger", cat: [calendar], info: "Nation-wide calendar with events in Washington state."}
 ,{title: "The president lays the groundwork for a nationwide voter intimidation program.", url: "https://www.washingtonpost.com/opinions/the-president-lays-the-groundwork-for-a-nationwide-voter-intimidation-program/2017/02/14/ef524326-f2dd-11e6-a9b0-ecee7ce475fc_story.html", author: "Sherrilyn Ifill (NAACP)", pub: "Washington Post", date: "14 Feb 2017", cat: [article, voting_rights]}
 ,{title: "The Resistance Manual", url: "https://www.resistancemanual.org/Resistance_Manual_Home", fav: true, cat: [resource, strategy], info: "Launched by Black Lives Matter activities (I think), it’s a wiki collecting resources, strategies, etc. This is the most important resource in this list of bookmarks."}
@@ -366,7 +371,6 @@ var data = [
 ,{title: "Write and Be Counted: Op-Eds and Letters.", url: "http://ccmc.org/tips/write-and-be-counted-op-eds-and-letters/", cat: [resource, strategy, media], pub: "Communications Consortium Media Center", info: "Lots of help for writing letters and op-eds."}
 ,{title: "Yes Gov Works", url: "https://www.yesgovworks.org/", cat: [resource, trump, congress], info: "“Trump has launched a website to solicit feedback on which government departments it can slash...Fill out this form to tell President Trump #YesGovWorks, and we’ll pass along the message!”"}
 ];
-
-//,{title: "", url: "", cat: [], info: ""} //“” ’
-//“” ’
-//https://www.ftgf-seattle.com/ - also has many links
+// ,{title: "", url: "", cat: [], info: ""}
+// “” ’
+// https://www.ftgf-seattle.com/
