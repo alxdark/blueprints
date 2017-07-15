@@ -19,7 +19,8 @@
             <p>
                 <template v-for="(cat, index) in Object.values(categories).sort()">
                     <template v-if="index > 0">, </template>
-                    <a href="#" :class="{selected: isSelected(cat)}" @click.prevent="resetFilter(cat, 'category')">{{cat}}</a>
+                    <a href="#" :class="{selected: isSelected(cat)}" 
+                        @click.prevent="resetFilter(cat, 'category')">{{cat}}</a>
                 </template>
             </p>
             <p><small>Last update: {{date}}</small></p>
@@ -36,17 +37,17 @@
                     <div class="name">
                         <span class="fav" v-if="item.fav">&#9733; </span> 
                         <a class="title" :href="item.url">{{item.title}}</a>
-                        <a class="social" target="_blank"
-                            :href="'https://www.facebook.com/' + item.facebook" v-if="item.facebook">
-                            <span class="facebook"></span><!-- <span>facebook</span>-->
+                        <a class="social" target="_blank" v-if="item.f" 
+                            :href="'https://www.facebook.com/' + item.f">
+                            <span class="facebook"></span>
                         </a>
-                        <a class="social" target="_blank"
-                            :href="'https://www.twitter.com/' + item.twitter" v-if="item.twitter">
-                            <span class="twitter"></span><!-- <span>twitter</span>-->
+                        <a class="social" target="_blank" v-if="item.t" 
+                            :href="'https://www.twitter.com/' + item.t">
+                            <span class="twitter"></span>
                         </a>
-                        <a class="social" target="_blank"
-                            :href="'https://www.youtube.com/user/' + item.youtube" v-if="item.youtube">
-                            <span class="youtube"></span><!-- <span>youtube</span>-->
+                        <a class="social" target="_blank" v-if="item.y" 
+                            :href="'https://www.youtube.com/user/' + item.y">
+                            <span class="youtube"></span>
                         </a>
                     </div>
                     <div class="url">{{item.url}}</div>
@@ -55,16 +56,13 @@
                         <span class="cats" v-html="filteredCat(item)"></span>
                     </div>
                 </dt>
-                <dd>
-                    <div v-html="item.info"></div>
-                </dd>
+                <dd v-html="item.info"></dd>
             </template>
         <dl>
     </section>
     <footer>
-        <p>Site updated {{ date }}. Suggested additions encouraged via alxdark@gmail.com, 
-            or make a pull request on GitHub.  Background by 
-            <a href="http://www.marcbanderson.com/">Marc Anderson</a>. This site was created for residents 
+        <p>Suggested additions encouraged via alxdark@gmail.com, or make a pull request on GitHub. Background 
+            by <a href="http://www.marcbanderson.com/">Marc Anderson</a>. This site was created for residents 
             of Seattle and Washington state, and does not include regional resources from elsewhere. I do 
             remove resources if I find better or more recent replacements. </p> 
     </footer>

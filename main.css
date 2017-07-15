@@ -175,7 +175,7 @@ footer {
     .url {
         display: block;
     }
-    h1, .box, h3 button {
+    h1, .box, h3 button, .facebook, .twitter, .youtube {
         display: none;
     }
 }
