@@ -56,7 +56,16 @@
                         <span class="cats" v-html="filteredCat(item)"></span>
                     </div>
                 </dt>
-                <dd v-html="item.info"></dd>
+                <dd>
+                    <div v-html="item.info"></div>
+                    <div class="also" v-if="item.also">
+                        Don't miss: 
+                        <span v-for="(sub, i) in item.also">
+                            <span v-if="i > 0">, </span>
+                            <a :href="sub.url">{{sub.title}}</a>
+                        </span>
+                    </div>
+                </dd>
             </template>
         <dl>
     </section>

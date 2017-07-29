@@ -156,7 +156,13 @@ footer {
         margin-left: 1rem;
         padding-left: 0;
     }
-
+.also {
+    font-size: smaller;
+    color: #666;
+}
+    .also a, .also a:visited {
+        color: steelblue;
+    }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     html {
         font-size: 18px;
