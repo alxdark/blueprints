@@ -145,7 +145,7 @@ var data = [
 ,{title: "Front and Centered", url: "http://frontandcentered.org/", cat: [organization, environment, economic_justice], info: "“A statewide coalition of organizations and groups rooted in communities of color and people with lower incomes; we’re on the frontlines of economic and environmental change.” Good climate/environmental justice information here.", t: "frontandcenterd", f: "frontandcentered"}
 ,{title: "Fuse: Together for Progress", url: "http://fusewashington.org/", cat: [organization, community_organizing, washington_state], info: "I believe this organization is more active on the east side of the state, but they are involved in other campaigns.", t: "fusewa", f: "FuseWashington", y: "fusewa"}
 ,{title: "FWD.us", url: "https://www.fwd.us", cat: [organization, immigration_refugees], info: "This looks like a tech-industry sponsored, pro-immigration reform organization. No Seattle chapter at this time.", t: "FWD_us", f: "fwdus"}
-,{title: "Gay City", url: "https://www.gaycity.org/", cat: [oragnization, lgbtq, self_care]}
+,{title: "Gay City", url: "https://www.gaycity.org/", cat: [organization, lgbtq, self_care]}
 ,{title: "Gender Justice League", url: "http://www.genderjusticeleague.org/", cat: [lgbtq, organization], info: "“Gender Justice League has focused on elevating civil and human rights for trans and gender diverse people by creating community through advocacy efforts and shared leadership development.”", t: "GenderJusticeWA", f: "GenderJusticeLeague"}
 ,{title: "George Lakoff", url: "https://georgelakoff.com/blog/", cat: [person, strategy], t: "georgelakoff", f: "George-Lakoff-Official-165643503477608", info: "Cognitive anthropologist who has done extensive research on conservative worldviews and recently, the mindset behind the Trump voter."}
 ,{title: "Global Nonviolent Action Database", url: "http://nvdatabase.swarthmore.edu/", cat: [resource, nonviolent_resistance]}
@@ -409,3 +409,4 @@ var data = [
 // “” ’
 // https://www.ftgf-seattle.com/
 // http://norightturn.sostenga.org.uk/
+// Jefferson County Immigrant Rights Advocates JCIRA, Libby Palmer, 2336 KUHN ST, PORT TOWNSEND WA 98368-6228
