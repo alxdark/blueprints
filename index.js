@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
             textValue: null,
             items: data,
             categories: c,
-            date: "5 Sep 2017"
+            date: "15 Sep 2017"
         },
         created: function() {
             var arr = document.location.hash.split("=");
@@ -68,9 +68,9 @@ window.addEventListener("load", function() {
             },
             formatCitation: function(item) {
                 var array = [];
-                if (item.author) array.push(item.author);
-                if (item.pub) array.push('<i>'+item.pub+'</i>');
-                if (item.date) array.push(item.date);
+                if (item.author) { array.push(item.author); }
+                if (item.pub) { array.push('<i>'+item.pub+'</i>'); }
+                if (item.date) { array.push(item.date); }
                 return (array.length) ? array.join(', ') + '.' : '';
             },
             isSelected: function(cat) {
