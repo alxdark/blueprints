@@ -233,6 +233,7 @@ var data = [
 ,{title: "Migration Policy Institute", url: "http://www.migrationpolicy.org/", cat: [organization, immigration_refugees], info: "A policy institute that publishes deep research papers on migration and federal policy.", t: "MigrationPolicy", f: "MigrationPolicyInstitute"}
 ,{title: "Mijente", url: "http://mijente.net/", cat: [organization, immigration_refugees], info: "An immigrant rights organization? One thing they provide is the ability to start an on-line petition.", t:"ConMijente", f:"../conmijente", y:"../channel/UCRaIZEijK1gK2khpIf-O58Q"}
 ,{title: "Moms Demand Action", url: "http://momsdemandaction.org/", cat: [organization, gun_violence], info: "“Much like Mothers Against Drunk Driving was created to reduce drunk driving, Moms Demand Action for Gun Sense in America was created to demand action from legislators, state and federal; companies; and educational institutions to establish common-sense gun reforms.”"}
+,{title: "Moms Rising", url: "https://www.momsrising.org/", cat: [organization, community_organizing], info: "“Where moms and the people who love them go to change our world.”"}
 ,{title: "Movement 2017", url: "http://movementvote.org/", cat: [resource, elections]}
 ,{title: "MoveOn.org", url: "https://front.moveon.org/", cat: [organization], info: "A membership organization with on-line tools for petitions and fundraising."}
 ,{title: "Muslim Association of Puget Sound", url: "http://www.mapsredmond.org/", cat: [organization, religious_freedom], info: "They have been responding to vandalism of mosques in our region (at the least, there’re probably doing more).", f: "../mapsredmond.org", t: "mapsredmond"}
@@ -432,7 +433,6 @@ var data = [
 ,{title: "Washington State Office of the Attorney General Guidance on Immigration Enforcement", url: "http://www.atg.wa.gov/immigrationguidance", cat: [resource, immigration_refugees, washington_state], info: "“This guidance seeks to answer questions local agencies...may have about the impacts of changes to immigration laws and their discretion regarding participation in federal immigration enforcement.”"}
 ,{title: "Washington Votes", url: "http://washingtonvotes.org/", cat: [resource, washington_state], info: "The best resource I have found for looking up information on bills in the Washington state legislature."}
 ,{title: "Washington Voting Rights", url: "http://wavotingjustice.org/", cat: [organization, voting_rights, washington_state], info: "“...a group of community organizations and individuals, dedicated to voting rights and access in Washington State”"}
-,{title: "Washington Won’t Discriminate", url: "http://www.washingtonwontdiscriminate.org/", cat: [campaign, lgbtq, washington_state], info: "A campaign to inform people that I-1552 is a discriminatry, anti-trans bill being pushed by the religious right."}
 ,{title: "We have at most a year to defend American democracy, perhaps less.", url: "http://international.sueddeutsche.de/post/157058066625/we-have-at-most-a-year-to-defend-american", author: "Matthias Kolb interviewing Timothy Snyder", pub: "SZ", date: "7 Feb 2017", info: "This interview lays out in simple and incontrovertible terms that the administration is following the same “playbook” as the Nazi Party in the 1930s.", cat: [article, civil_society], fav: true}
 ,{title: "Weekly Action Checklist for Democrats, Independents, and Republicans of Conscience", url: "https://jenniferhofmann.com/home/weekly-action-checklist-democrats-independents-republicans-conscience/", cat: [mailing_list, weeklies], info: "E-mail list with a weekly summary of actions to take."}
 ,{title: "Welcoming America", url: "https://www.welcomingamerica.org/", cat: [organization, immigration_refugees], info: "Seattle is a member of this network of “Welcoming Cities” that evolves the concept of a sanctuary city. This is what Trump wants to attack.", t: "welcomingusa", f: "WelcomingAmerica", y: "WelcomingAmerica"}
@@ -459,3 +459,6 @@ var data = [
 // “” ‘’
 // https://www.ftgf-seattle.com/
 // http://whatdoidoabouttrump.com/
+
+// https://iamerica.org/
+// https://www.wa-democrats.org/ngpvanforms/3653
