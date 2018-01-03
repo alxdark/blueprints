@@ -5,15 +5,8 @@ function f() {
         return object;
     }, {});
 }
-var c = f("Antifa", "App", "Article", "Boycott", "Budget", "Calendar", "Campaign", "Corruption", "Criminal Justice", "Event", 
-    "Mailing List", "News", "Organization", "Person", "Podcast", "Resource", "Racial Justice", "Civil Rights", 
-    "Civil Society", "Community Organizing", "Congress", "Economic Justice", "Elections", "Environment", "GOP", 
-    "Gun Violence", "Healthcare", "Homelessness", "Immigration & Refugees", "LGBTQ", "Media", "News", 
-    "Nonviolent Resistance", "Prison Reform", "Privacy", "Regionalism", "Religious Freedom", "Russia", "Science", 
-    "Security", "Self-Care", "Strategy", "Technology", "Trump", "Video", "Voting Rights", "Washington State", 
-    "Weeklies", "Women's Rights", "Judiciary");
-var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Mailing List", "News", "Organization", 
-    "Person", "Podcast", "Press Release", "Resource", "Video");
+var c = f("Antifa", "App", "Article", "Boycott", "Budget", "Calendar", "Campaign", "Corruption", "Criminal Justice", "Event", "Mailing List", "News", "Organization", "Person", "Podcast", "Resource", "Racial Justice", "Civil Rights", "Civil Society", "Community Organizing", "Congress", "Economic Justice", "Elections", "Environment", "GOP", "Gun Violence", "Healthcare", "Homelessness", "Immigration & Refugees", "LGBTQ", "Media", "News", "Nonviolent Resistance", "Prison Reform", "Privacy", "Regionalism", "Religious Freedom", "Russia", "Science", "Security", "Self-Care", "Strategy", "Technology", "Trump", "Video", "Voting Rights", "Washington State", "Weeklies", "Women's Rights", "Judiciary"); 
+var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Mailing List", "News", "Organization", "Person", "Podcast", "Press Release", "Resource", "Video");
 
 var data = [
  {title: "#GrabYourWallet", url: "https://grabyourwallet.org/", cat: [boycott], info: "Boycott of Trump products started after tapes of him bragging of sexual assault surfaced. "}
@@ -317,7 +310,7 @@ var data = [
 ,{title: "Robert Reich", url: "http://robertreich.org/", cat: [person, strategy], info: "Former Secretary of Labor who is very vocal in opposition to Trump."}
 ,{title: "Rogan’s List", url: "https://roganslist.blogspot.com/", cat: [weeklies, resource], info: "An exhaustive list of action items that comes out every day. Are you retired or independently wealthy and don’t have enough to resist? This is for you."}
 ,{title: "Ruckus Society", url: "http://ruckus.org/", cat: [nonviolent_resistance, organization], info: "Lots of information about action planning."}
-,{title: "Run For Something", url: "https://www.runforsomething.net/", cat: [organization, elections], info: "Another organization recruiting political candidates under the age of 35.", f: "runforsomethinginc", t: "runforsomething"}
+,{title: "Run For Something", url: "https://www.runforsomething.net/", cat: [organization, elections], info: "Another organization recruiting political candidates under the age of 35.", f: "../runforsomethingpac", t: "runforsomething"}
 ,{title: "Safe Zone Project", url: "http://thesafezoneproject.com/", cat: [resource, lgbtq], info: "“A free online resource for creating powerful, effective LGBTQ awareness and ally training workshops.”"}
 ,{title: "Sanctuary Movement", url: "http://www.sanctuarynotdeportation.org/", cat: [campaign, immigration_refugees, religious_freedom], info: "“A growing movement of immigrant and over 700 faith communities doing what Congress and the Administration refuse to do: protect and stand with immigrants facing deportation.” There is a little activity at this site, as churches respond to recent administration attacks on immigrants."}
 ,{title: "Save Our Outdoors", url: "https://saveouroutdoors.com/", cat: [campaign, environment], info: "Campaign to protect America’s national monuments and parks. Because now that’s a thing we have to defend as well."}
@@ -411,13 +404,11 @@ var data = [
 ,{title: "Twitter Activist Security.", url: "https://medium.com/@thegrugq/twitter-activist-security-7c806bae9cb0#.sh7dfsy9f", cat: [article, media, security], info: "Security for twitter users.", date: "29 Jan 2017"}
 ,{title: "Twitter list of alternative government accounts", url: "https://twitter.com/alxdark/lists/altgovaccts", cat: [resource, civil_society, science], info: "After Trump tried to censor government agencies, many formed rogue accounts to continue voicing their concerns about his attack on science and truth."}
 ,{title: "U.S. Anti-Semitic Incidents Surged in 2016-17.", url: "https://www.adl.org/sites/default/files/documents/Anti-Semitic%20Audit%20Print_vf2.pdf", pub: "Anti-Defamation League", cat: [resource, religious_freedom], info: "A report with statistics."}
-,{title: "U.S. House Twitter accounts", url: "https://twitter.com/gov/lists/us-house", cat: [resource, congress]}
-,{title: "U.S. Senate Twitter accounts", url: "https://twitter.com/gov/lists/us-senate/members", cat: [resource, congress]}
 ,{title: "Ultraviolet", url: "https://weareultraviolet.org/", cat: [organization, womens_rights], info: "“UltraViolet is a powerful and rapidly growing community of people from all walks of life mobilized to fight sexism and expand women’s rights, from politics and government to media and pop culture.”", f: "weareultraviolet", t: "ultraviolet", y: "UltravioletAction"}
 ,{title: "Understanding Trump.", url: "https://georgelakoff.com/2016/07/23/understanding-trump-2/", cat: [article, trump], info: "Another explanation for why social conservatives support Trump. (Social conservatives are disturbing as described by Lakoff, but it does explain the unexplainable.)"}
 ,{title: "Unhack the Vote", url: "https://www.unhackthevote.com/", cat: [campaign, voting_rights], info: "“Fighting against Hackable EVMs, Gerrymandering and Crosscheck”"}
 ,{title: "Unite Guide", url: "http://www.uniteguide.com/", cat: [resource, elections, community_organizing], info: "How we used social media to organize about 1m people across 50 states since the week of the 2016 presidential election.”"}
-,{title: "United to Protect Democracy", url: "https://unitedtoprotectdemocracy.org/", cat: [organization, civil_society], info: "“a nonpartisan nonprofit with an urgent goal: to hold the President and the Executive Branch accountable to the laws and longstanding practices that have protected our democracy through both Democratic and Republican Administrations...”", }
+,{title: "United to Protect Democracy", url: "https://unitedtoprotectdemocracy.org/", cat: [organization, civil_society], info: "Started by Obama’s lawyers after the election “to hold the President and the Executive Branch accountable to the laws and longstanding practices that have protected our democracy through both Democratic and Republican Administrations...”", t: "protctdemocracy"}
 ,{title: "United We Dream", url: "https://unitedwedream.org/", cat: [organization, immigration_refugees], info: "Focused on immigrants with DACA and DAPA status, as well as higher education issues for “Dreamers”.", f: "UnitedWeDream", t: "unitedwedream", y: "unitedwedream"}
 ,{title: "Vote 411", url: "http://www.vote411.org/", cat: [voting_rights, resource], info: "From the League of Women Voters, a sight with the information you need to get registered to vote anywhere."}
 ,{title: "Vote Riders", url: "http://www.voteriders.org/", cat: [organization, voting_rights], f: "VoteRiders", t: "VoteRiders", y: "../channel/UCA79W1bqi48-8lgnVX6MtUQ"}
@@ -426,7 +417,7 @@ var data = [
 ,{title: "Wall of Us", url: "https://www.wallofus.org/", cat: [resource, weeklies],  info: "“Four concrete acts of resistance delivered to your inbox each week.”"}
 ,{title: "Wallingford Indivisible", url: "http://wallingfordindivisible.org", cat: [organization, elections, congress], info: "Originall Wallingford Area Resistance, large group that has adopted Indivisible approach to engagement.", f: "../groups/wallingfordindivisible"}
 ,{title: "War by Other Means: Russian Active Measures and the Weaponization of Information.", url: "https://www.americanprogress.org/issues/security/reports/2017/06/06/433345/war-by-other-means/", cat: [article, russia], author: "Max Bergmann and Carolyn Kenney", pub: "Center for American Progress", date: "6 Jun 2017", info: "“Russia is treating the online environment like a new theater for conflict and has invested in developing its capabilities just as it would in developing a new weapon system.”"}
-,{title: "Washington Dream Coalition", url: "http://www.wadreamcoalition.org/", cat: [organization, immigration_refugees, washington_state], info: "Organization for Dreamers in Washington state, education focused. See Facebook page.", f: "WADREAMers"}
+,{title: "Washington Dream Coalition", url: "https://www.facebook.com/WADreamCoalition/", cat: [organization, immigration_refugees, washington_state], info: "Organization for Dreamers in Washington state, education focused."}
 ,{title: "Washington Immigrant Solidarity Network", url: "http://waimmigrantsolidaritynetwork.org/", cat: [organization, immigration_refugees, washington_state], info: "Organization of immigrant rights groups, lawyers, labor unions, and activists to support immigrant rights in Washington state.", f: "WAimmigrantsolidaritynetwork"}
 ,{title: "Washington Post", url: "https://www.washingtonpost.com/", cat: [news], info: "I believe this national paper did the best reporting on the Trump campaign and is a good place to read about the day’s news."}
 ,{title: "Washington State Immigration Community Events Calendar", url: "https://www.nwirp.org/calendar-of-community-immigration-events/", cat: [calendar], info: "Know your rights presentations and the like throughout Washington state."}
@@ -452,7 +443,11 @@ var data = [
 ,{title: "Why We Call Congress", url: "https://www.youtube.com/watch?v=hkrjAdxpLck", cat: [video, congress], pub: "Indivisible Nation Brooklyn", info: "A short video on why you should be calling Congress."}
 ,{title: "Working Families Party", url: "http://workingfamilies.org/", cat: [campaign, voting_rights], info: "This is a 3rd party that is active in the northeast of the United States. They have had some interesting electoral successes in local races."}
 ,{title: "Write and Be Counted: Op-Eds and Letters.", url: "http://ccmc.org/tips/write-and-be-counted-op-eds-and-letters/", cat: [resource, strategy, media], pub: "Communications Consortium Media Center", info: "Lots of help for writing letters and op-eds."}
-,{title: "Yes Gov Works", url: "https://www.yesgovworks.org/", cat: [resource, trump, congress], info: "“Trump has launched a website to solicit feedback on which government departments it can slash...Fill out this form to tell President Trump #YesGovWorks, and we’ll pass along the message!”"}
+,{title: "Uphold The Oath", url: "https://upholdtheoath.org/", cat: [civil_society, campaign], info: "Campaign to have civil servants publicly reaffirm their oath to uphold the constitution."}
+,{title: "What Should I Call About?", url: "http://whatshouldicallabout.com/", cat: [resource, congress], info: "An infrequently updated call script site."}
+,{title: "Take Care", url: "https://takecareblog.com/", cat: [organization, trump, civil_society], info: "A Trump watchdog site that examines whether or not Trump’s actions are constitutional and legal."}
+,{title: "The Loyal Opposition PAC", url: "https://www.theloyalopposition.net/", cat: [organization, civil_society, elections], info: "“We are a political action committee...combating the increased risk of the United States sliding towards autocracy under the Trump administration.”", t: "TheLoyalO"}
+,{title: "Northwest Community Bail Fund", url: "https://www.nwcombailfund.org/", cat: [organization, criminal_justice], info: "Provides bail funds for indigent defendents charged with misdemeanors, so they can don’t sit in jail pre-trail simply out of poverty."}
 ];
 
 // ,{title: "", url: "", cat: [], info: ""}
@@ -462,3 +457,6 @@ var data = [
 
 // https://iamerica.org/
 // https://www.wa-democrats.org/ngpvanforms/3653
+// Voting rights: ACLU Voting Justice project, Let America Vote, Swing Left, Sister District, Flippable, Mobilize, and BallotReady
+// http://www.actlocal2017.org/ - interesting but unfortunately, nothing happening in the PNW. Does have interesting list of resources.
+// http://www.actiontogethernetwork.org/

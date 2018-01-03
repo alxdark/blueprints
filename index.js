@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
             textValue: null,
             items: data,
             categories: c,
-            date: "25 Dec 2017"
+            date: "2 Jan 2018"
         },
         created: function() {
             var arr = document.location.hash.split("=");
