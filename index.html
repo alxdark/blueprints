@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Blueprints through a Blitzkrieg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gudea:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho|Gudea:400,700">
     <link rel="stylesheet" href="./main.css">
     <script src="vue.min.js"></script>
 </head>
@@ -51,7 +51,7 @@
                         </a>
                     </div>
                     <div class="url">{{item.url}}</div>
-                    <div>
+                    <div class="cite">
                         <span class="cite" v-html="formatCitation(item)"></span> 
                         <span class="cats" v-html="filteredCat(item)"></span>
                     </div>
@@ -70,10 +70,9 @@
         <dl>
     </section>
     <footer>
-        <p>Suggested additions encouraged via alxdark@gmail.com, or make a pull request on GitHub. Background 
-            by <a href="http://www.marcbanderson.com/">Marc Anderson</a>. This site was created for residents 
-            of Seattle and Washington state, and does not include regional resources from elsewhere. I do 
-            remove resources if I find better or more recent replacements. </p> 
+        <p>Suggested additions encouraged via alxdark@gmail.com, or make a pull request on GitHub. This site 
+            was created for residents of Seattle and Washington state, and does not include regional resources 
+            from elsewhere. I do remove resources if I find better or more recent replacements. </p> 
     </footer>
 </div>
 <script src="./data.js"></script>
