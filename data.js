@@ -295,7 +295,7 @@ var data = [
     , { title: "Postcards From The People", url: "http://www.postcardsfromthepeople.com/", cat: [elections, resource], info: "PDF templates of postcards you can print out to send for campaigns, to get out the vote, etc." }
     , { title: "Presterity", url: "https://presterity.org/", cat: [resource, trump], info: "A large wiki summarizing news articles on all facets of the Trump administration. Seems like a good starting point to catch up on your research of specific concerns or topic areas." }
     , { title: "Prison Divestment Movement", url: "https://prisondivest.com/", cat: [organization, criminal_justice, prison_reform], t: "prisondivest" }
-    , { title: "Progcode", url: "http://www.progcode.co/", cat: [technology, organization] }
+    , { title: "Progcode", url: "https://www.progcode.org/", cat: [technology, organization] }
     , { title: "Project on Government Oversight", url: "http://www.pogo.org/", cat: [organization, civil_society, prison_reform], info: "“...a nonpartisan independent watchdog that champions good government reforms.” Currently investigating the lack of reporting on private prisons.", f: "pogo.org", t: "pogoblog" }
     , { title: "Project Vote", url: "http://www.projectvote.org/", cat: [organization, voting_rights], f: "ProjectVote", t: "projectvote", y: "projectvoteorg" }
     , { title: "Prospects for the American press under Trump.", cat: [article, media], url: "http://pressthink.org/2016/12/prospects-american-press-trump-part-two/", author: "Jay Rosen", pub: "PressThink", date: "28 Dec 2016", info: "Second article on how the press might respond." }
@@ -372,7 +372,6 @@ var data = [
     , { title: "Take Care", url: "https://takecareblog.com/", cat: [organization, trump, civil_society], info: "A Trump watchdog site that examines whether or not Trump’s actions are constitutional and legal.", f: "ShallTakeCare", t: "@ShallTakeCare" }
     , { title: "Talking Points Memo", url: "http://talkingpointsmemo.com/", cat: [news], info: "The daily headlines here tend to be attention grabbing and don’t always weed out the critical news from the chaffe. However the editor, Josh Marshall, has very good analyses of political developments." }
     , { title: "Teaching Tolerance", url: "https://www.tolerance.org/", cat: [resource, racial_justice, religious_freedom], info: "An online magazine put out by the Southern Poverty Law Center with information on teaching tolerance in the classroom. An extensive set of back issues, classroom resources, and the like are available for download." }
-    , { title: "Techs and Balances", url: "http://www.techsandbalances.org/", cat: [technology, organization] }
     , { title: "Text The Vote", url: "https://www.textthevote.com/", cat: [elections, organization], info: "Volunteer to GOTV by texting voters. Easy and fun." }
     , { title: "The 65", url: "http://thesixtyfive.org/", cat: [resource, congress], info: "Calling scripts on virtually all issues." }
     , { title: "The Action Network", url: "https://actionnetwork.org/", cat: [organization, strategy], info: "Free to individuals and small groups, this company provides support for large mailing lists. Probably not that useful over a mailing list service if you’re small.", t: "theactionnet", f: "TheActionNet" }
