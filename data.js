@@ -503,6 +503,7 @@ var data = [
     , { title: "Women’s Refugee Commission", url: "https://www.womensrefugeecommission.org/", cat: [immigration_refugees, organization, womens_rights], info: "An advocacy organization that has written several reports about the treatment of women, children, and families in the U.S. immigrant detention system.", t: "wrcommission", f: "../wrcommission" }
     , { title: "Write and Be Counted: Op-Eds and Letters.", url: "http://ccmc.org/tips/write-and-be-counted-op-eds-and-letters/", cat: [resource, strategy, media], pub: "Communications Consortium Media Center", info: "Lots of help for writing letters and op-eds." }
     , { title: "You Power Democracy", url: "https://youpower.democracyforamerica.com/", pub: "Democracy for America", cat: [campaign, resource, civil_society], info: "“Start a petition, build a movement.” You too can start a petition. Then have a mailing list. Then try and get people to do stuff. Now you’re an organizer!" }
+    , { title: "Resistance Labs", url: "https://resistancelabs.com/volunteer/", cat: [organization, texting, voting_rights], info: "Resistance Labs runs text banking to GOTV." }
 ];
 
 // , { title: "", url: "", cat: [], info: "" }
