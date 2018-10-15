@@ -34,6 +34,14 @@ window.addEventListener("load", function() {
                     this.category = null;
                     document.location.hash = "#search="+encodeURIComponent(this.textValue);
                     return this.items.filter(function(item) {
+                        if (item.also) {
+                            var hasSome = item.also.some(function(obj) {
+                                return itemFieldMatch(obj, "title", this.textValue);
+                            }, this);
+                            if (hasSome) {
+                                return true;
+                            }
+                        }
                         return SEARCH_FIELDS.some(function(fieldName) {
                             return itemFieldMatch(item, fieldName, this.textValue);
                         }, this);
