@@ -5,8 +5,17 @@ function f() {
         return object;
     }, {});
 }
-var c = f("Antifa", "App", "Article", "Boycott", "Budget", "Calendar", "Campaign", "Congress", "Corruption", "Criminal Justice", /*"Event",*/ "Mailing List", "News", "Organization", "Person", "Podcast", "Resource", "Racial Justice", "Civil Rights", "Civil Society", "Community Organizing", "Congress", "Economic Justice", "Elections", "Environment", "Game", "GOP", "Government Agency", "Gun Violence", "Healthcare", "Homelessness", "Human Rights", "Immigration & Refugees", "LGBTQ", "Media", "News", "Nonviolent Resistance", "Postcards", "Prison Reform", "Privacy", "Regionalism", "Religious Freedom", "Russia", "Science", "Security", "Self-Care", "State Government", "Strategy", "Technology", "Texting", "Trump", "Video", "Voting Rights", "Washington State", "Weeklies", "Women's Rights", "Judiciary");
-var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Game", "Government Agency", "Mailing List", "News", "Organization", "Person", "Podcast", "Press Release", "Resource", "Video");
+var c = f("Antifa", "Apps", "Article", "Boycott", "Budget", "Calendar", "Campaign", "Congress", 
+    "Corruption", "Criminal Justice", /*"Event",*/ "Mailing List", "News", "Organization", "Person", 
+    "Podcast", "Resource", "Racial Justice", "Civil Rights", "Civil Society", "Community Organizing", 
+    "Congress", "Economic Justice", "Elections", "Environment", "Game", "GOP", "Government Agency", 
+    "Gun Violence", "Healthcare", "Homelessness", "Human Rights", "Immigration & Refugees", "LGBTQ", 
+    "Media", "News", "Nonviolent Resistance", "Postcards", "Prison Reform", "Privacy", "Regionalism", 
+    "Religious Freedom", "Russia", "Science", "Security", "Self-Care", "State Government", "Strategy", 
+    "Technology", "Texting", "Trump", "Video", "Voting Rights", "Washington State", "Weeklies", 
+    "Women's Rights", "Judiciary");
+var t = f("App", "Article", "Boycott", "Calendar", "Campaign", "Event", "Game", "Government Agency", 
+    "Mailing List", "News", "Organization", "Person", "Podcast", "Press Release", "Resource", "Video");
 console.log(t);
 var data = [
     { title: "#GrabYourWallet", url: "https://grabyourwallet.org/", cat: [boycott], info: "Boycott of Trump products started after tapes of him bragging of sexual assault surfaced. " }
